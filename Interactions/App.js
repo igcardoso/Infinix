@@ -203,24 +203,24 @@ var developer3 = document.querySelector("#content .home .containment-support .bl
 var developer4 = documen
 var label = document.querySelector("#content .home .containment-support label");
 
-function developer1() {
+function Functiondeveloper1() {
   window.location.href = "https://instagram.com/igor.cardoso75?igshid=ZDdkNTZiNTM="
 }
 
-function developer2() {
+function Functiondeveloper2() {
   window.location.href = "https://instagram.com/sahvercosa?igshid=YmMyMTA2M2Y="
 }
 
-function developer3() {
+function Functiondeveloper3() {
   window.location.href = "https://instagram.com/anacllara_c.s?igshid=YmMyMTA2M2Y="
 }
 
-function developer4() {
+function Functiondeveloper4() {
   window.location.href = "https://instagram.com/user.bruno_rivers?igshid=YmMyMTA2M2Y="
 }
 
 developer1.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="developer1()">@Igor O. Cardoso | developer </span>'
+  label.innerHTML = '<span onclick="Functiondeveloper1()">@Igor O. Cardoso | developer </span>'
   label.style.opacity = "1"
 })
 
@@ -232,7 +232,7 @@ developer1.addEventListener("mouseout", function() {
 // img2
 
 developer2.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="developer2()">@Sarah | adm</span>'
+  label.innerHTML = '<span onclick="Functiondeveloper2()">@Sarah | adm</span>'
   label.style.opacity = "1"
 })
 
@@ -244,7 +244,7 @@ developer2.addEventListener("mouseout", function() {
 // img3 
 
 developer3.addEventListener("mouseup", function() {
-label.innerHTML = '<span onclick="developer3()">@Clara | adm </span>'
+label.innerHTML = '<span onclick="Functiondeveloper3()">@Clara | adm </span>'
 label.style.opacity = "1"
 })
 
@@ -256,7 +256,7 @@ developer3.addEventListener("mouseout", function() {
 // img4
 
 developer4.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="developer4()">@Bruno Rios | developer </span>'
+  label.innerHTML = '<span onclick="Functiondeveloper4()">@Bruno Rios | developer </span>'
   label.style.opacity = "1"
 })
 
