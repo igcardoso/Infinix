@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="images/icons/icon-72x72.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-128x128.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-144x144.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-384x384.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#EDEFEE">
+  <meta name="theme-color" content="#EDEFEE">
+  <title>Infinix UI</title>
+  <!-- app photo guia -->
+  <link rel="icon" href="images/icons/icon-512x512.png" type="image/png">
+  <style type="text/css" media="all">
+@charset"utf-8";
+
+    /*PAGINAS*/
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Sans-Serif;
+      background: #EDEFEE;
+    }
+
+    #home {
+      display: block;
+      background: #EDEFEE;
+      transition: width .5s, background 1s, height 0s;
+      height: 100vh;
+    }
+
+    #home .side-menu {
+      display: none;
+    }
+
+    #containment-remaining-buttons {
+      display: none;
+    }
+
+    #home .bottom-menu-containment {
+      position: fixed;
+      top: auto;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+    }
+
+    #home .bottom-menu {
+      background: rgba(255,255,255) /*rgba(255,255,255,0.284)*/;
+      backdrop-filter: blur(15px);
+      width: 90%;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      margin: auto;
+      border-radius: 1.2em;
+      box-shadow: 2px 2px 20px rgba(255,255,255,0.047);
+    }
+
+    #home .bottom-menu .options {
+      display: inline;
+      width: 22%;
+      padding: 10px;
+      border: none;
+      color: rgba(255,255,255,0.707);
+      background: 0;
+      font-size: 23px;
+      border-radius: 8em;
+    }
+
+    #home .bottom-menu .transition-animation {
+      position: absolute;
+      top: 15%;
+      left: 4.8%;
+      padding: 8px;
+      width: 22%;
+      background: var(--page-selector-color);
+      color: var(--page-selector-color);
+      font-size: 23px;
+      border-radius: .9em;
+      border: 0;
+      transition: left 0.4s;
+      z-index: -1;
+      scroll-behavior: smooth;
+    }
+
+    #home .bottom-menu .op1 {
+      color: #000000;
+    }
+
+    #home .bottom-menu .op4 {
+      color: #ffffff;
+    }
+
+:root {
+      --page-selector-icon-color: rgba(0,0,0,0.502);
+      --main-text-color: #fff;
+      --second-text-color: #000;
+      /* SELETOR DE PÁGINA/HOME*/
+      --page-selector-color: #000;
+      --second-page-selector-color: #fff;
+    }
+
+    #containment-remaining-buttons {
+      display: none;
+
+    }
+
+    .offlinePage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .offlinePage .text {
+      color: #000000;
+      padding-top: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .offlinePage .alert {
+      font-weight: 800;
+    }
+
+    .offlinePage img {
+      margin: auto;
+      width: 250px;
+      height: 112px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="offlinePage" id="offline">
+    <img src="images/offline.png" />
+    <br />
+    <p class="alert">
+      Ops! Parece que você está offline
+    </p>
+    <br />
+    <p class="text">
+      Caso esteja conectado a internet,
+      desative e ative o wi-fi para corrigir erros
+    </p>
+  </div>
+  <div id="home">
+
+    <div class="containment-of-menus">
+
+      <div class="bottom-menu-containment">
+        <div class="bottom-menu">
+          <button id="transition-animation" class="transition-animation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0,0,0,0);transform: ;msFilter:;"><path d="M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z"></path></svg></button>
+          <button id="bottomop1" class="options op1"><!--<i class='bx bx-home-alt'></i>-->
+            <svg id="bottomSvg1" class="svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--second-page-selector-color)" style=";transform: ;msFilter:;"><path d="M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1 1 1 0 0 0-.29-.71zM6 20v-9.59l6-6 6 6V20z"></path></svg>
+          </button>
+          <button id="bottomop2" class="options op2">
+            <!--<i class="bx bx-edit"></i>-->
+            <svg id="bottomSvg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--page-selector-icon-color)" style="transform: ;msFilter:;"><path d="M16 2H8C4.691 2 2 4.691 2 8v12a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 13c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v7z"></path><circle cx="9.5" cy="11.5" r="1.5"></circle><circle cx="14.5" cy="11.5" r="1.5"></circle></svg>
+          </button>
+          <button id="bottomop3" class="options op3">
+            <!--<i class="bx bx-link"></i>-->
+            <svg id="bottomSvg3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--page-selector-icon-color)" style="transform: ;msFilter:;"><path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path><path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path></svg>
+          </button>
+          <button id="bottomop4" class="options op4">
+            <!--<i class="bx bxs-chevron-right"></i></i>-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" style="transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+          </button>
+          <div id="containment-remaining-buttons">
+            <button id="bottomBackop1" class="options back">
+              <!--<i class='bx bxs-chevron-left'></i>-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+            </button>
+            <button id="bottomop5" class="options op5">
+              <!--<i class="bx bx-mail-send"></i>-->
+              <svg id="bottomSvg4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--page-selector-icon-color)" style="transform: ;msFilter:;"><path d="M17.5 4C15.57 4 14 5.57 14 7.5c0 1.554 1.025 2.859 2.43 3.315-.146.932-.547 1.7-1.23 2.323-1.946 1.773-5.527 1.935-7.2 1.907V8.837c1.44-.434 2.5-1.757 2.5-3.337C10.5 3.57 8.93 2 7 2S3.5 3.57 3.5 5.5c0 1.58 1.06 2.903 2.5 3.337v6.326c-1.44.434-2.5 1.757-2.5 3.337C3.5 20.43 5.07 22 7 22s3.5-1.57 3.5-3.5c0-.551-.14-1.065-.367-1.529 2.06-.186 4.657-.757 6.409-2.35 1.097-.997 1.731-2.264 1.904-3.768C19.915 10.438 21 9.1 21 7.5 21 5.57 19.43 4 17.5 4zm-12 1.5C5.5 4.673 6.173 4 7 4s1.5.673 1.5 1.5S7.827 7 7 7s-1.5-.673-1.5-1.5zM7 20c-.827 0-1.5-.673-1.5-1.5a1.5 1.5 0 0 1 1.482-1.498l.13.01A1.495 1.495 0 0 1 7 20zM17.5 9c-.827 0-1.5-.673-1.5-1.5S16.673 6 17.5 6s1.5.673 1.5 1.5S18.327 9 17.5 9z"></path></svg>
+            </button>
+
+            <button id="bottomop6" class="options op6">
+              <!--<i class="bx bx-globe"></i>-->
+              <svg id="bottomSvg5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--page-selector-icon-color)" style="transform: ;msFilter:;"><path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"></path></svg>
+            </button>
+            <button id="bottomop7" class="options op7">
+              <!--<i class="bx bx-book-open"></i>-->
+              <svg id="bottomSvg6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--page-selector-icon-color)" style="transform: ;msFilter:;"><path d="M9 20h6v2H9zm7.906-6.288C17.936 12.506 19 11.259 19 9c0-3.859-3.141-7-7-7S5 5.141 5 9c0 2.285 1.067 3.528 2.101 4.73.358.418.729.851 1.084 1.349.144.206.38.996.591 1.921H8v2h8v-2h-.774c.213-.927.45-1.719.593-1.925.352-.503.726-.94 1.087-1.363zm-2.724.213c-.434.617-.796 2.075-1.006 3.075h-2.351c-.209-1.002-.572-2.463-1.011-3.08a20.502 20.502 0 0 0-1.196-1.492C7.644 11.294 7 10.544 7 9c0-2.757 2.243-5 5-5s5 2.243 5 5c0 1.521-.643 2.274-1.615 3.413-.373.438-.796.933-1.203 1.512z"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    window.addEventListener('online', () => {
+      window.location = "index.html"
+    });
+  </script>
+</body>
+</html>
