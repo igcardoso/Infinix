@@ -204,7 +204,7 @@ var developer4 = document.querySelector("#content .home .containment-support .bl
 var label = document.querySelector("#content .home .containment-support label");
 
 developer1.addEventListener("mouseup", function() {
-  label.innerHTML = "@Igor O. Cardoso | developer"
+  label.innerHTML = '<span onclick="window.location.href = "https://instagram.com/igor.cardoso75?igshid=ZDdkNTZiNTM=">@Igor O. Cardoso | developer </span>'
   label.style.opacity = "1"
 })
 
@@ -216,7 +216,7 @@ developer1.addEventListener("mouseout", function() {
 // img2
 
 developer2.addEventListener("mouseup", function() {
-  label.innerHTML = "@Sarah | adm"
+  label.innerHTML = '<span onclick="window.location.href = "https://instagram.com/sahvercosa?igshid=YmMyMTA2M2Y=">@Sarah | adm</span>'
   label.style.opacity = "1"
 })
 
@@ -228,7 +228,7 @@ developer2.addEventListener("mouseout", function() {
 // img3 
 
 developer3.addEventListener("mouseup", function() {
-  label.innerHTML = "@Clara | adm"
+  label.innerHTML = '<span onclick="window.location.href = "https://instagram.com/anacllara_c.s?igshid=YmMyMTA2M2Y=">@Clara | adm </span>'
   label.style.opacity = "1"
 })
 
@@ -240,7 +240,7 @@ developer3.addEventListener("mouseout", function() {
 // img4
 
 developer4.addEventListener("mouseup", function() {
-  label.innerHTML = "@Bruno Rios | developer"
+  label.innerHTML = '<span onclick="window.location.href = "https://instagram.com/user.bruno_rivers?igshid=YmMyMTA2M2Y=">@Bruno Rios | developer </span>'
   label.style.opacity = "1"
 })
 
