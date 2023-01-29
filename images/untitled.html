@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+  </head>
+  <body style="background: red;">
+<div class="highlight">
+  <a donwload="PDF.pdf" href="PDF.pdf">Download dos horários</a>
+  <p>${doc.data().description}</p>
+  <div>
+    <img src=`${doc.data().photograph}` />
+  </div>
+  <div>
+    <ul>
+      <li>${doc.data().name}</li>
+      <li>${doc.data().date}</li>
+      <li onclick="document.querySelector('. highlights .affairs .plus').style.display = 'block'"><i class="bx bx-plus"></i></li>
+    </ul>
+    <ul class="plus">
+      Ola
+    </ul>
+  </div>
+</div>
+  </body>
+</html>
