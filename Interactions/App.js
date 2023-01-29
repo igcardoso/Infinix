@@ -220,7 +220,7 @@ function Functiondeveloper4() {
 }
 
 developer1.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="Functiondeveloper1()">@Igor O. Cardoso | developer </span>'
+  label.innerHTML = "<span onclick='Functiondeveloper1()'>@Igor O. Cardoso | developer </span>"
   label.style.opacity = "1"
 })
 
@@ -232,7 +232,7 @@ developer1.addEventListener("mouseout", function() {
 // img2
 
 developer2.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="Functiondeveloper2()">@Sarah | adm</span>'
+  label.innerHTML = "<span onclick='Functiondeveloper2()'>@Sarah | adm</span>"
   label.style.opacity = "1"
 })
 
@@ -244,7 +244,7 @@ developer2.addEventListener("mouseout", function() {
 // img3 
 
 developer3.addEventListener("mouseup", function() {
-label.innerHTML = '<span onclick="Functiondeveloper3()">@Clara | adm </span>'
+label.innerHTML = "<span onclick='Functiondeveloper3()'>@Clara | adm </span>"
 label.style.opacity = "1"
 })
 
@@ -256,7 +256,7 @@ developer3.addEventListener("mouseout", function() {
 // img4
 
 developer4.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick="Functiondeveloper4()">@Bruno Rios | developer </span>'
+  label.innerHTML = "<span onclick='Functiondeveloper4()'>@Bruno Rios | developer </span>"
   label.style.opacity = "1"
 })
 
