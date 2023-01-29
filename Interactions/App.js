@@ -204,7 +204,7 @@ var developer4 = document.querySelector("#content .home .containment-support .bl
 var label = document.querySelector("#content .home .containment-support label");
 
 developer1.addEventListener("mouseup", function() {
-  label.innerHTML = '<span onclick='window.location.href = "https://instagram.com/igor.cardoso75?igshid=ZDdkNTZiNTM="'>@Igor O. Cardoso | developer </span>'
+  label.innerHTML = '<span onclick=' window.location.href = "https://instagram.com/igor.cardoso75?igshid=ZDdkNTZiNTM="'>@Igor O. Cardoso | developer </span>'
   label.style.opacity = "1"
 })
 
