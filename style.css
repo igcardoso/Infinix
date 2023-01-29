@@ -1,7 +1,5 @@
 @charset"utf-8";
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Anybody&family=Raleway&display=swap');
 
 
@@ -451,7 +449,7 @@ body {
   padding: 36px 10px;
   font-family: var(--poppins);
   height: calc(100vh - 86px);
-  overflow-y: auto;
+  overflow: auto;
   border-radius: .9em;
   background: var(--grey);
   margin: 8px;
