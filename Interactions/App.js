@@ -211,7 +211,8 @@ function developer2() {
   window.location.href = "https://instagram.com/sahvercosa?igshid=YmMyMTA2M2Y="
 }
 
-function developer3() {window.location.href = "https://instagram.com/anacllara_c.s?igshid=YmMyMTA2M2Y="  window.location.href = ""
+function developer3() {
+  window.location.href = "https://instagram.com/anacllara_c.s?igshid=YmMyMTA2M2Y="
 }
 
 function developer4() {
