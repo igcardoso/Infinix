@@ -16,7 +16,10 @@ li {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 2px;
+    height: 20px;
+    background: var(--blue-ios);
+    border-radius: 8em;
 }
 
 .background {
