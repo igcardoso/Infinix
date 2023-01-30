@@ -38,7 +38,7 @@ window.onload = function() {
     if (user) {
       var profile = document.querySelector("nav .containerUser .profile .user img");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
-      
+
       profile.src = user.photoURL
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName
 
@@ -241,10 +241,20 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
-          Affairs.innerHTML = `<ul>
+          Affairs.innerHTML = `
+          <script>
+          function Mudarestado(el) {
+          var display = document.getElementById(el).style.display;
+          if(display == "none")
+          document.getElementById(el).style.display = 'block';
+          else
+          document.getElementById(el).style.display = 'none';
+          }
+          </script>
+          <ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="document.querySelector('#infoOptions').style.display = 'block'" ondblclick="document.querySelector('#infoOptions').style.display = 'none'" class="plus"><i class="bx bx-plus"></i>
+          <li onclick="Mudarestado('infoOptions')" class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
@@ -252,7 +262,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
           <li>${doc.data().stitches}</li>
           </ul>
-        
+
           </ul>`
 
           // *******************************
@@ -280,7 +290,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
           <li>${doc.data().stitches}</li>
           </ul>
-        
+
           </ul>`
 
           // *******************************
