@@ -595,10 +595,6 @@ body {
   display: block;
 }
 
-.home .highlights:hover ul {
-  display: block;
-}
-
 .home .highlights {
   position: relative;
   margin-top: 20px;
