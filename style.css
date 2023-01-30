@@ -607,7 +607,7 @@ body {
 
 }
 
-.home .highlights.active ~ .home .elementsOfHome {
+.home .highlights.adisappear ~ .home .elementsOfHome {
   display: none;
 }
 
