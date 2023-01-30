@@ -562,6 +562,7 @@ body {
   top: 50px;
   left: 0;
   width: 100%;
+  color: var(--dark);
 }
 
 .home .highlights .options li.plus ul li:first-child {
@@ -579,6 +580,7 @@ body {
   background: var(--light);
   padding: 10px;
   border: 0.5px solid var(--dark);
+  color: var(--dark);
 }
 
 .home .highlights .options li.plus:hover ul {
