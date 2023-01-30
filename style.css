@@ -611,10 +611,6 @@ body {
   display: block;
 }
 
-.home .highlights.adisappear ~ .elementsOfHome {
-  display: none;
-}
-
 .home .highlights button.donwload {
   position: absolute;
   top: 0;
