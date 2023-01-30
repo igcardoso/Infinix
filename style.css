@@ -578,7 +578,7 @@ body {
 .home .highlights .options li.plus ul li {
   background: var(--light);
   padding: 10px;
-  border: 0.5px solid var(--grey);
+  border: 0.5px solid var(--dark);
 }
 
 .home .highlights .options li.plus:hover ul {
