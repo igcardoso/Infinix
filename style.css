@@ -1066,8 +1066,7 @@ body {
 
   }
 
-  #content nav form.show ~ .notification,
-  #content nav form.show ~ .profile {
+  #content nav form.show ~ .notification, #content nav form.show ~ .profile {
     display: none;
   }
 
