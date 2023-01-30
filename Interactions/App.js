@@ -1,4 +1,3 @@
-
 // constantemente com o caminho para os botões de transição de pagina do menu lateral
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu li .options');
 /* adição e remoção da class de estilo por meio do
@@ -86,15 +85,24 @@ if (window.innerWidth < 768) {
 
 // quando ouver um redimensionamento da pagina para um width maior, as configurações serão alteradas sem carregadar a pagina novamente
 window.addEventListener('resize', function () {
-  if (window.innerHeight > window.innerWidth) {
-    document.getElementById('app').className = 'retrato';
-  } else { 
-    document.getElementById('wrapper').className = 'paisagem';
+  if (this.innerWidth > 576) {
+    sidebar.classList.replace('mobileHide', 'hide');
+    searchButtonIcon.classList.replace('bx-x', 'bx-search');
+    searchForm.classList.remove('show');
+  } else {
+    sidebar.classList.replace('hide', 'mobileHide');
   }
-    window.addEventListener('load', function() {
-      document.getElementById('app').className = 'retrato';
-    });
 })
+
+window.addEventListener('orientationchange', function() {
+  // funciona com addEventListener('resize', ...) também!
+  if (window.innerHeight > window.innerWidth) document.getElementById('app').className = 'retrato';
+  else document.getElementById('app').className = 'paisagem';
+});
+
+window.addEventListener('load', function() {
+  document.getElementById('app').className = 'retrato';
+});
 
 // ação de mudança de página ao clicar em uma opção no menu lateral
 // página painel
@@ -215,7 +223,7 @@ developer1.addEventListener("mouseout", function() {
   label.innerHTML = ""
   label.style.opacity = "0"
 })
- 
+
 // img2
 
 developer2.addEventListener("mouseup", function() {
@@ -228,7 +236,7 @@ developer2.addEventListener("mouseout", function() {
   label.style.opacity = "0"
 })
 
-// img3 
+// img3
 
 developer3.addEventListener("mouseup", function() {
   label.innerHTML = "@Clara | adm"
