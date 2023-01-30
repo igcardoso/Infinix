@@ -83,17 +83,6 @@ if (window.innerWidth < 768) {
   searchForm.classList.remove('show');
 }
 
-// quando ouver um redimensionamento da pagina para um width maior, as configurações serão alteradas sem carregadar a pagina novamente
-window.addEventListener('resize', function () {
-  if (this.innerWidth > 576) {
-    sidebar.classList.replace('mobileHide', 'hide');
-    searchButtonIcon.classList.replace('bx-x', 'bx-search');
-    searchForm.classList.remove('show');
-  } else {
-    sidebar.classList.replace('hide', 'mobileHide');
-  }
-})
-
 window.addEventListener('orientationchange', function() {
   // funciona com addEventListener('resize', ...) também!
   if (window.innerHeight > window.innerWidth) document.getElementById('app').className = 'retrato';
