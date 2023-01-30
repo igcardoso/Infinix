@@ -13,13 +13,16 @@
 
 li {
   list-style: none;
-}::-webkit-scrollbar {
+}
+::-webkit-scrollbar {
     width: 7px;
-    height: 7px;
+    height: 20px;
 }
 
 ::-webkit-scrollbar-track {
     background: 0;
+    width: 7px;
+    height: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
