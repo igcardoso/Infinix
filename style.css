@@ -1100,7 +1100,8 @@ body {
   margin: 30px auto;
   padding: 20px;
   display: flex;
-  background: #000000;
+  background: var(--light);
+  border: 2px solid var(--dark);
 }
 
 #containment-card-notifications .cards .container .topEl {
