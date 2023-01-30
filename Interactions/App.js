@@ -85,8 +85,10 @@ if (window.innerWidth < 768) {
 
 window.addEventListener('orientationchange', function() {
   // funciona com addEventListener('resize', ...) também!
-  if (window.innerHeight > window.innerWidth) document.getElementById('app').className = 'retrato';
-  else document.getElementById('app').className = 'paisagem';
+  if (window.innerHeight > window.innerWidth) {
+  document.getElementById('app').className = 'retrato';
+  } else { document.getElementById('app').className = 'paisagem';
+  }
 });
 
 window.addEventListener('load', function() {
