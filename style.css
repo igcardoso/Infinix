@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-#app.retrato {
+#app.paisagem {
   transform: rotate(-90deg);
 }
 
