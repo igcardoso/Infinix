@@ -11,15 +11,6 @@
   scroll-behavior: smooth;
 }
 
-#app {
-  width: 100%;
-  height: 100%;
-}
-
-#app.paisagem {
-   -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);
-}
-
 li {
   list-style: none;
 }
