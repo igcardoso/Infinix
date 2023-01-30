@@ -559,7 +559,7 @@ body {
   color: var(--dark);
 }
 
-.home .highlights .options li.plus ul {
+.home .highlights .options ul ul {
   display: none;
   position: absolute;
   top: 50px;
@@ -568,19 +568,19 @@ body {
   color: var(--dark);
 }
 
-.home .highlights .options li.plus ul li:first-child {
+.home .highlights .options ul ul li:first-child {
   border-top-right-radius: .8em;
   border-top-left-radius: .8em;
 }
 
 
-.home .highlights .options li.plus ul li:last-child {
+.home .highlights .options ul ul li:last-child {
   border-bottom-right-radius: .8em;
   border-bottom-left-radius: .8em;
   border-bottom: 0;
 }
 
-.home .highlights .options li.plus ul li {
+.home .highlights .options ul ul li {
   background: var(--light);
   padding: 10px;
   color: var(--dark);
