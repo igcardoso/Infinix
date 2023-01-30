@@ -530,6 +530,7 @@ body {
 
 .home .back {
   font-size: 20px;
+  font-weight: 700;
   background: none;
   color: var(--blue-ios);
   padding: 10px;
