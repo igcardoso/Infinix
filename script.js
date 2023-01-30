@@ -247,12 +247,12 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="
-          var display = document.getElementById('#infoOptions').style.display;
+          var display = document.getElementById('infoOptions').style.display;
           
           if (display == 'none') {
-          document.getElementById('#infoOptions').style.display = 'block';
+          document.getElementById('infoOptions').style.display = 'block';
          } else {
-          document.getElementById('#infoOptions').style.display = 'none';
+          document.getElementById('infoOptions').style.display = 'none';
           }
           
           " class="plus"><i class="bx bx-plus"></i>
