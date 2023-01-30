@@ -11,12 +11,12 @@
   scroll-behavior: smooth;
 }
 
-.app {
+#app {
   width: 100%;
   height: 100%;
 }
 
-.app.retrato {
+#app.retrato {
   transform: rotate(-90deg);
 }
 
