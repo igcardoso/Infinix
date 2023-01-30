@@ -19,7 +19,7 @@ li {
 }
 
 ::-webkit-scrollbar-track {
-    background: white;
+    background: 0;
 }
 
 ::-webkit-scrollbar-thumb {
