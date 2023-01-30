@@ -607,6 +607,10 @@ body {
 
 }
 
+.home .highlights.active ~ #content nav {
+  display: none;
+}
+
 .home .highlights button.donwload {
   position: absolute;
   top: 0;
