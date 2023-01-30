@@ -596,6 +596,7 @@ body {
   margin-top: 20px;
   display: none;
   background: var(--light);
+  color: var(--dark);
   border-radius: .8em;
   padding: 10px;
   padding-top: 50px;
