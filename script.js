@@ -241,22 +241,21 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
-          function pluSinfo(el) {
-            var display = document.getElementById('infoOptions').style.display;
-
-            if (display == 'none') {
-              document.getElementById('infoOptions').style.display = 'block';
-            } else {
-              document.getElementById('infoOptions').style.display = 'none';
-            }
-          }
 
           Affairs.innerHTML = `
 
           <ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="pluSinfo('infoOptions')" class="plus"><i class="bx bx-plus"></i>
+          <li onclick="
+          var display = document.getElementById('infoOptions').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions').style.display = 'none';
+          }
+          " class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
@@ -284,7 +283,15 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           evaluation.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="document.querySelector('#infoOptions2').style.display = 'block'" ondblclick="document.querySelector('#infoOptions2').style.display = 'none'" class="plus"><i class="bx bx-plus"></i>
+          <li onclick="
+          var display = document.getElementById('infoOptions2').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions2').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions2').style.display = 'none';
+          }
+          "  class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions2">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
