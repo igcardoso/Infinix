@@ -261,7 +261,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           return doc.data();
         });
       })
-
+/*
       db.collection('evaluation').onSnapshot((data)=> {
 
         data.docs.map(doc => {
@@ -276,7 +276,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           return doc.data();
         });
-      })
+      })*/
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
 
