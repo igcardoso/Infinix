@@ -268,18 +268,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var evaluation = document.createElement("div");
-          evaluation.innerHTML = `<ul>
-          <li>${doc.data().name}</li>
-          <li>${doc.data().date}</li>
-          <li onclick="document.querySelector('#infoOptions').style.display = 'block'" class="plus"><i class="bx bx-plus"></i>
-          <ul id="infoOptions">
-          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-          <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-          <li>${doc.data().stitches}</li>
-          </ul>
-          </li>
-          </ul>`
+          evaluation.innerHTML = ``
 
           // *******************************
 
