@@ -241,7 +241,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
-          Affairs.innerHTML = `<ul onclick="document.querySelector('#infoOptions').style.display = 'none'" >
+          Affairs.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="document.querySelector('#infoOptions').style.display = 'block'" class="plus"><i class="bx bx-plus"></i>
@@ -269,7 +269,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var evaluation = document.createElement("div");
-          evaluation.innerHTML = `<ul onclick="document.querySelector('#infoOptions').style.display = 'none'">
+          evaluation.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="document.querySelector('#infoOptions').style.display = 'block'" class="plus"><i class="bx bx-plus"></i>
