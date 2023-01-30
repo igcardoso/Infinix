@@ -272,9 +272,9 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           evaluation.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="document.querySelector('#infoOptions').style.display = 'block'" class="plus"><i class="bx bx-plus"></i>
+          <li onclick="document.querySelector('#infoOptions2').style.display = 'block'" class="plus"><i class="bx bx-plus"></i>
           </li>
-          <ul id="infoOptions">
+          <ul id="infoOptions2">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li>${doc.data().description}</li>
           <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
