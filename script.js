@@ -193,13 +193,18 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           highlights.addEventListener("click",
             function() {
               console.log("Executed successfully")
-              document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' + `${doc.data().name}`
+              document.querySelector("main .home .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' + `${doc.data().name}`
+              document.querySelector("main .home .back").style.display = "block"
+              document.querySelector("#contant nav").style.display = "none"
+              document.querySelector("main .home .elementsOfHome").style.display = "none"
               document.querySelector("main .home .highlights").classList.add('adisappear')
               
               
               document.querySelector("main .home .back").addEventListener("click", function() {
-               
-
+                document.querySelector("main .home .back").style.display = "none"
+              document.querySelector("#contant nav").style.display = "flex"
+              document.querySelector("main .home .elementsOfHome").style.display = "block"
+              document.querySelector("main .home .highlights").classList.remove('adisappear') 
               })
 
 
