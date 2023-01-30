@@ -248,7 +248,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li>${doc.data().date}</li>
           <li onclick="
           function() {
-          var display = document.getElementById(el).style.display;
+          var display = document.getElementById('#infoOptions').style.display;
           if (display == 'none')
           document.getElementById('#infoOptions').style.display = 'block';
           else
