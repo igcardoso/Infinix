@@ -575,12 +575,12 @@ body {
 .home .highlights .options li.plus ul li:last-child {
   border-bottom-right-radius: .8em;
   border-bottom-left-radius: .8em;
+  border: 0.5px solid var(--dark);
 }
 
 .home .highlights .options li.plus ul li {
   background: var(--light);
   padding: 10px;
-  border: 0.5px solid var(--dark);
   color: var(--dark);
 }
 
