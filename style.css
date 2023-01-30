@@ -538,6 +538,7 @@ body {
   border-radius: .8em;
   display: none;
   margin-bottom: 20px;
+  margin-left: -10px;
 }
 
 .home .highlight {
