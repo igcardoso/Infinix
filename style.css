@@ -607,6 +607,10 @@ body {
 
 }
 
+.home .highlights.adisappear {
+  display: block;
+}
+
 .home div:nth-child(2).adisappear ~ .home div:nth-child(1) {
   display: none;
 }
