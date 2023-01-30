@@ -742,7 +742,7 @@ body {
   padding: 24px;
   background: var(--grey);
   border-radius: 20px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--dark);
   display: flex;
   align-items: center;
   grid-gap: 24px;
