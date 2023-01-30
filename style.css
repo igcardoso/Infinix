@@ -25,6 +25,8 @@ li {
 ::-webkit-scrollbar-thumb {
     background: red;
     border-radius: 8em ;
+    width: 7px;
+    height: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
