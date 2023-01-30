@@ -86,9 +86,11 @@ if (window.innerWidth < 768) {
 
 // quando ouver um redimensionamento da pagina para um width maior, as configurações serão alteradas sem carregadar a pagina novamente
 window.addEventListener('resize', function () {
-  if (window.innerHeight > window.innerWidth) document.getElementById('app').className = 'retrato';
-      else document.getElementById('wrapper').className = 'paisagem';
-
+  if (window.innerHeight > window.innerWidth) {
+    document.getElementById('app').className = 'retrato';
+  } else { 
+    document.getElementById('wrapper').className = 'paisagem';
+  }
     window.addEventListener('load', function() {
       document.getElementById('app').className = 'retrato';
     });
