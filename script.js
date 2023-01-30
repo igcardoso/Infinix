@@ -246,13 +246,16 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="function Mudarestado(el) {
+          <li onclick="
+          function() {
           var display = document.getElementById(el).style.display;
-          if (display == "none")
-          document.getElementById("#infoOptions").style.display = 'block';
+          if (display == 'none')
+          document.getElementById('#infoOptions').style.display = 'block';
           else
-          document.getElementById("#infoOptions").style.display = 'none';
-          }" class="plus"><i class="bx bx-plus"></i>
+          document.getElementById('#infoOptions').style.display = 'none';
+          }
+          
+          " class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
