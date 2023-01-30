@@ -591,7 +591,11 @@ body {
   display: block;
 }
 
-.home .highlights .options li.plus:hover ul:hover {
+.home .highlights .options li.plus ul:hover {
+  display: block;
+}
+
+.home .highlights:hover ul {
   display: block;
 }
 
