@@ -1070,7 +1070,7 @@ body {
     display: none;
   } 
   
-  #content nav form.show ~ .profile {
+  #content nav form.show ~ .containerUser {
     display: none;
   }
 
