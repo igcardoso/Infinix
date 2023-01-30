@@ -59,7 +59,8 @@ searchButton.addEventListener('click', function (e) {
     // se o formulário tiver uma class show
     if (searchForm.classList.contains('show')) {
       // então o icone do campo de busca vai ser um "x"
-      searchButtonIcon.classList.replace('bx-search', 'bx-x');
+      searchButtonIcon.classList.replace('bx-search', 'bx-0');
+      searchButtonIcon.innerHTML = "Cancelar"
     } else {
       // se não vai ser uma lupa
       searchButtonIcon.classList.replace('bx-x', 'bx-search');
