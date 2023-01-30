@@ -247,11 +247,11 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="
-          function() {
           var display = document.getElementById('#infoOptions').style.display;
-          if (display == 'none')
+          
+          if (display == 'none') {
           document.getElementById('#infoOptions').style.display = 'block';
-          else
+         } else {
           document.getElementById('#infoOptions').style.display = 'none';
           }
           
