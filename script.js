@@ -244,7 +244,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           Affairs.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="document.querySelector('#infoOptions').style.display = 'block'" ondblclick="document.querySelector('#infoOptions2').style.display = 'none'" class="plus"><i class="bx bx-plus"></i>
+          <li onclick="document.querySelector('#infoOptions').style.display = 'block'" ondblclick="document.querySelector('#infoOptions1').style.display = 'none'" class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
