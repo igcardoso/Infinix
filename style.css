@@ -1058,7 +1058,7 @@ body {
     background: var(--light);
   }
   #content nav form.show .form-input button {
-    width: 40px;
+    width: 120px;
     height: 100%;
     border-radius: 0 .8em.8em 0;
     color: var(--dark);
