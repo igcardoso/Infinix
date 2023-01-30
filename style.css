@@ -14,30 +14,10 @@
 li {
   list-style: none;
 }
+
 ::-webkit-scrollbar {
-  position: absolute;
-    width: 7px;
-    height: 20px;
-    visibility: auto;
+   display: none;
 }
-
-::-webkit-scrollbar-track {
-    background: 0;
-    width: 7px;
-    height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 8em ;
-    width: 7px;
-    height: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: blue;
-}
-
 
 .background {
   position: fixed;
