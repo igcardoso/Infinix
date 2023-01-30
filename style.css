@@ -969,6 +969,9 @@ body {
     padding-top: 90px;
     height: calc(100vh - 74px - 16px - 8px);
   }
+  #content main.activEsuBpage {
+    padding-top: 10px;
+  }
 
   #content nav .bx-menu-alt-left {
     display: none;
