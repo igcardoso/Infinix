@@ -63,7 +63,8 @@ searchButton.addEventListener('click', function (e) {
       searchButtonIcon.innerHTML = "Cancelar"
     } else {
       // se não vai ser uma lupa
-      searchButtonIcon.classList.replace('bx-x', 'bx-search');
+      searchButtonIcon.classList.replace('bx-0', 'bx-search');
+      searchButtonIcon.innerHTML = ""
     }
   }
 })
