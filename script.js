@@ -237,20 +237,20 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       db.collection('affairs').onSnapshot((data)=> {
 
+        function Mudarestado(el) {
+          var display = document.getElementById(el).style.display;
+          if (display == "none")
+            document.getElementById(el).style.display = 'block';
+          else
+            document.getElementById(el).style.display = 'none';
+        }
+
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
           Affairs.innerHTML = `
-          <script>
-          function Mudarestado(el) {
-          var display = document.getElementById(el).style.display;
-          if(display == "none")
-          document.getElementById(el).style.display = 'block';
-          else
-          document.getElementById(el).style.display = 'none';
-          }
-          </script>
+
           <ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
