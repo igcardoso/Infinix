@@ -241,21 +241,22 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
+          function pluSinfo(el) {
+            var display = document.getElementById('infoOptions').style.display;
+
+            if (display == 'none') {
+              document.getElementById('infoOptions').style.display = 'block';
+            } else {
+              document.getElementById('infoOptions').style.display = 'none';
+            }
+          }
+
           Affairs.innerHTML = `
 
           <ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
-          <li onclick="
-          var display = document.getElementById('infoOptions').style.display;
-          
-          if (display == 'none') {
-          document.getElementById('infoOptions').style.display = 'block';
-         } else {
-          document.getElementById('infoOptions').style.display = 'none';
-          }
-          
-          " class="plus"><i class="bx bx-plus"></i>
+          <li onclick="pluSinfo('infoOptions')" class="plus"><i class="bx bx-plus"></i>
           </li>
           <ul id="infoOptions">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
