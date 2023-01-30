@@ -607,7 +607,7 @@ body {
 
 }
 
-.home .highlights.active ~ #content nav {
+.home .highlights.active ~ .elementsOfHome {
   display: none;
 }
 
