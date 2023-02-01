@@ -207,36 +207,28 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
                 document.querySelector("main").classList.remove('activEsuBpage')
               })
 
-              var containmentOfInformation = document.createElement("div")
 
-              var highlight = document .createElement("div");
-              highlight.classList.add("highlight");
-              containmentOfInformation.appendChild(highlight);
+              if (doc.data().affairs == "yes") {
+                document.querySelector("main .home .highlights .options.affairs").style.display = "block"
+              } else {
+                document.querySelector("main .home .highlights .options.affairs").style.display = "none"
+              }
+              if (doc.data().evaluation == "yes") {
+                document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
+              } else {
+                document.querySelector("main .home .highlights .options.evaluation").style.display = "none"
+              }
 
-              var download = document .createElement("button");
-              download.classList.add(`${doc.data().pdf}` + "download");
-              download.innerHTML = "Download dos horários";
-              highlight.appendChild(download);
+              document.querySelector("main .home .highlights .elements").innerHTML = `
+              <div class="highlight">
+              <button class="${doc.data().pdf}   donwload" donwload="${doc.data().pdf}" onclick="window.location = '${doc.data().pdf}' " >Download dos horários</button>
+              <p class="${doc.data().description}">${doc.data().description}</p>
+              <div>
+              <img onclick="window.location = '${doc.data().photograph}' "  class="${doc.data().photograph}  photograph" src="${doc.data().photograph}" />
+              </div>
+              </div>`
 
-              var description = document .createElement("p");
-              description.classList.add(`${doc.data().description}` + "descriptin");
-              description.innerHTML = `${doc.data().description}`;
-              highlight.appendChild(description);
-
-              var imageContention = document .createElement("div");
-              highlight.appendChild(imageContention);
-
-              var photograph = document .createElement("img");
-              photograph.classList.add(`${doc.data().photograph}` + "photograph");
-              photograph.src = `${doc.data().photograph}`;
-              imageContention.appendChild(photograph);
-              
-              
-         document.querySelector("#elements").appendChild(containmentOfInformation);
-
-
-
-            });
+            })
 
           // *******************************
 
@@ -246,6 +238,79 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
         });
       })
 
+      db.collection('affairs').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var Affairs = document.createElement("div");
+
+          Affairs.innerHTML = `
+
+          <ul>
+          <li>${doc.data().name}</li>
+          <li>${doc.data().date}</li>
+          <li onclick="
+          var display = document.getElementById('infoOptions').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions').style.display = 'none';
+          }
+          " class="plus"><i class="bx bx-plus"></i>
+          </li>
+          <ul id="infoOptions">
+          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li>${doc.data().description}</li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li>${doc.data().stitches}</li>
+          </ul>
+
+          </ul>`
+
+          // *******************************
+
+          document.querySelector(".highlights .affairs").appendChild(Affairs);
+
+          return doc.data();
+        });
+      })
+
+      db.collection('evaluation').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var evaluation = document.createElement("div");
+          evaluation.innerHTML = `<ul>
+          <li>${doc.data().name}</li>
+          <li>${doc.data().date}</li>
+          <li onclick="
+          var display = document.getElementById('infoOptions2').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions2').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions2').style.display = 'none';
+          }
+          "  class="plus"><i class="bx bx-plus"></i>
+          </li>
+          <ul id="infoOptions2">
+          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li>${doc.data().description}</li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li>${doc.data().stitches}</li>
+          </ul>
+
+          </ul>`
+
+          // *******************************
+
+          document.querySelector(".highlights  .evaluation").appendChild(evaluation);
+
+          return doc.data();
+        });
       })
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
