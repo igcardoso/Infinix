@@ -49,7 +49,7 @@ const searchButton = document.querySelector('#content nav form .form-input butto
 const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
 // form da busca
 const searchForm = document.querySelector('#content nav form');
-const searchForm = document.querySelector('main');
+const main = document.querySelector('main');
 
 // se o botão de pesquisa for clicado e o width da tela for menor q 576px, então o formulário vai ter uma class show
 searchButton.addEventListener('click', function (e) {
