@@ -66,7 +66,7 @@ searchButton.addEventListener('click', function (e) {
     } else {
       // se não vai ser uma lupa
       searchButtonIcon.classList.replace('bx-0', 'bx-search');
-      main.style.marginLeft = "0"
+      main.style.marginLeft = "10px"
       sidebar.style.display = "block"
       searchButtonIcon.innerHTML = ""
     }
