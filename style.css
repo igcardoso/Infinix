@@ -1072,6 +1072,8 @@ body {
     width: 100%;
     background: var(--light);
     color: var(--dark);
+    margin-left: 10px;
+    margin-right: 10px;
   }
   #content nav form.show .form-input button {
     width: 120px;
@@ -1080,6 +1082,7 @@ body {
     color: var(--dark);
     background: none;
     font-size: 14px;
+    margin-left: 2px;
   }
 
   #content nav form.show ~ .notification {
