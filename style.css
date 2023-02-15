@@ -1009,7 +1009,7 @@ body {
     font-family: var(--lato);
     transition: .3s ease;
     overflow-x: hidden;
-    border-radius: .8em;
+    border-radius: 8em;
   }
 
   #sidebar .brand {
