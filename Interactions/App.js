@@ -60,6 +60,7 @@ searchButton.addEventListener('click', function (e) {
     if (searchForm.classList.contains('show')) {
       // então o icone do campo de busca vai ser um "x"
       searchButtonIcon.classList.replace('bx-search', 'bx-0');
+      main.style.display = "none"
       searchButtonIcon.innerHTML = "Cancelar"
     } else {
       // se não vai ser uma lupa
