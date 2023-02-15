@@ -1079,7 +1079,7 @@ body {
     border-radius: 0 .8em.8em 0;
     color: var(--dark);
     background: none;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #content nav form.show ~ .notification {
