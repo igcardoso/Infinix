@@ -1078,7 +1078,7 @@ body {
     height: 100%;
     border-radius: 0 .8em.8em 0;
     color: var(--dark);
-    background: var(--light);
+    background: none;
   }
 
   #content nav form.show ~ .notification {
