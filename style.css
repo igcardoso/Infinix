@@ -400,7 +400,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--grey);
+  background: none;
   color: var(--blue-ios);
   font-size: 18px;
   border: none;
