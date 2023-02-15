@@ -387,7 +387,7 @@ body {
   height: 100%;
   border: none;
   background: var(--grey);
-  border-radius: .8em 0 0 .8em;
+  border-radius: .8em;
   outline: none;
   width: 100%;
   color: var(--blue-ios);
