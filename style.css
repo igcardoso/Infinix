@@ -958,7 +958,6 @@ body {
     left: 8px;
     right: 8px;
     height: calc(60px + 14px);
-    background: var(--light);
     z-index: 2000;
     font-family: var(--lato);
     transition: .3s ease;
