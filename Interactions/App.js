@@ -61,11 +61,13 @@ searchButton.addEventListener('click', function (e) {
       // então o icone do campo de busca vai ser um "x"
       searchButtonIcon.classList.replace('bx-search', 'bx-0');
       main.style.marginLeft = "-100%"
+      sidebar.style.display = "none"
       searchButtonIcon.innerHTML = "Cancelar"
     } else {
       // se não vai ser uma lupa
       searchButtonIcon.classList.replace('bx-0', 'bx-search');
-      main.style.display = "block"
+      main.style.marginLeft = "0"
+      sidebar.style.display = "block"
       searchButtonIcon.innerHTML = ""
     }
   }
