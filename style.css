@@ -50,7 +50,6 @@ body {
   scrollbar-width: none;
   border-radius: 8em;
   opacity: .8;
-  backdrop-filter: blur(15px);
 }
 
 /* width inicial do menu lateral em dispositivos maiores, ou em orientação paisagem */
@@ -228,7 +227,6 @@ body {
   z-index: 1000;
   border-radius: .8em;
   opacity: .8;
-  backdrop-filter: blur(15px);
 }
 /*
 #content nav::before {
