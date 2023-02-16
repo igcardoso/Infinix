@@ -190,35 +190,34 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           </span>
           `;
 
-          highlights.addEventListener("click",
-            function() {
-              console.log("Executed successfully")
-              document.querySelector("main .elementsOfHome").style.display = "none"
-              document.querySelector("main .back").style.display = "block"
-              document.querySelector("#content nav").style.display = "none"
-              document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' + `${doc.data().name}`
-              document.querySelector("main .highlights").classList.add('adisappear')
-              document.querySelector("main").classList.add('activEsuBpage')
+  highlights.addEventListener("click", function() {
+   console.log("Executed successfully")
+   document.querySelector("main .elementsOfHome").style.display = "none"
+   document.querySelector("main .back").style.display = "block"
+   document.querySelector("#content nav").style.display = "none"
+   document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' +   `${doc.data().name}`
+   document.querySelector("main .highlights").classList.add('adisappear')
+   document.querySelector("main").classList.add('activEsuBpage')
               
               
-              document.querySelector("main .home .back").addEventListener("click", function() {
-                document.querySelector("main .elementsOfHome").style.display = "block"
-                document.querySelector("main .back").style.display = "none"
-                document.querySelector("#content nav").style.display = "flex"
-                document.querySelector("main .highlights").classList.remove('adisappear')
-                document.querySelector("main").classList.remove('activEsuBpage')
-              })
+   document.querySelector("main .home .back").addEventListener("click", function() {
+    document.querySelector("main .elementsOfHome").style.display = "block"
+    document.querySelector("main .back").style.display = "none"
+    document.querySelector("#content nav").style.display = "flex"
+    document.querySelector("main .highlights").classList.remove('adisappear')
+    document.querySelector("main").classList.remove('activEsuBpage')
+})
 
 
-              if (doc.data().type == "affairs") {
-                document.querySelector("main .home .highlights .options.affairs").style.display = "block"
-              } else if (doc.data().type == "evaluation") {
-                document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
-              } else if (doc.data().type == "timetables") {
-                document.querySelector("main .home .highlights .options.timetables").style.display = "block"
-              } else {
-                document.querySelector("main .home .highlights .options").style.display = "none"
-              }
+if (doc.data().type == "affairs") {
+    document.querySelector("main .home .highlights .options.affairs").style.display = "block"
+} else if (doc.data().type == "evaluation") {
+    document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
+} else if (doc.data().type == "timetables") {
+    document.querySelector("main .home .highlights .options.timetables").style.display = "block"
+ } else {
+    document.querySelector("main .home .highlights .options").style.display = "none"
+ }
 
               document.querySelector("main .home .highlights .elements").innerHTML = `
               <div class="highlight">
