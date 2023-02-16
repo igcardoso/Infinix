@@ -299,7 +299,7 @@ if (doc.data().type == "affairs") {
 
           // *******************************
 
-          document.querySelector(".highlights  .evaluation").appendChild(evaluation);
+          document.querySelector(".highlights  .options.evaluation").appendChild(evaluation);
 
           return doc.data();
         });
