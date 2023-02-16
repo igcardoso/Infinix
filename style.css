@@ -515,9 +515,6 @@ body {
 
 .home .highlights .options ul ul {
   display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
   width: 100%;
   color: var(--dark);
 }
