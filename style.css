@@ -512,6 +512,10 @@ body {
   color: var(--dark);
 }
 
+.home .highlights .options ul li:nth-child(1) {
+  color: red;
+}
+
 .home .highlights .options ul ul {
   display: none;
   width: 100%;
