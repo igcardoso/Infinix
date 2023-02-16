@@ -199,6 +199,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' + `${doc.data().name}`
               document.querySelector("main .highlights").classList.add('adisappear')
               document.querySelector("main").classList.add('activEsuBpage')
+              
+              
               document.querySelector("main .home .back").addEventListener("click", function() {
                 document.querySelector("main .elementsOfHome").style.display = "block"
                 document.querySelector("main .back").style.display = "none"
