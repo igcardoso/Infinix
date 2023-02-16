@@ -293,7 +293,7 @@ body {
   width: 100%;
   line-height: 34px;
   text-align: center;
-  color: var(--light);
+  color: var(--dark-grey);
   font-size: 20px;
 }
 
@@ -323,7 +323,7 @@ body {
 
 /* input de busca nk menu do topo */
 #content nav form .form-input .bx {
-  color: var(--light);
+  color: var(--dark-grey);
 }
 
 #content nav form .form-input {
@@ -342,7 +342,7 @@ body {
   border-radius: 8em;
   outline: none;
   width: 100%;
-  color: var(--light);
+  color: var(--dark-grey);
 }
 
 /* botão de envio do formulário de busca */
@@ -353,7 +353,7 @@ body {
   justify-content: center;
   align-items: center;
   background: none;
-  color: var(--grey);
+  color: var(--dark-grey);
   font-size: 18px;
   border: none;
   outline: none;
