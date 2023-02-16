@@ -1030,7 +1030,7 @@ body {
     width: 120px;
     height: 100%;
     border-radius: 0 .8em.8em 0;
-    color: var(--dark);
+    color: var(--dark-grey);
     background: none;
     font-size: 14.5px;
     margin-left: 2px;
