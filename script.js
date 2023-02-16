@@ -198,6 +198,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' +   `${doc.data().name}`
             document.querySelector("main .highlights").classList.add('adisappear')
             document.querySelector("main").classList.add('activEsuBpage')
+            
+            if (doc.data().type == "affairs") {
+              document.querySelector("main").style.display = "none"
+
+            } else {
+              document.querySelector("main").style.display = "none"
+            }
 
 
             document.querySelector("main .home .back").addEventListener("click", function() {
@@ -209,16 +216,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             })
 
 
-            if (doc.data().type == "affairs") {
-              document.querySelector("main .home .highlights .options.affairs").style.display = "block"
-
-            } else if (doc.data().type == "evaluation") {
-              document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
-            } else if (doc.data().type == "timetables") {
-              document.querySelector("main .home .highlights .options.timetables").style.display = "block"
-            } else {
-              document.querySelector("main .home .highlights .options").style.display = "none"
-            }
+            
 
           })
 
