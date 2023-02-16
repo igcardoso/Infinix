@@ -219,16 +219,7 @@ if (doc.data().type == "affairs") {
     document.querySelector("main .home .highlights .options").style.display = "none"
  }
 
-              document.querySelector("main .home .highlights .elements").innerHTML = `
-              <div class="highlight">
-              <button class="${doc.data().pdf}   donwload" donwload="${doc.data().pdf}" onclick="window.location = '${doc.data().pdf}' " >Download dos horários</button>
-              <p class="${doc.data().description}">${doc.data().description}</p>
-              <div>
-              <img onclick="window.location = '${doc.data().photograph}' "  class="${doc.data().photograph}  photograph" src="${doc.data().photograph}" />
-              </div>
-              </div>`
-
-            })
+})
 
           // *******************************
 
