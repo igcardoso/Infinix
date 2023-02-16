@@ -1035,6 +1035,9 @@ body {
     font-size: 14.5px;
     margin-left: 2px;
   }
+  #content nav form.show .form-input button .bx {
+    color: var(--blue-ios);
+  }
 
   #content nav form.show ~ .notification {
     display: none;
