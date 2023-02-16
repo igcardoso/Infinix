@@ -148,7 +148,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <div></div>
           <div></div>
           </div>
-          <i class='bx bx-link'></i>
+          <i class='${doc.data().icon}'></i>
           <span class="text">
           <h3>${doc.data().name}</h3>
           <p>
