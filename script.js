@@ -237,7 +237,7 @@ if (doc.data().type == "affairs") {
             doc.data());
           var Affairs = document.createElement("div");
 
-          Affairs.innerHTML == `
+          Affairs.innerHTML = `
 
           <ul>
           <li>${doc.data().name}</li>
