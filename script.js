@@ -216,6 +216,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
                 document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
               } else if (doc.data().type == "timetables") {
                 document.querySelector("main .home .highlights .options.timetables").style.display = "block"
+              } else {
+                document.querySelector("main .home .highlights .options").style.display = "none"
               }
 
               document.querySelector("main .home .highlights .elements").innerHTML = `
