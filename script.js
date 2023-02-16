@@ -204,8 +204,11 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               document.querySelector("#evaluation").style.display = "none"
               document.querySelector("#timetables").style.display = "none"
 
-            } else {
-              document.querySelector("main").style.display = "none"
+            } else if (doc.data().type == "evaluation") {
+              document.querySelector("#affairs").style.display = "none"
+              document.querySelector("#evaluation").style.display = "block"
+              document.querySelector("#timetables").style.display = "none"
+
             }
 
 
