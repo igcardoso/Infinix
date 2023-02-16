@@ -299,7 +299,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           }
           "  class="plus"><i class="bx bx-plus"></i>
           </li>
-          <ul id="infoOptions2">
+          <ul id="${doc.data().name}evaluations">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li>${doc.data().description}</li>
           <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
