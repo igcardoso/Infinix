@@ -1081,7 +1081,7 @@ body {
   padding: 20px;
   display: flex;
   background: var(--grey);
-  border: 3px solid var(--light);
+  border: 2px solid var(--light);
 }
 
 #containment-card-notifications .cards .container .topEl {
