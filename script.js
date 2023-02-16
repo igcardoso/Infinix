@@ -190,37 +190,37 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           </span>
           `;
 
-  highlights.addEventListener("click", function() {
-   console.log("Executed successfully")
-   document.querySelector("main .elementsOfHome").style.display = "none"
-   document.querySelector("main .back").style.display = "block"
-   document.querySelector("#content nav").style.display = "none"
-   document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' +   `${doc.data().name}`
-   document.querySelector("main .highlights").classList.add('adisappear')
-   document.querySelector("main").classList.add('activEsuBpage')
-              
-              
-   document.querySelector("main .home .back").addEventListener("click", function() {
-    document.querySelector("main .elementsOfHome").style.display = "block"
-    document.querySelector("main .back").style.display = "none"
-    document.querySelector("#content nav").style.display = "flex"
-    document.querySelector("main .highlights").classList.remove('adisappear')
-    document.querySelector("main").classList.remove('activEsuBpage')
-})
+          highlights.addEventListener("click", function() {
+            console.log("Executed successfully")
+            document.querySelector("main .elementsOfHome").style.display = "none"
+            document.querySelector("main .back").style.display = "block"
+            document.querySelector("#content nav").style.display = "none"
+            document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' +   `${doc.data().name}`
+            document.querySelector("main .highlights").classList.add('adisappear')
+            document.querySelector("main").classList.add('activEsuBpage')
 
 
-if (doc.data().type == "affairs") {
-   document.querySelector("main .home .highlights .options.affairs").style.display = "block"
-    
-} else if (doc.data().type == "evaluation") {
-    document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
-} else if (doc.data().type == "timetables") {
-    document.querySelector("main .home .highlights .options.timetables").style.display = "block"
- } else {
-    document.querySelector("main .home .highlights .options").style.display = "none"
- }
+            document.querySelector("main .home .back").addEventListener("click", function() {
+              document.querySelector("main .elementsOfHome").style.display = "block"
+              document.querySelector("main .back").style.display = "none"
+              document.querySelector("#content nav").style.display = "flex"
+              document.querySelector("main .highlights").classList.remove('adisappear')
+              document.querySelector("main").classList.remove('activEsuBpage')
+            })
 
-})
+
+            if (doc.data().type == "affairs") {
+              document.querySelector("main .home .highlights .options.affairs").style.display = "block"
+
+            } else if (doc.data().type == "evaluation") {
+              document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
+            } else if (doc.data().type == "timetables") {
+              document.querySelector("main .home .highlights .options.timetables").style.display = "block"
+            } else {
+              document.querySelector("main .home .highlights .options").style.display = "none"
+            }
+
+          })
 
           // *******************************
 
@@ -230,80 +230,6 @@ if (doc.data().type == "affairs") {
         });
       })
 
-      db.collection('affairs').onSnapshot((data)=> {
-
-        data.docs.map(doc => {
-          console.log("objeto:",
-            doc.data());
-          var Affairs = document.createElement("div");
-
-          Affairs.innerHTML = `
-
-          <ul>
-          <li>${doc.data().name}</li>
-          <li>${doc.data().date}</li>
-          <li onclick="
-          var display = document.getElementById('infoOptions').style.display;
-
-          if (display == 'none') {
-          document.getElementById('infoOptions').style.display = 'block';
-          } else {
-          document.getElementById('infoOptions').style.display = 'none';
-          }
-          " class="plus"><i class="bx bx-plus"></i>
-          </li>
-          <ul id="infoOptions">
-          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-          <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-          <li>${doc.data().stitches}</li>
-          </ul>
-
-          </ul>`
-
-          // *******************************
-
-          document.querySelector(".highlights .options.affairs").appendChild(Affairs);
-
-          return doc.data();
-        });
-      })
-
-      db.collection('evaluation').onSnapshot((data)=> {
-
-        data.docs.map(doc => {
-          console.log("objeto:",
-            doc.data());
-          var evaluation = document.createElement("div");
-          evaluation.innerHTML = `<ul>
-          <li>${doc.data().name}</li>
-          <li>${doc.data().date}</li>
-          <li onclick="
-          var display = document.getElementById('infoOptions2').style.display;
-
-          if (display == 'none') {
-          document.getElementById('infoOptions2').style.display = 'block';
-          } else {
-          document.getElementById('infoOptions2').style.display = 'none';
-          }
-          "  class="plus"><i class="bx bx-plus"></i>
-          </li>
-          <ul id="infoOptions2">
-          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-          <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-          <li>${doc.data().stitches}</li>
-          </ul>
-
-          </ul>`
-
-          // *******************************
-
-          document.querySelector(".highlights  .options.evaluation").appendChild(evaluation);
-
-          return doc.data();
-        });
-      })
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
 
