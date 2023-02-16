@@ -530,6 +530,7 @@ body {
   font-size: 15px;
   background: var(--grey);
   color: var(--dark);
+  border-radius: 8em;
 }
 
 .home .highlights .options ul ul {
