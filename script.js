@@ -208,6 +208,18 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
     document.querySelector("main").classList.remove('activEsuBpage')
 })
 
+
+if (doc.data().type == "affairs") {
+    
+    
+} else if (doc.data().type == "evaluation") {
+    document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
+} else if (doc.data().type == "timetables") {
+    document.querySelector("main .home .highlights .options.timetables").style.display = "block"
+ } else {
+    document.querySelector("main .home .highlights .options").style.display = "none"
+ }
+
 })
 
           // *******************************
@@ -218,6 +230,80 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
         });
       })
 
+      db.collection('affairs').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var Affairs = document.createElement("div");
+
+          Affairs.innerHTML = `
+
+          <ul>
+          <li>${doc.data().name}</li>
+          <li>${doc.data().date}</li>
+          <li onclick="
+          var display = document.getElementById('infoOptions').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions').style.display = 'none';
+          }
+          " class="plus"><i class="bx bx-plus"></i>
+          </li>
+          <ul id="infoOptions">
+          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li>${doc.data().description}</li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li>${doc.data().stitches}</li>
+          </ul>
+
+          </ul>`
+
+          // *******************************
+
+          document.querySelector(".highlights .options.affairs").appendChild(Affairs);
+
+          return doc.data();
+        });
+      })
+
+      db.collection('evaluation').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var evaluation = document.createElement("div");
+          evaluation.innerHTML = `<ul>
+          <li>${doc.data().name}</li>
+          <li>${doc.data().date}</li>
+          <li onclick="
+          var display = document.getElementById('infoOptions2').style.display;
+
+          if (display == 'none') {
+          document.getElementById('infoOptions2').style.display = 'block';
+          } else {
+          document.getElementById('infoOptions2').style.display = 'none';
+          }
+          "  class="plus"><i class="bx bx-plus"></i>
+          </li>
+          <ul id="infoOptions2">
+          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li>${doc.data().description}</li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li>${doc.data().stitches}</li>
+          </ul>
+
+          </ul>`
+
+          // *******************************
+
+          document.querySelector(".highlights  .evaluation").appendChild(evaluation);
+
+          return doc.data();
+        });
+      })
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
 
