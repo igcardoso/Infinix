@@ -501,7 +501,7 @@ body {
   position: relative;
   background: var(--grey);
   display: flex;
-  flex-direction: row;
+  flex-direction: collumn;
   padding: 10px;
   border-radius: .8em;
   border: 0;
