@@ -513,7 +513,15 @@ body {
 }
 
 .home .highlights .options ul li:nth-child(1) {
-  color: red;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.home .highlights .options ul li:nth-child(1) {
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--dark);
 }
 
 .home .highlights .options ul ul {
