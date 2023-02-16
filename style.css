@@ -342,7 +342,7 @@ body {
   border-radius: 8em;
   outline: none;
   width: 100%;
-  color: var(--blue-ios);
+  color: var(--light);
 }
 
 /* botão de envio do formulário de busca */
@@ -353,7 +353,7 @@ body {
   justify-content: center;
   align-items: center;
   background: none;
-  color: var(--blue-ios);
+  color: var(--light);
   font-size: 18px;
   border: none;
   outline: none;
