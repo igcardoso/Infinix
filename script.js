@@ -216,7 +216,8 @@ if (doc.data().type == "affairs") {
           console.log("objeto:",
             doc.data());
           var Affairs = document.createElement("div");
-
+          
+          Affairs.innerHTML =  ""
           Affairs.innerHTML = `
 
           <ul>
@@ -256,6 +257,7 @@ if (doc.data().type == "affairs") {
           console.log("objeto:",
             doc.data());
           var evaluation = document.createElement("div");
+          evaluation.innerHTML = ""
           evaluation.innerHTML = `<ul>
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
