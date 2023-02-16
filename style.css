@@ -497,18 +497,6 @@ body {
   height: 100%;
 }
 
-.home .highlights .affairs {
-  display: none;
-}
-
-.home .highlights .evaluation {
-  display: none;
-}
-  
-.home .highlights .timetables  {
-  display: none;
-}
-
 .home .highlights .options ul {
   position: relative;
   background: var(--grey);
