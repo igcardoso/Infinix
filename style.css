@@ -502,7 +502,7 @@ body {
   background: var(--grey);
   padding: 10px;
   border-radius: .8em;
-  border: 0;
+  border: 1px solid var(--dark);
   margin-top: 20px;
 }
 
