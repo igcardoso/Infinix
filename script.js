@@ -210,7 +210,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               })
 
 
-              if (doc.data().type == "yes") {
+              if (doc.data().type == "affairs") {
                 document.querySelector("main .home .highlights .options.affairs").style.display = "block"
               } else {
                 document.querySelector("main .home .highlights .options.affairs").style.display = "none"
