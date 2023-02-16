@@ -512,19 +512,19 @@ body {
   color: var(--dark);
 }
 
-.home .highlights .options ul li:nth-child(1) {
+.home .highlights .options ul li.matter_name {
   font-weight: 700;
   font-size: 18px;
   color: var(--dark);
 }
 
-.home .highlights .options ul li:nth-child(2) {
+.home .highlights .options ul li.posting_date {
   font-weight: 300;
   font-size: 13px;
   color: var(--dark);
 }
 
-.home .highlights .options ul li:nth-child(3) {
+.home .highlights .options ul li.more {
   margin-top: 20px;
   font-weight: 700;
   font-size: 15px;
