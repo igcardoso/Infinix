@@ -518,7 +518,7 @@ body {
   color: var(--dark);
 }
 
-.home .highlights .options ul li:nth-child(1) {
+.home .highlights .options ul li:nth-child(2) {
   font-weight: 300;
   font-size: 13px;
   color: var(--dark);
