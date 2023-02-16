@@ -200,7 +200,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             document.querySelector("main").classList.add('activEsuBpage')
             
             if (doc.data().type == "affairs") {
-              document.querySelector("main").style.display = "none"
+              document.querySelector("main .home .highlights affairs").style.display = "none"
 
             } else {
               document.querySelector("main").style.display = "none"
