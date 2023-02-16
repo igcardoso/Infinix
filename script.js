@@ -213,6 +213,10 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               document.querySelector("#affairs").style.display = "none"
               document.querySelector("#evaluation").style.display = "none"
               document.querySelector("#timetables").style.display = "block"
+            } else {
+              document.querySelector("#affairs").style.display = "none"
+              document.querySelector("#evaluation").style.display = "none"
+              document.querySelector("#timetables").style.display = "none"
             }
 
 
