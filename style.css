@@ -500,9 +500,14 @@ body {
 .home .highlights .options ul {
   position: relative;
   background: var(--grey);
+  border-bottom: 1px solid var(--light);
   padding: 10px;
   border-radius: .8em;
   margin-top: 20px;
+}
+
+.home .highlights .options ul:last-child {
+  border-bottom: none;
 }
 
 .home .highlights .options ul li {
