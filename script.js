@@ -210,13 +210,16 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
 if (doc.data().type == "affairs") {
-    document.querySelector("main .home .highlights .options.affairs").style.display = "block"
+    
+    
 } else if (doc.data().type == "evaluation") {
-    document.querySelector("main .home .highlights .options.evaluation").style.display = "block"
+    
+    
 } else if (doc.data().type == "timetables") {
     document.querySelector("main .home .highlights .options.timetables").style.display = "block"
  } else {
-    document.querySelector("main .home .highlights .options").style.display = "none"
+  
+  
  }
 
 })
