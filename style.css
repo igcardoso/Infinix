@@ -528,9 +528,9 @@ body {
   margin-top: 20px;
   font-weight: 700;
   font-size: 15px;
-  background: var(--grey);
+  background: var(--light);
   color: var(--dark);
-  border: 2px solid var(--light);
+  padding: 15px;
   border-radius: 8em;
 }
 
