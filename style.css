@@ -548,15 +548,6 @@ body {
 .home .highlights .options li.plus ul:hover {
   display: block;
 }*/
-.home .highlights .affairs {
-  display: none;
-}
-.home .highlights .evaluation{
-  display: none;
-}
-.home .highlights .timetables {
-  display: none;
-}
 
 .home .highlights {
   position: relative;
