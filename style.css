@@ -524,7 +524,7 @@ body {
   color: var(--dark);
 }
 
-.home .highlights .options ul li:nth-child(4) {
+.home .highlights .options ul li:nth-child(3) {
   margin-top: 20px;
   font-weight: 700;
   font-size: 15px;
