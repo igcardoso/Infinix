@@ -500,8 +500,6 @@ body {
 .home .highlights .options ul {
   position: relative;
   background: var(--grey);
-  display: flex;
-  flex-direction: collumn;
   padding: 10px;
   border-radius: .8em;
   border: 0;
@@ -517,6 +515,7 @@ body {
   display: none;
   width: 100%;
   color: var(--dark);
+  margin-top: 20px;
 }
 
 .home .highlights .options ul ul li:first-child {
