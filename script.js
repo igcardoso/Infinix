@@ -254,16 +254,16 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="
-          var display = document.getElementById('infoOptions').style.display;
+          var display = document.getElementById('${doc.data().name}affairs').style.display;
 
           if (display == 'none') {
-          document.getElementById('infoOptions').style.display = 'block';
+          document.getElementById('${doc.data().name}affairs').style.display = 'block';
           } else {
-          document.getElementById('infoOptions').style.display = 'none';
+          document.getElementById('${doc.data().name}affairs').style.display = 'none';
           }
           " class="plus"><i class="bx bx-plus"></i>
           </li>
-          <ul id="infoOptions">
+          <ul id="${doc.data().name}affairs">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li>${doc.data().description}</li>
           <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
@@ -290,12 +290,12 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li>${doc.data().name}</li>
           <li>${doc.data().date}</li>
           <li onclick="
-          var display = document.getElementById('infoOptions2').style.display;
+          var display = document.getElementById('${doc.data().name}evaluations').style.display;
 
           if (display == 'none') {
-          document.getElementById('infoOptions2').style.display = 'block';
+          document.getElementById('${doc.data().name}evaluations').style.display = 'block';
           } else {
-          document.getElementById('infoOptions2').style.display = 'none';
+          document.getElementById('${doc.data().name}evaluations').style.display = 'none';
           }
           "  class="plus"><i class="bx bx-plus"></i>
           </li>
