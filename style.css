@@ -293,7 +293,7 @@ body {
   width: 100%;
   line-height: 34px;
   text-align: center;
-  color: var(--blue-ios);
+  color: var(--light);
   font-size: 20px;
 }
 
@@ -323,7 +323,7 @@ body {
 
 /* input de busca nk menu do topo */
 #content nav form .form-input .bx {
-  color: var(--blue-ios);
+  color: var(--light);
 }
 
 #content nav form .form-input {
