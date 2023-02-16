@@ -201,6 +201,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             
             if (doc.data().type == "affairs") {
               document.querySelector("main .highlights .home .affairs").style.display = "block"
+              document.querySelector("main .highlights .home .evaluation").style.display = "none"
+              document.querySelector("main .highlights .home .timetables").style.display = "none"
 
             } else {
               document.querySelector("main").style.display = "none"
