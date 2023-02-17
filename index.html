@@ -49,6 +49,22 @@
 </head>
 <body>
 
+  <!-- botão de confirmação -->
+  <div style="display: none; width:100%; position: absolute; top: calc(50% - 100px); left: 0; z-index:2100;" id="confirmation">
+    <div style="font-family: sans-serif; background: #ffffff; margin: auto; border-radius: 1em; border: 1px solid var(--grey); text-align: center; width: 300px; height: 176px;">
+      <p style="padding:20px;">
+        Tem certeza que deseja sair?
+        Posteriormente caso não se lembre da senha terá
+        que contactar o administrador geral
+      </p>
+      <div style="width: 100%; display: flex;">
+        <button id="cancel" style="margin: 10px; margin-top: 0;
+          border-radius: 8em ; border: 0; background: var(--blue); color: var(--light);  font-weight: 700; width:100%; height: 40px;" type="submit">Cancelar</button>
+        <button onclick="logout()" id="ok" style="margin: 10px; margin-top: 0; border-radius: 8em ; border: 0; background: var(--grey);
+          font-weight: 700; width:100%; height: 40px;" type="submit">Sim, ok</button>
+      </div>
+    </div>
+  </div>
   <!-- menu lateral -->
   <section class="hide" id="sidebar">
     <!-- nome e logo da instituição -->
@@ -99,11 +115,11 @@
     <ul class="side-menu">
       <!-- opções da parte de baixo do menu -->
       <!-- <li>
-                                                                                                          <button class="options op6">
-                                                                                                            <i class='bx bxs-wrench'>0</i>
-                                                                                                            <span class="text">configurações</span>
-                                                                                                          </button>
-                                                                                                        </li> -->
+                                                                                                                <button class="options op6">
+                                                                                                                  <i class='bx bxs-wrench'>0</i>
+                                                                                                                  <span class="text">configurações</span>
+                                                                                                                </button>
+                                                                                                              </li> -->
       <li>
         <button onclick="logout()" id="logout" class="logout options">
           <i class='bx bxs-log-out-circle'></i>
@@ -116,30 +132,12 @@
   </section>
   <!-- // final do menu lateral // -->
 
-  
-  <!-- botão de confirmação -->
-  <div style="display: none; width:100%; position: absolute; top: calc(50% - 100px); left: 0; z-index:2100;" id="confirmation">
-    <div style="font-family: sans-serif; background: #ffffff; margin: auto; border-radius: 1em; border: 1px solid var(--grey); text-align: center; width: 300px; height: 176px;">
-      <p style="padding:20px;">
-        Tem certeza que deseja sair?
-        Posteriormente caso não se lembre da senha terá
-        que contactar o administrador geral
-      </p>
-      <div style="width: 100%; display: flex;">
-        <button id="cancel" style="margin: 10px; margin-top: 0;
-          border-radius: 8em ; border: 0; background: var(--blue); color: var(--light);  font-weight: 700; width:100%; height: 40px;" type="submit">Cancelar</button>
-        <button onclick="logout()" id="ok" style="margin: 10px; margin-top: 0; border-radius: 8em ; border: 0; background: var(--grey);
-          font-weight: 700; width:100%; height: 40px;" type="submit">Sim, ok</button>
-      </div>
-    </div>
-  </div>
-
   <!-- contenção da página e do menu do topo -->
   <section id="content">
 
     <!-- conteúdo das páginas -->
     <main>
-      
+
       <!-- pagina home -->
       <div class="home page active">
         <span class="back"></span>
