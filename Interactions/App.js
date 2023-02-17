@@ -189,8 +189,9 @@ document.querySelector("nav .op7").addEventListener("click", function() {
 
 // botão de logout
 
-function activeLogout() {
+document.querySelector("#logout").addEventListener("click", function {
   document.querySelector("#confirmation").display = "block"
+})
 }
 
 // Interações básicas
