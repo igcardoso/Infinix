@@ -41,7 +41,7 @@ window.onload = function() {
 
       profile.src = user.photoURL
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName
-      const userLogin = user.email
+      const userLogin = user.emailVerified
       window.alert(userLogin);
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
