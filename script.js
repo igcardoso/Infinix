@@ -43,7 +43,7 @@ window.onload = function() {
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName
       const userLogin = user.email;
 
-      if (userLogin == "ioliveiracardoso76@gmail.com") {
+      if (userLogin == "ioliveiracardoso76@gmail.com" of userLogin == "aprogrammer155@gmail.com") {
         document.querySelector(".side-menu .op4").style.display = "flex";
       
         /*
