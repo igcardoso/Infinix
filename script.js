@@ -42,6 +42,7 @@ window.onload = function() {
       profile.src = user.photoURL
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName
       const userLogin = user.email
+      console.location(userLogin)
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
         window.alert("iai")
