@@ -1227,7 +1227,7 @@ body {
 /*Pagina de controle*/
 
 .releases {
-  background: var(--grey);
+  background: var(--light);
   width: 100%;
   padding: 10px;
 }
