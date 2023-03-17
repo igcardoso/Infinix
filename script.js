@@ -332,13 +332,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var user__sender = document.querySelector('[name=user]').value;
               var sender__date = document.querySelector('[name=date]').value;
               var sender__tel = document.querySelector('[name=tel]').value;
-              var monthsage__sender = document.querySelector('[name=monthsage]').value;
+              var message__sender = document.querySelector('[name=message]').value;
 
               db.collection('comunicados').add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
-                monthsage: monthsage__sender,
+                message: message__sender,
                 date: date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear()
               })
             })
