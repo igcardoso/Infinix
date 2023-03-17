@@ -15,8 +15,8 @@ firebase.firestore().settings({
 
 });
 
-const db = firebase.firestore()
-const auth = firebase.auth()
+const db = firebase.firestore();
+const auth = firebase.auth();
 
 document.querySelector("#logout").addEventListener("click", function() {
   // Faço um logout do meu usuário (saio da aplicação).
