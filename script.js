@@ -326,21 +326,6 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           // Página de controle
 
-          var data = new Date();
-
-          var day = String(data.getDate()).padStart(2,
-            '0');
-
-          var month = String(data.getMonth() + 1).padStart(2,
-            '0');
-
-          var year = data.getFullYear();
-
-          var current__date = day + '/' + month + '/' + year;
-
-          console.log(current__date);
-
-
           document.querySelector("#publish__notification").addEventListener("click",
             ()=> {
               var sender__notification = document.querySelector('[name=name]').value;
@@ -354,7 +339,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 monthsage: monthsage__sender,
-                date: current__date
+                date: date.getDay() + "/" + date.getMonth() + "" + date.getFullYear()
               })
             })
 
