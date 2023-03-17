@@ -18,6 +18,12 @@ firebase.firestore().settings({
 const db = firebase.firestore()
 const auth = firebase.auth()
 
+document.querySelector("#logout").addEventListener("click", function logout() {
+  // Faço um logout do meu usuário (saio da aplicação).
+  firebase.auth().signOut().then(() => {
+    alert('Usuário deslogou');
+  });
+})
 /**
 * Listener de dom ready
 */
@@ -37,13 +43,6 @@ window.onload = function() {
       const userLogin = user.email;
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
-
-        function logout() {
-          // Faço um logout do meu usuário (saio da aplicação).
-          firebase.auth().signOut().then(() => {
-            alert('Usuário deslogou');
-          });
-        }
         document.querySelector(".side-menu .op4").style.display = "flex";
 
         /*
