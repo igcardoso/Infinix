@@ -44,7 +44,7 @@ window.onload = function() {
       const userLogin = user.email
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
-
+        window.alert("iai")
         /*
 function getIp(callback) {
   function response(s) {
@@ -318,6 +318,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             return doc.data();
           });
         })
+      } else {
+        window.alert("sai")
       }
 
     } else {
