@@ -320,7 +320,9 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           });
         })
       } else if (userLogin == "aprogrammer155@gmail.com") {
-        document.querySelector(".side-menu .op4").style.display = "flex"; {} else {
+        document.querySelector(".side-menu .op4").style.display = "flex"; 
+        
+      } else {
           document.querySelector(".side-menu .op4").style.display = "none";
         }
 
