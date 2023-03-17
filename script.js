@@ -331,9 +331,9 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var message__sender = document.querySelector('[name=message]').value;
 
               var novo_id = firebase.database().ref().child('comunicados').push().key;
-
-              firebase.database().ref('comunicados/' + novo_id).set({
-                name: novo_id,
+              
+            db.collection('channels/' + "teste").add({
+                name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
