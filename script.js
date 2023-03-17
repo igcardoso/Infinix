@@ -114,7 +114,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
           <div class="topEl text">
-          <h1 class="name">${doc.data().token}</h1>
+          <h1 class="name">${doc.data().name}</h1>
           <p class="date">
           ${doc.data().date}
           </p>
@@ -329,10 +329,11 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var sender__date = document.querySelector('[name=date]').value;
               var sender__tel = document.querySelector('[name=tel]').value;
               var message__sender = document.querySelector('[name=message]').value;
-             
-             
-              db.collection('comunicados').add({
-                name: sender__notification,
+
+              var novo_id = firebase.database().ref().child('comunicados').push().key;
+
+              firebase.database().ref('comunicados/' + novo_id).set({
+                name: novo_id,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
