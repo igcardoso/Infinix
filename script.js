@@ -102,7 +102,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 */
       db.collection('comunicados').onSnapshot((data)=> {
         data.docs.map(doc => {
-          alert("objeto:",
+          console.log("objeto:",
             doc.data());
           var cards = document.createElement("div");
           cards.className = 'cards';
