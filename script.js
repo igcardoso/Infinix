@@ -332,7 +332,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var sender__tel = document.querySelector('[name=tel]').value;
               var message__sender = document.querySelector('[name=message]').value;
               
-              db.collection('comunicados').add({
+              db.collection('comunicados').doc(sender__date).add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
