@@ -1227,7 +1227,7 @@ body {
 /*Pagina de controle*/
 
 .releases {
-  background: var(--light);
+  border: 2px solid #ffffff;
   margin-top: 40px;
   width: 100%;
   padding: 10px;
@@ -1262,6 +1262,7 @@ body {
 }
 
 .releases .submit {
+  margin-top: 10px;
   padding: 10px;
   border-radius: .8em;
   background: var(--blue-ios);
