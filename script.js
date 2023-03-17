@@ -339,7 +339,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
-                date: date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear()
+                date: 
               })
             })
 
