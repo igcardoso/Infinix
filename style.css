@@ -1242,5 +1242,5 @@ body {
   margin-top: 10px;
   border: none;
   outline: none;
-  border: .8em;
+  border-radius: .8em;
 }
