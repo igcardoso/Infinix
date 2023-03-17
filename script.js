@@ -336,7 +336,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           var year = data.getFullYear();
 
-          current__date = day + '/' + month + '/' + year;
+          var current__date = day + '/' + month + '/' + year;
 
           console.log(current__date);
 
