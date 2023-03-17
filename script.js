@@ -44,7 +44,8 @@ window.onload = function() {
       const userLogin = user.email;
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
-        window.alert("iai")
+        document.querySelector(".side-menu .op4").style.display = "block";
+      
         /*
 function getIp(callback) {
   function response(s) {
@@ -319,7 +320,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           });
         })
       } else {
-        window.alert("sai")
+        document.querySelector(".side-menu .op4").style.display = "block";
       }
 
     } else {
