@@ -18,13 +18,6 @@ firebase.firestore().settings({
 const db = firebase.firestore()
 const auth = firebase.auth()
 
-function logout() {
-  // Faço um logout do meu usuário (saio da aplicação).
-  firebase.auth().signOut().then(() => {
-    alert('Usuário deslogou');
-  })
-}
-
 /**
 * Listener de dom ready
 */
@@ -44,6 +37,13 @@ window.onload = function() {
       const userLogin = user.email;
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
+
+        function logout() {
+          // Faço um logout do meu usuário (saio da aplicação).
+          firebase.auth().signOut().then(() => {
+            alert('Usuário deslogou');
+          });
+        }
         document.querySelector(".side-menu .op4").style.display = "flex";
 
         /*
@@ -320,26 +320,26 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           });
         })
       } else if (userLogin == "aprogrammer155@gmail.com") {
-        document.querySelector(".side-menu .op4").style.display = "flex"; 
-        
-      } else {
-          document.querySelector(".side-menu .op4").style.display = "none";
-        }
+        document.querySelector(".side-menu .op4").style.display = "flex";
 
       } else {
-        var provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithRedirect(provider).then(resposta => {
-          if (resposta.credential) {
-            const token = resposta.credential.accessToken;
-          }
-          const user = resposta.user;
-        }).catch(error => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          const email = error.email;
-          const credential = error.credential;
-        })
+        document.querySelector(".side-menu .op4").style.display = "none";
       }
-    })
-  }
+
+    } else {
+      var provider = new firebase.auth.GoogleAuthProvider();
+
+      firebase.auth().signInWithRedirect(provider).then(resposta => {
+        if (resposta.credential) {
+          const token = resposta.credential.accessToken;
+        }
+        const user = resposta.user;
+      }).catch(error => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        const email = error.email;
+        const credential = error.credential;
+      })
+    }
+  })
+}
