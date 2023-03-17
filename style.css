@@ -1227,7 +1227,7 @@ body {
 /*Pagina de controle*/
 
 .releases {
-  border: 2px solid #ffffff;
+  border: .1px solid #ffffff;
   margin-top: 40px;
   width: 100%;
   padding: 10px;
@@ -1245,7 +1245,7 @@ body {
 .releases input {
   width: 100%;
   padding: 10px;
-  background: var(--blue);
+  border: .1px solid #ffffff;
   color: #ffffff;
   margin-top: 10px;
   border: none;
