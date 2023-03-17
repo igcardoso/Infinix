@@ -967,6 +967,7 @@ body {
   }
 
   #sidebar {
+    background: var(--blue);
     position: fixed;
     top: auto;
     bottom: 10px;
