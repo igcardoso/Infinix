@@ -1252,3 +1252,7 @@ body {
   outline: none;
   border-radius: .8em;
 }
+
+.releases .message {
+  height: 150px;
+}
