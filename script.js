@@ -323,15 +323,15 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           // Página de controle
 
-          var sender__notification = document.querySelector('[name=name]').value;
-          var user__sender = document.querySelector('[name=user]').value;
-          var sender__date = document.querySelector('[name=date]').value;
-          var sender__tel = document.querySelector('[name=tel]').value;
-          var message__sender = document.querySelector('[name=message]').value;
-          var publish__notification = document.querySelector("#publish__notification")
 
-          publish__notification.addEventListener("click",
+          document.querySelector("#publish__notification").addEventListener("click",
             ()=> {
+              var sender__notification = document.querySelector('[name=name]').value;
+              var user__sender = document.querySelector('[name=user]').value;
+              var sender__date = document.querySelector('[name=date]').value;
+              var sender__tel = document.querySelector('[name=tel]').value;
+              var message__sender = document.querySelector('[name=message]').value;
+              
               db.collection('comunicados').add({
                 name: sender__notification,
                 photograph: user__sender,
