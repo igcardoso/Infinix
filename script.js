@@ -323,10 +323,10 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           // Página de controle
 
-          var sender__notification = document.querySelector('[name=name]').value
-          var user__sender = document.querySelector('[name=user]').value
-          var sender__date = document.querySelector('[name=date]').value
-          var sender__tel = document.querySelector('[name=tel]').value
+          var sender__notification = document.querySelector('[name=name]').value;
+          var user__sender = document.querySelector('[name=user]').value;
+          var sender__date = document.querySelector('[name=date]').value;
+          var sender__tel = document.querySelector('[name=tel]').value;
           var message__sender = document.querySelector('[name=message]').value;
           var publish__notification = document.querySelector("#publish__notification")
 
