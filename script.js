@@ -31,7 +31,6 @@ document.querySelector("#logout").addEventListener("click", function() {
 document.addEventListener("DOMContentLoaded", function () {
 })
 */
-/* =============
 window.onload = function() {
 
   auth.onAuthStateChanged(user => {
@@ -50,7 +49,7 @@ window.onload = function() {
 
       } else {
         document.querySelector(".side-menu .control").style.display = "none";
-      } =================  */
+      }
       /*
 function getIp(callback) {
   function response(s) {
@@ -346,7 +345,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           return doc.data();
         });
       })
-/*=============
+
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -361,6 +360,6 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
         const email = error.email;
         const credential = error.credential;
       })
-    } ===========*/
+    }
   })
 }
