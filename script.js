@@ -203,7 +203,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             document.querySelector("main .elementsOfHome").style.display = "none"
             document.querySelector("main .back").style.display = "block"
             document.querySelector("#content nav").style.display = "none"
-            document.querySelector("main .back").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#329FFC" height="24" viewBox="0 0 18 18" style="transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg> &nbsp;&nbsp; ' +   `${doc.data().name}`
+            document.querySelector("main .back").innerHTML = '<svg style="transform: rotate(180deg); margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="#FFFFFF"/> &nbsp;&nbsp; ' +   `${doc.data().name}`
             document.querySelector("main .highlights").classList.add('adisappear')
             document.querySelector("main").classList.add('activEsuBpage')
 
