@@ -1215,3 +1215,19 @@ body {
   border-radius: 8em;
   z-index: 3;
 }
+
+
+
+
+
+
+
+
+
+/*Pagina de controle*/
+
+.releases {
+  background: var(--grey);
+  width: 100%;
+  padding: 10px;
+}
