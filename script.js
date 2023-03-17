@@ -114,7 +114,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
           <div class="topEl text">
-          <h1 class="name">${doc.data()}</h1>
+          <h1 class="name">${doc.data().uid}</h1>
           <p class="date">
           ${doc.data().date}
           </p>
