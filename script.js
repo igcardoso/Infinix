@@ -43,7 +43,7 @@ window.onload = function() {
       const userLogin = user.email;
 
       if (userLogin == "ioliveiracardoso76@gmail.com") {
-        document.querySelector(".side-menu .op4").style.display = "flex";
+        document.querySelector(".side-menu .control").style.display = "flex";
 
         /*
 function getIp(callback) {
@@ -319,10 +319,10 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           });
         })
       } else if (userLogin == "aprogrammer155@gmail.com") {
-        document.querySelector(".side-menu .op4").style.display = "flex";
+        document.querySelector(".side-menu .control").style.display = "flex";
 
       } else {
-        document.querySelector(".side-menu .op4").style.display = "none";
+        document.querySelector(".side-menu .control").style.display = "none";
       }
 
     } else {
