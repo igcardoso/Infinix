@@ -327,7 +327,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           var user__sender = document.querySelector('[name=user]').value
           var sender__date = document.querySelector('[name=date]').value
           var sender__tel = document.querySelector('[name=tel]').value
-          var message__sender = document.querySelector('[name=message]').value
+          var message__sender = document.querySelector('[name=message]').value;
           var publish__notification = document.querySelector("#publish__notification")
 
           publish__notification.addEventListener("click",
