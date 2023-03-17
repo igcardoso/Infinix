@@ -334,7 +334,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               
               db.collection('comunicados').add({
                 name: sender__notification,
-                photograph: "images/" + user__sender,
+                photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
                 date: sender__date
