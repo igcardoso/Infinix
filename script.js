@@ -337,7 +337,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
-                date: sender__date
+                date: Date()
               })
             })
 
