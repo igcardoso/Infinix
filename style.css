@@ -1245,7 +1245,8 @@ body {
 .releases input {
   width: 100%;
   padding: 10px;
-  border: .1px solid #ffffff;
+  background: var(--blue);
+  border: none;
   color: #ffffff;
   margin-top: 10px;
   outline: none;
