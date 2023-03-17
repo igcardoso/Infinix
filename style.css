@@ -1228,6 +1228,15 @@ body {
 
 .releases {
   background: var(--light);
+  margin-top: 40px;
   width: 100%;
   padding: 10px;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.releases input {
+  width: 100%;
+  padding: 10px;
+  background: var(--blue);
 }
