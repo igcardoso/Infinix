@@ -3,7 +3,7 @@ var config = {
   authDomain: "infinix-d200d.firebaseapp.com",
   projectId: "infinix-d200d",
   storageBucket: "infinix-d200d.appspot.com",
-  monthsagingSenderId: "618474026565",
+  messagingSenderId: "618474026565",
   appId: "1:618474026565:web:2db11006169e62d5cd952c",
   measurementId: "G-Q6K70V3GBZ"
 };
@@ -11,7 +11,7 @@ var config = {
 firebase.initializeApp(config);
 // Apenas para remover um warning
 firebase.firestore().settings({
-  timonthtampsInSnapshots: true,
+  timestampsInSnapshots: true,
 
 });
 
@@ -123,8 +123,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24" style="transform: ;msFilter:;"><circle cx="18" cy="6" r="3"></circle><path d="M18 19H5V6h8c0-.712.153-1.387.422-2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h13c1.103 0 2-.897 2-2v-8.422A4.962 4.962 0 0 1 18 11v8z"></path></svg>
           </div>
           </div>
-          <div class="monthsage">
-          ${doc.data().monthsage}
+          <div class="message">
+          ${doc.data().message}
           </div>
           <div class="adms">
           <img class="img1" src="images/user_01.jpg" />
@@ -321,10 +321,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           document.querySelector("#evaluation").appendChild(evaluation);
 
-
-
-
           // Página de controle
+
 
           document.querySelector("#publish__notification").addEventListener("click",
             ()=> {
@@ -333,13 +331,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var sender__date = document.querySelector('[name=date]').value;
               var sender__tel = document.querySelector('[name=tel]').value;
               var message__sender = document.querySelector('[name=message]').value;
-
+              
               db.collection('comunicados').add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
                 message: message__sender,
-                date: sender__date
+                date: Date()
               })
             })
 
@@ -357,7 +355,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
         const user = resposta.user;
       }).catch(error => {
         const errorCode = error.code;
-        const errormonthsage = error.monthsage;
+        const errorMessage = error.message;
         const email = error.email;
         const credential = error.credential;
       })
