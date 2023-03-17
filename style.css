@@ -1257,10 +1257,15 @@ body {
   height: 50px;
 }
 
+.releases .submit__contention {
+  text-align: left;
+}
+
 .releases .submit {
   padding: 10px;
   border-radius: .8em;
   background: var(--blue-ios);
   color: #ffffff;
   width: 50%;
+  border: 0;
 }
