@@ -949,7 +949,8 @@ body {
     padding-top: 90px;
     margin: 0;
     top: 0;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 74px - 16px - 8px);
+    width: 100%;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
   }
