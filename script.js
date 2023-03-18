@@ -275,7 +275,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <ul id="${doc.data().name}affairs">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
           <li>${doc.data().stitches}</li>
           </ul>
           </ul>`;
