@@ -342,11 +342,11 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__notification").addEventListener("click",
         ()=> {
-          var sender__notification = document.querySelector('[name=name]').value;
-          var user__sender = document.querySelector('[name=user]').value;
-          var sender__date = document.querySelector('[name=date]').value;
-          var sender__tel = document.querySelector('[name=tel]').value;
-          var message__sender = document.querySelector('[name=message]').value;
+          var sender__notification = document.querySelector('[name=nameNotifications]').value;
+          var user__sender = document.querySelector('[name=userNotifications]').value;
+          var sender__date = document.querySelector('[name=dateNotifications]').value;
+          var sender__tel = document.querySelector('[name=telNotifications]').value;
+          var message__sender = document.querySelector('[name=messageNotifications]').value;
 
 
           db.collection('comunicados').add({
@@ -363,11 +363,11 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       // Página de ferramentas
 
 
-      document.querySelector("#publish__notification").addEventListener("click",
+      document.querySelector("#publish__tools").addEventListener("click",
         ()=> {
-          var sender__notification = document.querySelector('[name=nameTools]').value;
-          var user__sender = document.querySelector('[name=userTools]').value;
-          var sender__date = document.querySelector('[name=dateTools]').value;
+          var sender__tools = document.querySelector('[name=nameTools]').value;
+          var userTools__sender = document.querySelector('[name=userTools]').value;
+          var sender__dateTools = document.querySelector('[name=dateTools]').value;
 
 
           db.collection('comunicados').add({
