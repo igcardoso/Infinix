@@ -378,7 +378,7 @@ body {
 }
 
 #content nav svg {
-  fill: var(--blue-ios);
+  fill: var(--dark-grey);
 }
 
 #content nav .active svg {
