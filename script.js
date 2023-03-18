@@ -359,7 +359,6 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
         });
         
         
-        
       // Página de ferramentas
 
 
