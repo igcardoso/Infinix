@@ -344,6 +344,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__notification").addEventListener("click",
         ()=> {
+          window.alert("Adicionado com sucesso");
           var sender__notification = document.querySelector('[name=nameNotifications]').value;
           var user__sender = document.querySelector('[name=userNotifications]').value;
           var sender__date = document.querySelector('[name=dateNotifications]').value;
@@ -366,6 +367,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__tools").addEventListener("click",
         ()=> {
+          window.alert("Adicionado com sucesso");
           var nameTools = document.querySelector('[name=nameTools]').value;
           var linkTools = document.querySelector('[name=linkTools]').value;
 
@@ -383,6 +385,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__work").addEventListener("click",
         ()=> {
+          window.alert("Adicionado com sucesso");
           var nameWork = document.querySelector('[name=nameWork]').value;
           var dateWork = document.querySelector('[name=dateWork]').value;
           var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
@@ -406,6 +409,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__evaluations").addEventListener("click",
         ()=> {
+          window.alert("Adicionado com sucesso");
           var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
           var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
           var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
