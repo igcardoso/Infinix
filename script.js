@@ -366,16 +366,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       document.querySelector("#publish__tools").addEventListener("click",
         ()=> {
           var sender__tools = document.querySelector('[name=nameTools]').value;
-          var userTools__sender = document.querySelector('[name=userTools]').value;
-          var sender__dateTools = document.querySelector('[name=dateTools]').value;
+          var sender__linkTools = document.querySelector('[name=linkTools]').value;
 
 
-          db.collection('comunicados').add({
-            name: sender__notification,
-            photograph: "images/" + user__sender + ".jpg",
-            contact: sender__tel,
-            message: message__sender,
-            date: sender__date
+          db.collection('websites').add({
+            name: sender__tools,
+            icon: "bx bx-link",
+            link: sender__linkTools
           });
         });
 
