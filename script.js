@@ -47,6 +47,9 @@ window.onload = function() {
       } else if (userLogin == "aprogrammer155@gmail.com") {
         document.querySelector(".side-menu .control").style.display = "flex";
 
+      } else if (userLogin == "anacllaralili@gmail.com") {
+        document.querySelector(".side-menu .control").style.display = "flex";
+
       } else {
         document.querySelector(".side-menu .control").style.display = "none";
       }
