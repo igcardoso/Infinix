@@ -271,7 +271,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           } else {
           document.getElementById('${doc.data().name}affairs').style.display = 'none';
           }
-          " class="plus"><i class="bx bx-plus-alt"></i>
+          " class="plus"><i>mais...</i>
           </li>
           <ul id="${doc.data().name}affairs">
           <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
