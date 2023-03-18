@@ -357,6 +357,27 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             date: sender__date
           });
         });
+        
+        
+        
+      // Página de ferramentas
+
+
+      document.querySelector("#publish__notification").addEventListener("click",
+        ()=> {
+          var sender__notification = document.querySelector('[name=nameTools]').value;
+          var user__sender = document.querySelector('[name=userTools]').value;
+          var sender__date = document.querySelector('[name=dateTools]').value;
+
+
+          db.collection('comunicados').add({
+            name: sender__notification,
+            photograph: "images/" + user__sender + ".jpg",
+            contact: sender__tel,
+            message: message__sender,
+            date: sender__date
+          });
+        });
 
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
