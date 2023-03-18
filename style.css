@@ -1278,7 +1278,10 @@ body {
   padding: 10px;
   border-radius: var(--border-radius);
   background: var(--dark);
-  fill: #ffffff;
   width: 50%;
   border: 0;
+}
+
+.releases .submit svg {
+  fill: #ffffff;
 }
