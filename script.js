@@ -100,7 +100,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
   });
 })
 */
-      db.collection('comunicados').onSnapshot((data)=> {
+      db.collection("comunicados")
+.orderBy("date", "desc").onSnapshot((data)=> {
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
