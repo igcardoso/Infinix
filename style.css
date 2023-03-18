@@ -1259,7 +1259,7 @@ body {
   padding: 10px;
   background: var(--blue);
   border: none;
-  color: #ffffff;
+  color: var(--dark);
   margin-top: 10px;
   outline: none;
   border-radius: var(--border-radius);
