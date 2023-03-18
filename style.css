@@ -944,7 +944,6 @@ body {
 
 @media screen and (max-width: 576px) {
   #content main {
-    background: #ffffff0f;
     padding: 10px 10px;
     padding-top: 90px;
     margin: 0;
