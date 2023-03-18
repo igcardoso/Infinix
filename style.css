@@ -559,7 +559,13 @@ body {
 }
 
 .home .highlights .options ul ul .none {
+  height: 0;
+  border-bottom: 0;
+  opacity: 0;
   display: none;
+  position: absolute;
+  top: -100%;
+  left: -100%;
 }
 
 .home .highlights .options ul ul li {
