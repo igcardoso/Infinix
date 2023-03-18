@@ -398,6 +398,29 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           });
         });
 
+      // Página de provaa
+
+
+      document.querySelector("#publish__evaluations").addEventListener("click",
+        ()=> {
+          var nameWork = document.querySelector('[name=nameWork]').value;
+          var dateWork = document.querySelector('[name=dateWork]').value;
+          var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
+          var photographWork = document.querySelector('[name=photographWork]').value;
+          var stitchesWork = document.querySelector('[name=stitchesWork]').value;
+          var descriptionWork = document.querySelector('[name=descriptionWork]').value;
+
+
+          db.collection('affairs').add({
+            date: dateWork,
+            description: descriptionWork,
+            indexing_files: indexing_filesWork,
+            name: nameWork,
+            photograph: photographWork,
+            stitches: stitchesWork
+          });
+        });
+
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
 
