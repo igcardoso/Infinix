@@ -101,7 +101,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 })
 */
       db.collection("comunicados")
-.orderBy("date", "desc").onSnapshot((data)=> {
+      .orderBy("date", "desc").onSnapshot((data)=> {
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
@@ -121,7 +121,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           </p>
           </div>
           <div class="topEl icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24" style="transform: ;msFilter:;"><circle cx="18" cy="6" r="3"></circle><path d="M18 19H5V6h8c0-.712.153-1.387.422-2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h13c1.103 0 2-.897 2-2v-8.422A4.962 4.962 0 0 1 18 11v8z"></path></svg>
+          <svg style="margin-bottom: -3px;" height="19.409px" id="Capa_1" style="enable-background:new 0 0 27.147 21.409;" version="1.1" viewBox="0 0 27.147 21.409" width="25.147px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M9.971,4.226c5.505,0,9.97,3.402,9.97,7.598   s-4.465,7.597-9.97,7.597c-0.972,0-1.91-0.106-2.798-0.303C6,21.244,3.872,21.716,1.969,21.238c1.147-0.984,2.137-1.916,2.88-2.896   C1.944,17.015,0,14.592,0,11.824C0,7.628,4.465,4.226,9.971,4.226z" /><path d="M17.178,0c-3.416,0-6.432,1.31-8.229,3.307   c4.46-1.197,15.345,3.597,11.237,11.604c1.173,2.126,3.089,2.578,4.993,2.1c-1.147-0.984-2.137-1.916-2.88-2.896   c2.903-1.328,4.848-3.75,4.848-6.519C27.147,3.402,22.683,0,17.178,0z" /></g><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /></svg>
           </div>
           </div>
           <div class="message">
@@ -330,8 +330,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var sender__date = document.querySelector('[name=date]').value;
               var sender__tel = document.querySelector('[name=tel]').value;
               var message__sender = document.querySelector('[name=message]').value;
-             
-             
+
+
               db.collection('comunicados').add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
