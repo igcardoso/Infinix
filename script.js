@@ -332,7 +332,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
               var novo_id = firebase.database().ref().child('comunicados').push().key;
               
-            db.collection('comunicados').add({
+            db.collection("comunicados")
+.orderBy("", "asc").add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
