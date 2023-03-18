@@ -273,9 +273,9 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           " class="plus"><i>mais...</i>
           </li>
           <ul id="${doc.data().name}affairs">
-          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-          <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
+          <li style="display:var(--${doc.data().indexing_files});" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li style="display:var(--${doc.data().description});" >${doc.data().description}</li>
+          <li onclick="window.location = '${doc.data().photograph}'" ><img style="display:var(--${doc.data().photograph});" src="${doc.data().photograph}"/></li>
           <li>${doc.data().stitches}</li>
           </ul>
           </ul>`;
@@ -305,12 +305,12 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           } else {
           document.getElementById('${doc.data().name}evaluations').style.display = 'none';
           }
-          "  class="plus"><i class="bx bx-plus"></i>
+          "  class="plus"><i>mais...</i>
           </li>
           <ul id="${doc.data().name}evaluations">
-          <li onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-          <li>${doc.data().description}</li>
-          <li onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li style="display:var(--${doc.data().indexing_files});" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li style="display:var(--${doc.data().description});">${doc.data().description}</li>
+          <li style="display:var(--${doc.data().photograph});" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
           <li>${doc.data().stitches}</li>
           </ul>
           </ul>`;
