@@ -214,7 +214,7 @@ body {
 #content nav {
   width: calc(100% - 16px);
   height: 60px;
-  background: var(--light);
+  background: var(--grey);
   padding: 2px 24px;
   display: flex;
   flex-direction: row;
