@@ -561,6 +561,7 @@ body {
 .home .highlights .options ul ul .none {
   padding: 0;
   height: 0;
+  border-bottom: 0;
 }
 
 .home .highlights .options ul ul li {
