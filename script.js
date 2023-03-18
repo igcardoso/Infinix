@@ -317,7 +317,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           // *******************************
 
-          document.querySelector("#evaluation").appendChild(evaluation)
+          document.querySelector("#evaluation").appendChild(evaluation);
 
           // Página de controle
 
