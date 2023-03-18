@@ -1134,7 +1134,7 @@ body {
 }
 
 #containment-card-notifications .cards .container .text {
-  color: #ffffff;
+  color: var(--dark);
   position: absolute;
   top: 25px;
   left: 87px;
@@ -1165,7 +1165,7 @@ body {
   margin-bottom: 45px;
   font-size: 14px;
   z-index: 1;
-  color: #ffffff;
+  color: var(--dark);
   font-family: 'Raleway', sans-serif;
 }
 
