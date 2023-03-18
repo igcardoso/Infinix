@@ -100,7 +100,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
   });
 })
 */
-      db.collection("comunicados").onSnapshot((data)=> {
+      db.collection('comunicados').onSnapshot((data)=> {
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
@@ -329,8 +329,10 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
               var sender__date = document.querySelector('[name=date]').value;
               var sender__tel = document.querySelector('[name=tel]').value;
               var message__sender = document.querySelector('[name=message]').value;
+
+              var novo_id = firebase.database().ref().child('comunicados').push().key;
               
-            db.collection('comunicados').add({
+            db.collection('comunicados/teste').add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
@@ -359,4 +361,4 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       })
     }
   })
-}
+} 
