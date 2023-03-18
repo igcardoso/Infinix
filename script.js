@@ -35,7 +35,7 @@ window.onload = function() {
 
   auth.onAuthStateChanged(user => {
     if (user) {
-      var profile = document.querySelector("nav .containerUser .profile .user img");
+      var profile = document.querySelector("nav .containerUser .profile .user");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
