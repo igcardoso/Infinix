@@ -410,7 +410,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       // Página de provaa
 
 
-      document.querySelector("#publish__evaluations").addEventListener("click",
+      document.querySelector("#publish__evaluations").addEventListener("submit",
         ()=> {
           window.alert("Adicionado com sucesso");
           var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
