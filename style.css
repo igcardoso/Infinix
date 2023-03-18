@@ -565,14 +565,6 @@ body {
   color: var(--dark);
   border-bottom: 0.5px solid var(--dark);
 }
-/*
-.home .highlights .options li.plus:hover ul {
-  display: block;
-}
-
-.home .highlights .options li.plus ul:hover {
-  display: block;
-}*/
 
 .home .highlights {
   position: relative;
