@@ -944,9 +944,12 @@ body {
 
 @media screen and (max-width: 576px) {
   #content main {
+    background: var(--grey);
     padding: 10px 10px;
     padding-top: 90px;
     height: calc(100vh - 74px - 16px - 8px);
+    border-bottom-right-radius: 1em ;
+    border-bottom-left-radius: 1em ;
   }
   #content main.activEsuBpage {
     padding-top: 10px;
