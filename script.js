@@ -330,7 +330,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           console.log("objeto:",
             doc.data());
             
-          document.querySelector("#timetables").innerHTML = `<img style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
+          document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
 
           return doc.data();
         });
