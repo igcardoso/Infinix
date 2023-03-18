@@ -375,6 +375,7 @@ body {
   cursor: pointer;
   pointer-events: none;
   color: var(--blue-ios);
+  fill: var(--blue-ios);
 }
 
 /* número de notificações */
