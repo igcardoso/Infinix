@@ -558,6 +558,11 @@ body {
   border-bottom: 0;
 }
 
+.home .highlights .options ul ul .none {
+  padding: 0;
+  height: 0;
+}
+
 .home .highlights .options ul ul li {
   background: var(--light);
   padding: 10px;
