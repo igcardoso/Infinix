@@ -49,7 +49,6 @@ body {
   overflow-x: hidden;
   scrollbar-width: none;
   border-radius: 8em;
-  opacity: .8;
 }
 
 /* width inicial do menu lateral em dispositivos maiores, ou em orientação paisagem */
