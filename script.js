@@ -320,30 +320,43 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
           document.querySelector("#evaluation").appendChild(evaluation);
 
-          // Página de controle
+          return doc.data();
+        });
+      });
+      
+      db.collection('timetables').onSnapshot((data)=> {
 
-
-          document.querySelector("#publish__notification").addEventListener("click",
-            ()=> {
-              var sender__notification = document.querySelector('[name=name]').value;
-              var user__sender = document.querySelector('[name=user]').value;
-              var sender__date = document.querySelector('[name=date]').value;
-              var sender__tel = document.querySelector('[name=tel]').value;
-              var message__sender = document.querySelector('[name=message]').value;
-
-
-              db.collection('comunicados').add({
-                name: sender__notification,
-                photograph: "images/" + user__sender + ".jpg",
-                contact: sender__tel,
-                message: message__sender,
-                date: sender__date
-              });
-            });
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+            
+          document.querySelector("#timetables").innerHTML = `<img src="${}" alt="Horários" />`;
 
           return doc.data();
         });
       });
+
+
+      // Página de controle
+
+
+      document.querySelector("#publish__notification").addEventListener("click",
+        ()=> {
+          var sender__notification = document.querySelector('[name=name]').value;
+          var user__sender = document.querySelector('[name=user]').value;
+          var sender__date = document.querySelector('[name=date]').value;
+          var sender__tel = document.querySelector('[name=tel]').value;
+          var message__sender = document.querySelector('[name=message]').value;
+
+
+          db.collection('comunicados').add({
+            name: sender__notification,
+            photograph: "images/" + user__sender + ".jpg",
+            contact: sender__tel,
+            message: message__sender,
+            date: sender__date
+          });
+        });
 
     } else {
       var provider = new firebase.auth.GoogleAuthProvider();
