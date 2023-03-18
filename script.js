@@ -323,13 +323,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           return doc.data();
         });
       });
-      
+
       db.collection('timetables').onSnapshot((data)=> {
 
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
-            
+
           document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
 
           return doc.data();
@@ -357,21 +357,45 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             date: sender__date
           });
         });
-        
-        
+
+
       // Página de ferramentas
 
 
       document.querySelector("#publish__tools").addEventListener("click",
         ()=> {
-          var sender__tools = document.querySelector('[name=nameTools]').value;
-          var sender__linkTools = document.querySelector('[name=linkTools]').value;
+          var nameTools = document.querySelector('[name=nameTools]').value;
+          var linkTools = document.querySelector('[name=linkTools]').value;
 
 
           db.collection('websites').add({
-            name: sender__tools,
+            name: nameTools,
             icon: "bx bx-link",
-            link: sender__linkTools
+            link: linkTools
+          });
+        });
+
+
+      // Página de trabalhos
+
+
+      document.querySelector("#publish__work").addEventListener("click",
+        ()=> {
+          var nameWork = document.querySelector('[name=nameWork]').value;
+          var dateWork = document.querySelector('[name=dateWork]').value;
+          var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
+          var photographWork = document.querySelector('[name=photographWork]').value;
+          var stitchesWork = document.querySelector('[name=stitchesWork]').value;
+          var descriptionWork = document.querySelector('[name=descriptionWork]').value;
+
+
+          db.collection('affairs').add({
+            date: dateWork,
+            description: descriptionWork,
+            indexing_files: indexing_filesWork,
+            name: nameWork,
+            photograph: photographWork,
+            stitches: stitchesWork
           });
         });
 
