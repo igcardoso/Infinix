@@ -377,6 +377,10 @@ body {
   color: var(--blue-ios);
 }
 
+#content nav svg {
+  fill: var(--blue-ios);
+}
+
 #content nav .active svg {
   fill: var(--blue-ios);
 }
