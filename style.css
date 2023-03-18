@@ -16,7 +16,8 @@ li {
 }
 
 ::-webkit-scrollbar {
-   display: none;
+   height: 100px;
+   width: 20px;
 }
 
 .home .highlight .none {
