@@ -635,7 +635,7 @@ body {
   padding: 10px;
   color: var(--grey);
   margin: 18px auto 18px;
-  border-radius: .8em .8em .8em .8em;
+  border-radius:  var(--border-radius);
   position: relative;
 }
 
