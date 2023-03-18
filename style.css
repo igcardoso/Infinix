@@ -1277,8 +1277,8 @@ body {
   margin-top: 10px;
   padding: 10px;
   border-radius: var(--border-radius);
-  background: var(--blue-ios);
-  color: #ffffff;
+  background: var(--dark);
+  fill: #ffffff;
   width: 50%;
   border: 0;
 }
