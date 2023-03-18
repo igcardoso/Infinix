@@ -1237,7 +1237,7 @@ body {
 
 .releases h2 {
   text-align: left;
-  color: #ffffff;
+  color: var(--blue-ios);
   font-weight: 400;
   font-size: 20px;
 }
