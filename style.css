@@ -121,7 +121,7 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   top: -40px;
   right: 0;
   box-shadow: 20px 20px 0 var(--grey);
@@ -132,7 +132,7 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   bottom: -40px;
   right: 0;
   box-shadow: 20px -20px 0 var(--grey);
@@ -224,7 +224,7 @@ body {
   margin-bottom: 0;
   margin: 8px;
   z-index: 1000;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
 }
 /*
 #content nav::before {
@@ -253,7 +253,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   padding: 2px;
   background: var(--light);
 }
@@ -270,13 +270,13 @@ body {
   padding-bottom: 0;
   width: 67px;
   height: 100%;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 
 #content nav .profile .user img {
   height: 90%;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
 }
 
 #content nav .profile .icon {
@@ -369,7 +369,7 @@ body {
 #content nav .active {
   background: 0;
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   cursor: pointer;
   pointer-events: none;
   color: var(--blue-ios);
@@ -466,7 +466,7 @@ body {
   grid-gap: 16px;
   background: var(--light);
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   border: 0 solid var(--grey);
 }
 #content main .head-title .left .breadcrumb li {
@@ -493,7 +493,7 @@ body {
   background: none;
   color: var(--blue-ios);
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   display: none;
   margin-bottom: 20px;
   margin-left: -10px;
@@ -507,7 +507,7 @@ body {
   position: relative;
   background: var(--grey);
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   margin-top: 20px;
 }
 
@@ -577,7 +577,7 @@ body {
   position: relative;
   display: none;
   color: var(--dark);
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   padding: 10px;
   padding-top: 50px;
 
@@ -604,7 +604,7 @@ body {
 .home .highlights img.photograph {
   margin-top: 10px;
   width: 100%;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
 }
 
 .home .containment-support {
@@ -779,7 +779,7 @@ body {
   grid-gap: 0;
   margin-top: 36px;
   background: var(--light);
-  border-radius: .8em;
+  border-radius: var(--border-radius);
 }
 
 #content main .page3 .box-info li {
@@ -963,7 +963,7 @@ body {
   #content nav .search-btn .bx-search {
     padding: 10px;
     background: none;
-    border-radius: .8em;
+    border-radius: var(--border-radius);
   }
 
   #content nav {
@@ -1000,12 +1000,12 @@ body {
 
   #sidebar .side-menu li {
     margin: auto;
-    border-radius: .8em;
+    border-radius: var(--border-radius);
   }
 
   #sidebar .side-menu li.active {
     margin: auto;
-    border-radius: .8em;
+    border-radius: var(--border-radius);
   }
 
   #sidebar .side-menu.top {
@@ -1243,7 +1243,7 @@ body {
   margin-top: 40px;
   width: 100%;
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   text-align: center;
 }
 
@@ -1262,7 +1262,7 @@ body {
   color: #ffffff;
   margin-top: 10px;
   outline: none;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
 }
 
 .releases .message {
@@ -1276,7 +1276,7 @@ body {
 .releases .submit {
   margin-top: 10px;
   padding: 10px;
-  border-radius: .8em;
+  border-radius: var(--border-radius);
   background: var(--blue-ios);
   color: #ffffff;
   width: 50%;
