@@ -38,7 +38,7 @@ window.onload = function() {
       var profile = document.querySelector("nav .containerUser .profile .user img");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
-      profile.src = user.photoURL;
+      profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
       const userLogin = user.email;
 
