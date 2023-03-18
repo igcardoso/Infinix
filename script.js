@@ -259,7 +259,6 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           var Affairs = document.createElement("div");
 
           Affairs.innerHTML = `
-
           <ul>
           <li class="matter_name">${doc.data().name}</li>
           <li class="posting_date">${doc.data().date}</li>
