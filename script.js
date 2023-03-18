@@ -100,7 +100,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
   });
 })
 */
-      db.collection('comunicados').onSnapshot((data)=> {
+      db.collection("comunicados")
+.orderBy("", "asc").onSnapshot((data)=> {
         data.docs.map(doc => {
           console.log("objeto:",
             doc.data());
@@ -332,8 +333,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
               var novo_id = firebase.database().ref().child('comunicados').push().key;
               
-            db.collection("comunicados")
-.orderBy("", "asc").add({
+            db.collection('comunicados').add({
                 name: sender__notification,
                 photograph: "images/" + user__sender + ".jpg",
                 contact: sender__tel,
