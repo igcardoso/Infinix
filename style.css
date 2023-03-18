@@ -994,6 +994,7 @@ body {
     transition: .3s ease;
     overflow-x: hidden;
     border-radius: 0;
+    font-size: 23px;
   }
 
   #sidebar .brand {
