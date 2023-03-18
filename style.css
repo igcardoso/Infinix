@@ -48,7 +48,7 @@ body {
   transition: .3s ease;
   overflow-x: hidden;
   scrollbar-width: none;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
 }
 
 /* width inicial do menu lateral em dispositivos maiores, ou em orientação paisagem */
@@ -85,7 +85,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
 }
 
 /* grade de opções dentro do menu */
@@ -337,7 +337,7 @@ body {
   height: 100%;
   border: none;
   background: var(--grey);
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   outline: none;
   width: 100%;
   color: var(--dark-grey);
@@ -536,7 +536,7 @@ body {
   background: var(--light);
   color: var(--dark);
   padding: 15px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
 }
 
 .home .highlights .options ul ul {
@@ -643,7 +643,7 @@ body {
   background: var(--blue);
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 1;
 }
 
@@ -653,7 +653,7 @@ body {
   left: 25px;
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 2;
 }
 
@@ -675,7 +675,7 @@ body {
   background: var(--blue);
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 3;
 }
 
@@ -685,7 +685,7 @@ body {
   background: var(--blue);
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 3;
 }
 
@@ -695,7 +695,7 @@ body {
   right: 15px;
   background: 0;
   border: none;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
 }
 
 #content main .box-info {
@@ -717,7 +717,7 @@ body {
   height: 2px;
   background: var(--dark);
   margin: 2px auto;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
 }
 
 #content main .box-info .marcador div:nth-child(1) {
@@ -1180,7 +1180,7 @@ body {
   background: #000000;
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 1;
 }
 
@@ -1190,7 +1190,7 @@ body {
   left: 19px;
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 2;
 }
 
@@ -1214,7 +1214,7 @@ body {
   background: #000000;
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 3;
 }
 
@@ -1224,7 +1224,7 @@ body {
   background: #000000;
   width: 27px;
   height: 27px;
-  border-radius: 8em;
+  border-radius: var(--border-radius);
   z-index: 3;
 }
 
