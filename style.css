@@ -948,8 +948,8 @@ body {
     padding: 10px 10px;
     padding-top: 90px;
     height: calc(100vh - 74px - 16px - 8px);
-    border-bottom-right-radius: 1em ;
-    border-bottom-left-radius: 1em ;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
   #content main.activEsuBpage {
     padding-top: 10px;
@@ -990,7 +990,6 @@ body {
     transition: .3s ease;
     overflow-x: hidden;
     border-radius: 0;
-    border-top: 1px solid var(--light);
   }
 
   #sidebar .brand {
