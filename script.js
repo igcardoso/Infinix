@@ -403,21 +403,21 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
       document.querySelector("#publish__evaluations").addEventListener("click",
         ()=> {
-          var nameWork = document.querySelector('[name=nameWork]').value;
-          var dateWork = document.querySelector('[name=dateWork]').value;
-          var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
-          var photographWork = document.querySelector('[name=photographWork]').value;
-          var stitchesWork = document.querySelector('[name=stitchesWork]').value;
-          var descriptionWork = document.querySelector('[name=descriptionWork]').value;
+          var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
+          var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
+          var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
+          var photographEvaluation = document.querySelector('[name=photographEvaluation]').value;
+          var stitchesEvaluation = document.querySelector('[name=stitchesEvaluation]').value;
+          var descriptionEvaluation = document.querySelector('[name=descriptionEvaluation]').value;
 
 
-          db.collection('affairs').add({
-            date: dateWork,
-            description: descriptionWork,
-            indexing_files: indexing_filesWork,
-            name: nameWork,
-            photograph: photographWork,
-            stitches: stitchesWork
+          db.collection('evaluation').add({
+            date: dateEvaluation,
+            description: descriptionEvaluation,
+            indexing_files: indexing_filesEvaluation,
+            name: nameEvaluation,
+            photograph: photographEvaluation,
+            stitches: stitchesEvaluation
           });
         });
 
