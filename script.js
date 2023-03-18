@@ -264,7 +264,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           Affairs.innerHTML = `
           <ul>
           <li class="matter_name">${doc.data().name}</li>
-          <li class="posting_date">${doc.data().date}</li>
+          <li class="posting_date">Entrega: ${doc.data().date}</li>
           <li class="more" onclick="
           var display = document.getElementById('${doc.data().name}affairs').style.display;
 
@@ -299,7 +299,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           var evaluation = document.createElement("div");
           evaluation.innerHTML = `<ul>
           <li class="matter_name">${doc.data().name}</li>
-          <li class="posting_date">${doc.data().date}</li>
+          <li class="posting_date">Entrega: ${doc.data().date}</li>
           <li class="more" onclick="
           var display = document.getElementById('${doc.data().name}evaluations').style.display;
 
