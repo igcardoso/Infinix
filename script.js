@@ -98,6 +98,7 @@ window.onload = function() {
           grey: '#F9F9F9',
           darkGrey: '#000000',
           dark: '#000000',
+          inverseDark: '#ffffff',
           update: 'true'
         });
       });
