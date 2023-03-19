@@ -1089,7 +1089,7 @@ body {
     flex-direction: row;
     margin: 12px;
     position: fixed;
-    width: calc(100% - 0);
+    width: 100%;
   }
 
   #sidebar .side-menu {
