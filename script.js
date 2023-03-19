@@ -53,6 +53,9 @@ window.onload = function() {
       } else if (userLogin == "bimatosv@gmail.com") {
         document.querySelector(".side-menu .control").style.display = "flex";
 
+      } else if (userLogin == "ssmn0504@gmail.com") {
+        document.querySelector(".side-menu .control").style.display = "flex";
+
       } else {
         document.querySelector(".side-menu .control").style.display = "none";
       }
