@@ -993,7 +993,7 @@ body {
 /* conteiner do menu do topo e das páginas em média screen */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   /*
   #content nav {
     position: absolute
