@@ -1053,7 +1053,7 @@ body {
   }
 
   #sidebar {
-    background: var(--blue);
+    background: none;
     position: fixed;
     top: auto;
     bottom: 10px;
