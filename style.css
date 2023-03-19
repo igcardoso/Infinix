@@ -1062,6 +1062,7 @@ body {
     left: 0;
     right: 0;
     height: calc(60px + 14px);
+    width: 100%;
     z-index: 2000;
     font-family: var(--lato);
     transition: .3s ease;
