@@ -96,6 +96,7 @@ body {
 /* menu lateral */
 
 #sidebar {
+  background: var(--light);
   position: fixed;
   top: 8px;
   bottom: 8px;
@@ -993,7 +994,7 @@ body {
 /* conteiner do menu do topo e das páginas em média screen */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /*
   #content nav {
     position: absolute
@@ -1011,19 +1012,6 @@ body {
   #content nav .nav-link {
     display: none;
   }
-  
-  #content main {
-    padding: 10px 10px;
-    padding-top: 90px;
-    margin: 0;
-    top: 0;
-    left: 0;
-    height: calc(100vh - 74px - 70px - 8px);
-    width: 100%;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
-  }
-  
 }
   
 
