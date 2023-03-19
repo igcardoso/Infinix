@@ -123,21 +123,6 @@ function getIp(callback) {
             topElUser.appendChild(imgUser);
             // end of user field
 
-            var topElText = document.createElement("div");
-            topElText.className = 'topEl text';
-            container.appendChild(topElText);
-
-            var name = document.createElement("h1");
-            name.className = 'name'
-            name.innerHTML = `${doc.data().name}`;
-            topElText.appendChild(name);
-
-            var date = document.createElement("p");
-            date.className = 'date';
-            date.innerHTML = `${doc.data().date}`;
-            topElText.appendChild(date);
-
-
 
             // cards.innerHTML = ``;
 
