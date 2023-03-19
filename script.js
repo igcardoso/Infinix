@@ -386,9 +386,9 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       // Página de trabalhos
 
 
-      document.querySelector("#publish__work").addEventListener("click",
-        ()=> {
-          window.alert("Adicionado com sucesso");
+      document.querySelector("#publish__work").addEventListener("submit",
+        (e)=> {
+          e.preventDefault();
           var nameWork = document.querySelector('[name=nameWork]').value;
           var dateWork = document.querySelector('[name=dateWork]').value;
           var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
@@ -405,6 +405,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             photograph: photographWork,
             stitches: stitchesWork
           });
+          alert("Adicionado com sucesso"); 
+          form.reset()
         });
 
       // Página de provaa
