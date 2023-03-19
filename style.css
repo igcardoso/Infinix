@@ -1014,6 +1014,12 @@ body {
 }
   
 
+@media screen and (max-height: 1300px) {
+  #content main {
+    height: calc(100vh - 74px - 70px - 8px);
+  }
+}
+  
 @media screen and (max-width: 576px) {
   
   #content main {
