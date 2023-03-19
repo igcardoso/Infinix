@@ -59,6 +59,10 @@ body {
   font-weight: 700;
 }
 
+#update p {
+  text-align: justify;
+}
+
 
 #update .marcador {
   position: absolute;
