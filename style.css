@@ -1011,10 +1011,7 @@ body {
   #content nav .nav-link {
     display: none;
   }
-}
-
-
-@media screen and (max-width: 576px) {
+  
   #content main {
     padding: 10px 10px;
     padding-top: 90px;
