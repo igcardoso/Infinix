@@ -1345,13 +1345,5 @@ body {
   background: var(--grey);
   border: 0;
   text-align: left;
-  padding-left: 30px;
-}
-
-.page6 #logout {
-  border: 0;
-  border-radius: var(--border-radius);
-  width: 100%;
-  padding: 10px;
-  z-index: 100;
+  padding-left: 20px;
 }
