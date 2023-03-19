@@ -80,11 +80,11 @@ window.onload = function() {
       users.doc(user.uid).set({
         name: user.displayName,
         photograph: user.photoURL,
-        light: '',
-        blue: '',
-        grey: '',
-        darkGrey: '',
-        dark: ''
+        light: '#EFEFEF',
+        blue: '#ffffff',
+        grey: '#F9F9F9',
+        darkGrey: '#000000',
+        dark: '#000000'
       });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
