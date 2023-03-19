@@ -345,7 +345,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       // Página de controle
 
 
-      document.querySelector("#publish__notification").addEventListener("click",
+      document.querySelector("#publish__notification").addEventListener("submit",
         (e)=> {
           e.preventDefault();
           window.alert("Adicionado com sucesso");
@@ -371,7 +371,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
       // Página de ferramentas
 
 
-      document.querySelector("#publish__tools").addEventListener("click",
+      document.querySelector("#publish__tools").addEventListener("submit",
         (e)=> {
           e.preventDefault();
           window.alert("Adicionado com sucesso");
