@@ -43,6 +43,7 @@ body {
   background: #ffffff;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+  box-shadow: -2px -2px 4px
 }
 
 /* menu lateral */
