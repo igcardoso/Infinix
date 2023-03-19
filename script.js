@@ -304,16 +304,16 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li class="matter_name">${doc.data().name}</li>
           <li class="posting_date">Entrega: ${doc.data().date}</li>
           <li class="more" onclick="
-          var display = document.getElementById('${doc.data().name}evaluations').style.display;
+          var display = document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display;
 
           if (display == 'none') {
-          document.getElementById('${doc.data().name}evaluations').style.display = 'block';
+          document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'block';
           } else {
-          document.getElementById('${doc.data().name}evaluations').style.display = 'none';
+          document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'none';
           }
           "  class="plus"><i>mais...</i>
           </li>
-          <ul id="${doc.data().name}evaluations">
+          <ul id="${doc.data().date}${doc.data().name}evaluations">
           <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li class="${doc.data().description}">${doc.data().description}</li>
           <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
