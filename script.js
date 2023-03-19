@@ -74,9 +74,9 @@ window.onload = function() {
         
         if (doc.data().update == 'true') {
           document.querySelector("#update ").style.display = "none";
-            
         } else {
           document.querySelector("#update ").style.display = "block"; 
+          document.querySelector("main").style.opacity = ".3"; 
         }
         
         
