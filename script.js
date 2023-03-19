@@ -114,8 +114,7 @@ function getIp(callback) {
             
             // user field
             var topElUser = document.createElement("div");
-            topElUser.className = 'topEl';
-            topElUser.classList.add('user');
+            topElUser.className = 'user';
             container.appendChild(topElUser);
 
             var imgUser = document.createElement(img);
