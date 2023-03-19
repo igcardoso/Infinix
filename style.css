@@ -1318,11 +1318,12 @@ body {
 
 .page6 .container_info .name {
   font-weight: 700;
+  color: var(--dark);
 }
 
 .page6 .container_info .mail {
   font-size: 14px;
-  color: #00000048;
+  color: var(--dark) /*#00000048*/;
 }
 
 .page6 .profile {
