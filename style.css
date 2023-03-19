@@ -1368,4 +1368,5 @@ body {
 .page6 .configuration_options button span:last-child {
   width: 100%;
   text-align: right;
+  margin-right: 20px;
 }
