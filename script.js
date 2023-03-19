@@ -525,6 +525,7 @@ function getIp(callback) {
             grey: '#F9F9F9',
             darkGrey: '##000000',
             dark: '#000000'
+            inverseDark: '#ffffff'
           });
         });
 
@@ -535,6 +536,7 @@ function getIp(callback) {
             grey: '#000000',
             darkGrey: '#ffffff',
             dark: '#ffffff'
+            inverseDark: '#000000'
           });
         });
 
