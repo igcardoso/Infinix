@@ -38,7 +38,7 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
-      db.collection('users').add({
+      /*db.collection('users').add({
         name: user.displayName,
         photograph: user.photoURL,
         light: '#3838387c',
@@ -46,26 +46,46 @@ window.onload = function() {
         grey: '#000000',
         darkGrey: '#ffffff',
         dark: '#ffffff'
+      });*/
+
+      db.ref('users/' + user.uid)
+      .set({
+        'nome': user.displayName,
+        'email': user.email,
+        'photograph': user.photoURL
+
+      })
+      .then(function() {
+
+        /* Armazena seção do usuario */
+        firebase
+        .database()
+        .ref('sesion/')
+        .push()
+        .set(firebase.auth().currentUser.uid);
+
+
+        console.log(secion);
       });
 
-      var profile = document.querySelector("nav .containerUser .profile .user");
-      var settings_profile = document.querySelector(".page6 .profile");
-      var settings_name = document.querySelector(".page6 .name");
-      var settings_mail = document.querySelector(".page6 .mail");
+    var profile = document.querySelector("nav .containerUser .profile .user");
+    var settings_profile = document.querySelector(".page6 .profile");
+    var settings_name = document.querySelector(".page6 .name");
+    var settings_mail = document.querySelector(".page6 .mail");
 
 
-      var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
+    var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
-      profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
-      settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
-      settings_name.innerHTML = user.displayName;
-      settings_mail.innerHTML = user.email;
-      nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
+    profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
+    settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
+    settings_name.innerHTML = user.displayName;
+    settings_mail.innerHTML = user.email;
+    nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
-      const userLogin = user.email;
+    const userLogin = user.email;
 
 
-      /*
+    /*
 function getIp(callback) {
   function response(s) {
     callback(window.userip);
@@ -98,31 +118,32 @@ function getIp(callback) {
 }
 
 */
-      db.collection('authorizedDevices').onSnapshot((data)=> {
-        data.docs.map(doc => {
-          switch (userLogin) {
-            case doc.data().firstAdmin:
-              document.querySelector(".side-menu .control").style.display = "flex";
-              break;
-            case doc.data().secondAdmin:
-              document.querySelector(".side-menu .control").style.display = "flex";
-              break;
-            case doc.data().thirdAdmin:
-              document.querySelector(".side-menu .control").style.display = "flex";
-              break;
-            case doc.data().fourthAdmin:
-              document.querySelector(".side-menu .control").style.display = "flex";
-              break;
+    db.collection('authorizedDevices').onSnapshot((data)=> {
+      data.docs.map(doc => {
+        switch (userLogin) {
+          case doc.data().firstAdmin:
+            document.querySelector(".side-menu .control").style.display = "flex";
+            break;
+          case doc.data().secondAdmin:
+            document.querySelector(".side-menu .control").style.display = "flex";
+            break;
+          case doc.data().thirdAdmin:
+            document.querySelector(".side-menu .control").style.display = "flex";
+            break;
+          case doc.data().fourthAdmin:
+            document.querySelector(".side-menu .control").style.display = "flex";
+            break;
 
-            default:
-              document.querySelector(".side-menu .control").style.display = "none";
-            }
-            return doc.data();
-          });
-        })
+          default:
+            document.querySelector(".side-menu .control").style.display = "none";
+          }
+          return doc.data();
+        });
+      })
 
-        db.collection("comunicados")
-        .orderBy("date", "desc").onSnapshot((data)=> {
+      db.collection("comunicados")
+      .orderBy("date",
+        "desc").onSnapshot((data)=> {
           data.docs.map(doc => {
             console.log("objeto:",
               doc.data());
@@ -168,309 +189,309 @@ function getIp(callback) {
           });
         });
 
-        db.collection('websites').onSnapshot((data)=> {
+      db.collection('websites').onSnapshot((data)=> {
 
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-            var website = document.createElement("li");
-            website.className = 'website';
-            website.innerHTML = `<div class="marcador">
-            <div></div>
-            <div></div>
-            </div>
-            <i class='${doc.data().icon}'></i>
-            <span class="text">
-            <h3>${doc.data().name}</h3>
-            <p>
-            <label>Site:</label> Oficial
-            </p>
-            </span>`;
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var website = document.createElement("li");
+          website.className = 'website';
+          website.innerHTML = `<div class="marcador">
+          <div></div>
+          <div></div>
+          </div>
+          <i class='${doc.data().icon}'></i>
+          <span class="text">
+          <h3>${doc.data().name}</h3>
+          <p>
+          <label>Site:</label> Oficial
+          </p>
+          </span>`;
 
-            website.addEventListener("click",
-              function() {
-                console.log("Executed successfully");
-                window.location = `${doc.data().link}`;
+          website.addEventListener("click",
+            function() {
+              console.log("Executed successfully");
+              window.location = `${doc.data().link}`;
+            });
+
+          // *******************************
+
+          document.querySelector("#tools").appendChild(website);
+
+          return doc.data();
+        });
+      });
+
+      db.collection('highlights').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var highlights = document.createElement("li");
+          highlights.innerHTML = `
+          <div class="marcador">
+          <div></div>
+          <div></div>
+          </div>
+          <i class='${doc.data().icon}'></i>
+          <span class="text">
+          <h3>${doc.data().name}</h3>
+          <p>
+          <label>Atualizado:</label> ${doc.data().update_date}
+          </p>
+          </span>
+          `;
+
+          highlights.addEventListener("click",
+            function() {
+              console.log("Executed successfully");
+              document.querySelector("main .elementsOfHome").style.display = "none";
+              document.querySelector("main .back").style.display = "block";
+              document.querySelector("#content nav").style.display = "none";
+              document.querySelector("main .back").innerHTML = '<svg height="25" viewBox="0 0 18 18" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)"/></svg>'
+
+              document.querySelector("main .highlights").classList.add('adisappear');
+              document.querySelector("main").classList.add('activEsuBpage');
+
+              if (doc.data().type == "affairs") {
+                document.querySelector("#affairs").style.display = "block";
+                document.querySelector("#evaluation").style.display = "none";
+                document.querySelector("#timetables").style.display = "none";
+
+              } else if (doc.data().type == "evaluation") {
+                document.querySelector("#affairs").style.display = "none";
+                document.querySelector("#evaluation").style.display = "block";
+                document.querySelector("#timetables").style.display = "none";
+
+              } else if (doc.data().type == "timetables") {
+                document.querySelector("#affairs").style.display = "none";
+                document.querySelector("#evaluation").style.display = "none";
+                document.querySelector("#timetables").style.display = "block";
+              } else {
+                document.querySelector("#affairs").style.display = "none";
+                document.querySelector("#evaluation").style.display = "none";
+                document.querySelector("#timetables").style.display = "none";
+              }
+
+
+              document.querySelector("main .home .back").addEventListener("click", function() {
+                document.querySelector("main .elementsOfHome").style.display = "block";
+                document.querySelector("main .back").style.display = "none";
+                document.querySelector("#content nav").style.display = "flex";
+                document.querySelector("main .highlights").classList.remove('adisappear');
+                document.querySelector("main").classList.remove('activEsuBpage');
               });
 
-            // *******************************
-
-            document.querySelector("#tools").appendChild(website);
-
-            return doc.data();
-          });
-        });
-
-        db.collection('highlights').onSnapshot((data)=> {
-
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-            var highlights = document.createElement("li");
-            highlights.innerHTML = `
-            <div class="marcador">
-            <div></div>
-            <div></div>
-            </div>
-            <i class='${doc.data().icon}'></i>
-            <span class="text">
-            <h3>${doc.data().name}</h3>
-            <p>
-            <label>Atualizado:</label> ${doc.data().update_date}
-            </p>
-            </span>
-            `;
-
-            highlights.addEventListener("click",
-              function() {
-                console.log("Executed successfully");
-                document.querySelector("main .elementsOfHome").style.display = "none";
-                document.querySelector("main .back").style.display = "block";
-                document.querySelector("#content nav").style.display = "none";
-                document.querySelector("main .back").innerHTML = '<svg height="25" viewBox="0 0 18 18" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)"/></svg>'
-
-                document.querySelector("main .highlights").classList.add('adisappear');
-                document.querySelector("main").classList.add('activEsuBpage');
-
-                if (doc.data().type == "affairs") {
-                  document.querySelector("#affairs").style.display = "block";
-                  document.querySelector("#evaluation").style.display = "none";
-                  document.querySelector("#timetables").style.display = "none";
-
-                } else if (doc.data().type == "evaluation") {
-                  document.querySelector("#affairs").style.display = "none";
-                  document.querySelector("#evaluation").style.display = "block";
-                  document.querySelector("#timetables").style.display = "none";
-
-                } else if (doc.data().type == "timetables") {
-                  document.querySelector("#affairs").style.display = "none";
-                  document.querySelector("#evaluation").style.display = "none";
-                  document.querySelector("#timetables").style.display = "block";
-                } else {
-                  document.querySelector("#affairs").style.display = "none";
-                  document.querySelector("#evaluation").style.display = "none";
-                  document.querySelector("#timetables").style.display = "none";
-                }
-
-
-                document.querySelector("main .home .back").addEventListener("click", function() {
-                  document.querySelector("main .elementsOfHome").style.display = "block";
-                  document.querySelector("main .back").style.display = "none";
-                  document.querySelector("#content nav").style.display = "flex";
-                  document.querySelector("main .highlights").classList.remove('adisappear');
-                  document.querySelector("main").classList.remove('activEsuBpage');
-                });
 
 
 
-
-              });
-
-            // *******************************
-
-            document.querySelector("#highlights").appendChild(highlights);
-
-            return doc.data();
-          });
-        });
-
-        db.collection('affairs').onSnapshot((data)=> {
-
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-            var Affairs = document.createElement("div");
-
-            Affairs.innerHTML = `
-            <ul>
-            <li class="matter_name">${doc.data().name}</li>
-            <li class="posting_date">Entrega: ${doc.data().date}</li>
-            <li class="more" onclick="
-            var display = document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display;
-
-            if (display == 'none') {
-            document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'block';
-            } else {
-            document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'none';
-            }
-            " class="plus"><i>mais...</i>
-            </li>
-            <ul id="${doc.data().date}${doc.data().name}affairs">
-            <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-            <li class="${doc.data().description}" >${doc.data().description}</li>
-            <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
-            <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
-            </ul>
-            </ul>`;
-
-            // *******************************
-
-            document.querySelector("#affairs").appendChild(Affairs);
-
-            return doc.data();
-          });
-        });
-
-        db.collection('evaluation').onSnapshot((data)=> {
-
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-            var evaluation = document.createElement("div");
-            evaluation.innerHTML = `<ul>
-            <li class="matter_name">${doc.data().name}</li>
-            <li class="posting_date">Entrega: ${doc.data().date}</li>
-            <li class="more" onclick="
-            var display = document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display;
-
-            if (display == 'none') {
-            document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'block';
-            } else {
-            document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'none';
-            }
-            "  class="plus"><i>mais...</i>
-            </li>
-            <ul id="${doc.data().date}${doc.data().name}evaluations">
-            <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-            <li class="${doc.data().description}">${doc.data().description}</li>
-            <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-            <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
-            </ul>
-            </ul>`;
-
-            // *******************************
-
-            document.querySelector("#evaluation").appendChild(evaluation);
-
-            return doc.data();
-          });
-        });
-
-        db.collection('timetables').onSnapshot((data)=> {
-
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-
-            document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
-
-            return doc.data();
-          });
-        });
-
-
-        // Página de controle
-
-
-        document.querySelector("#publish__notification").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            window.alert("Adicionado com sucesso");
-
-            var sender__date = document.querySelector('[name=dateNotifications]').value;
-            var sender__tel = document.querySelector('[name=telNotifications]').value;
-            var message__sender = document.querySelector('[name=messageNotifications]').value;
-
-
-            db.collection('comunicados').add({
-              name: user.displayName,
-              photograph: user.photoURL,
-              contact: sender__tel,
-              message: message__sender,
-              date: sender__date
             });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
 
+          // *******************************
 
-        // Página de ferramentas
+          document.querySelector("#highlights").appendChild(highlights);
 
+          return doc.data();
+        });
+      });
 
-        document.querySelector("#publish__tools").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            window.alert("Adicionado com sucesso");
-            var nameTools = document.querySelector('[name=nameTools]').value;
-            var linkTools = document.querySelector('[name=linkTools]').value;
+      db.collection('affairs').onSnapshot((data)=> {
 
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var Affairs = document.createElement("div");
 
-            db.collection('websites').add({
-              name: nameTools,
-              icon: "bx bx-link",
-              link: linkTools
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
+          Affairs.innerHTML = `
+          <ul>
+          <li class="matter_name">${doc.data().name}</li>
+          <li class="posting_date">Entrega: ${doc.data().date}</li>
+          <li class="more" onclick="
+          var display = document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display;
 
-
-        // Página de trabalhos
-
-
-        document.querySelector("#publish__work").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            var nameWork = document.querySelector('[name=nameWork]').value;
-            var dateWork = document.querySelector('[name=dateWork]').value;
-            var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
-            var photographWork = document.querySelector('[name=photographWork]').value;
-            var stitchesWork = document.querySelector('[name=stitchesWork]').value;
-            var descriptionWork = document.querySelector('[name=descriptionWork]').value;
-
-
-            db.collection('affairs').add({
-              date: dateWork,
-              description: descriptionWork,
-              indexing_files: indexing_filesWork,
-              name: nameWork,
-              photograph: photographWork,
-              stitches: stitchesWork
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-        // Página de provaa
-
-
-        document.querySelector("#publish__evaluations").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
-            var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
-            var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
-            var photographEvaluation = document.querySelector('[name=photographEvaluation]').value;
-            var stitchesEvaluation = document.querySelector('[name=stitchesEvaluation]').value;
-            var descriptionEvaluation = document.querySelector('[name=descriptionEvaluation]').value;
-
-
-            db.collection('evaluation').add({
-              date: dateEvaluation,
-              description: descriptionEvaluation,
-              indexing_files: indexing_filesEvaluation,
-              name: nameEvaluation,
-              photograph: photographEvaluation,
-              stitches: stitchesEvaluation
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-      } else {
-        var provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithRedirect(provider).then(resposta => {
-          if (resposta.credential) {
-            const token = resposta.credential.accessToken;
+          if (display == 'none') {
+          document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'block';
+          } else {
+          document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'none';
           }
-          const user = resposta.user;
-        }).catch(error => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          const email = error.email;
-          const credential = error.credential;
-        })
-      }
-    })
-  }
+          " class="plus"><i>mais...</i>
+          </li>
+          <ul id="${doc.data().date}${doc.data().name}affairs">
+          <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li class="${doc.data().description}" >${doc.data().description}</li>
+          <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
+          <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
+          </ul>
+          </ul>`;
+
+          // *******************************
+
+          document.querySelector("#affairs").appendChild(Affairs);
+
+          return doc.data();
+        });
+      });
+
+      db.collection('evaluation').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+          var evaluation = document.createElement("div");
+          evaluation.innerHTML = `<ul>
+          <li class="matter_name">${doc.data().name}</li>
+          <li class="posting_date">Entrega: ${doc.data().date}</li>
+          <li class="more" onclick="
+          var display = document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display;
+
+          if (display == 'none') {
+          document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'block';
+          } else {
+          document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'none';
+          }
+          "  class="plus"><i>mais...</i>
+          </li>
+          <ul id="${doc.data().date}${doc.data().name}evaluations">
+          <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+          <li class="${doc.data().description}">${doc.data().description}</li>
+          <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+          <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
+          </ul>
+          </ul>`;
+
+          // *******************************
+
+          document.querySelector("#evaluation").appendChild(evaluation);
+
+          return doc.data();
+        });
+      });
+
+      db.collection('timetables').onSnapshot((data)=> {
+
+        data.docs.map(doc => {
+          console.log("objeto:",
+            doc.data());
+
+          document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
+
+          return doc.data();
+        });
+      });
+
+
+      // Página de controle
+
+
+      document.querySelector("#publish__notification").addEventListener("submit",
+        (e)=> {
+          e.preventDefault();
+          window.alert("Adicionado com sucesso");
+
+          var sender__date = document.querySelector('[name=dateNotifications]').value;
+          var sender__tel = document.querySelector('[name=telNotifications]').value;
+          var message__sender = document.querySelector('[name=messageNotifications]').value;
+
+
+          db.collection('comunicados').add({
+            name: user.displayName,
+            photograph: user.photoURL,
+            contact: sender__tel,
+            message: message__sender,
+            date: sender__date
+          });
+          alert("Adicionado com sucesso");
+          form.reset()
+        });
+
+
+      // Página de ferramentas
+
+
+      document.querySelector("#publish__tools").addEventListener("submit",
+        (e)=> {
+          e.preventDefault();
+          window.alert("Adicionado com sucesso");
+          var nameTools = document.querySelector('[name=nameTools]').value;
+          var linkTools = document.querySelector('[name=linkTools]').value;
+
+
+          db.collection('websites').add({
+            name: nameTools,
+            icon: "bx bx-link",
+            link: linkTools
+          });
+          alert("Adicionado com sucesso");
+          form.reset()
+        });
+
+
+      // Página de trabalhos
+
+
+      document.querySelector("#publish__work").addEventListener("submit",
+        (e)=> {
+          e.preventDefault();
+          var nameWork = document.querySelector('[name=nameWork]').value;
+          var dateWork = document.querySelector('[name=dateWork]').value;
+          var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
+          var photographWork = document.querySelector('[name=photographWork]').value;
+          var stitchesWork = document.querySelector('[name=stitchesWork]').value;
+          var descriptionWork = document.querySelector('[name=descriptionWork]').value;
+
+
+          db.collection('affairs').add({
+            date: dateWork,
+            description: descriptionWork,
+            indexing_files: indexing_filesWork,
+            name: nameWork,
+            photograph: photographWork,
+            stitches: stitchesWork
+          });
+          alert("Adicionado com sucesso");
+          form.reset()
+        });
+
+      // Página de provaa
+
+
+      document.querySelector("#publish__evaluations").addEventListener("submit",
+        (e)=> {
+          e.preventDefault();
+          var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
+          var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
+          var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
+          var photographEvaluation = document.querySelector('[name=photographEvaluation]').value;
+          var stitchesEvaluation = document.querySelector('[name=stitchesEvaluation]').value;
+          var descriptionEvaluation = document.querySelector('[name=descriptionEvaluation]').value;
+
+
+          db.collection('evaluation').add({
+            date: dateEvaluation,
+            description: descriptionEvaluation,
+            indexing_files: indexing_filesEvaluation,
+            name: nameEvaluation,
+            photograph: photographEvaluation,
+            stitches: stitchesEvaluation
+          });
+          alert("Adicionado com sucesso");
+          form.reset()
+        });
+
+    } else {
+      var provider = new firebase.auth.GoogleAuthProvider();
+
+      firebase.auth().signInWithRedirect(provider).then(resposta => {
+        if (resposta.credential) {
+          const token = resposta.credential.accessToken;
+        }
+        const user = resposta.user;
+      }).catch(error => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        const email = error.email;
+        const credential = error.credential;
+      })
+    }
+  })
+}
