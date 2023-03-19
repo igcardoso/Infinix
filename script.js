@@ -41,7 +41,7 @@ window.onload = function() {
 
       var users = firebase.firestore().collection('users');
       
-      users.doc(`${user.uid}`).set({
+      users.doc(user.uid).set({
         name: user.displayName,
         photograph: user.photoURL,
         light: '#3838387c',
