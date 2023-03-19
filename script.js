@@ -31,6 +31,9 @@ document.querySelector("#logout").addEventListener("click", function() {
 document.addEventListener("DOMContentLoaded", function () {
 })
 */
+
+window.alert("O app está em manutenção e pode apresentar falhas.");
+
 window.onload = function() {
 
   auth.onAuthStateChanged(user => {
