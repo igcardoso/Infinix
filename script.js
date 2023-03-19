@@ -49,12 +49,12 @@ window.onload = function() {
           --lato: 'Lato', sans-serif;
 
           --light: ${doc.data().light};
-          --blue: #ffffff;
+          --blue: ${doc.data().blue};
           --blue-ios: #329FFC;
           --light-blue: #CFE8FF;
-          --grey: #F9F9F9;
-          --dark-grey: #000000;
-          --dark: #000000;
+          --grey: ${doc.data().grey};
+          --dark-grey: ${doc.data().darkGrey};
+          --dark: ${doc.data().dark};
           --red: #DB504A;
           --yellow: #FFCE26;
           --light-yellow: #FFF2C6;
@@ -70,7 +70,7 @@ window.onload = function() {
           }
 
           </style>`;
-          body.appendChild(style)
+          body.appendChild(style);
 
           return doc.data();
       });
