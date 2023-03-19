@@ -68,7 +68,7 @@ body {
   height: 2px;
   background: var(--dark);
   margin: 2px auto;
-  border-radius: var(--border-radius);
+  border-radius: 1.5em;
 }
 
 #update .marcador div:nth-child(1) {
