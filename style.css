@@ -1014,7 +1014,7 @@ body {
 }
   
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
   
   #content main {
     padding: 10px 10px;
