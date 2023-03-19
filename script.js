@@ -53,7 +53,7 @@ window.onload = function() {
         console.log('dados salvos');
       });
       */
-      var ref = firebase.database().ref('card');
+      var ref = firebase.database().ref('users');
 
       var card = {
         nome: igor,
