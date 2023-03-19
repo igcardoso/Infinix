@@ -32,12 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 */
 
-window.alert("O app está em manutenção e pode apresentar falhas.");
-
 window.onload = function() {
 
   auth.onAuthStateChanged(user => {
     if (user) {
+
+      window.alert("Olá" + user.photoURL + "O app está em manutenção e pode apresentar falhas.");
+
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector("main .page6 .profile");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
