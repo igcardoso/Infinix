@@ -38,13 +38,20 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
+      db.collection('channels').add({
+        name: name,
+        link: link,
+        quality: quality,
+        type: type,
+        image: image
+      })
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
       var settings_name = document.querySelector(".page6 .name");
       var settings_mail = document.querySelector(".page6 .mail");
-      
-      
+
+
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
@@ -52,7 +59,7 @@ window.onload = function() {
       settings_name.innerHTML = user.displayName;
       settings_mail.innerHTML = user.email;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
-      
+
       const userLogin = user.email;
 
 
@@ -357,7 +364,7 @@ function getIp(callback) {
           (e)=> {
             e.preventDefault();
             window.alert("Adicionado com sucesso");
-            
+
             var sender__date = document.querySelector('[name=dateNotifications]').value;
             var sender__tel = document.querySelector('[name=telNotifications]').value;
             var message__sender = document.querySelector('[name=messageNotifications]').value;
