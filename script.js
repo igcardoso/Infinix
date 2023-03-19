@@ -87,7 +87,7 @@ window.onload = function() {
         return doc.data();
       });
 
-      document.querySelector("#update").addEventListener("click", ()=> {
+      document.querySelector("#start_update").addEventListener("click", ()=> {
         var users = firebase.firestore().collection('users');
 
         users.doc(user.uid).set({
