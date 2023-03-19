@@ -504,8 +504,6 @@ body {
   top: 20px;
   left: 20px;
   z-index: 100;
-  background: var(--grey);
-  border-radius: var(--border-radius);
   transform: rotate(180deg);
   margin-bottom:-3px;
 }
