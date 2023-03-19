@@ -1324,6 +1324,7 @@ body {
 .page6 .container_info .mail {
   font-size: 14px;
   color: var(--dark) /*#00000048*/;
+  opacity: .7;
 }
 
 .page6 .profile {
