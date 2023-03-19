@@ -38,6 +38,7 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
+      /*
       var card = {
         name: user.displayName,
         photograph: user.photoURL,
@@ -51,7 +52,19 @@ window.onload = function() {
       firebase.firestore().collection('users').add(card).then(() => {
         console.log('dados salvos');
       });
+      */
+      var ref = firebase.database().ref('card');
 
+      var card = {
+        nome: igor,
+        idade: 15,
+        curtidas: 0
+      };
+      fetch('https://curso-firebase-webapps.firebaseio.com/card.json', {
+        body: JSON.stringify(card),
+        method: 'POST',
+        mode: 'no-cors'
+      }).catch(err => console.log(err));
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
