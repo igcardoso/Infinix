@@ -1087,7 +1087,7 @@ body {
   #sidebar .side-menu.top {
     display: flex;
     flex-direction: row;
-    margin: 12px;
+    margin: 0px;
     position: fixed;
     width: 100%;
   }
