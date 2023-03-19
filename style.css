@@ -506,8 +506,7 @@ body {
   z-index: 100;
   background: var(--light);
   padding: 10px;
-  border-radius:
-  var(--border-radius);
+  border-radius: var(--border-radius);
   transform: rotate(180deg);
   margin-bottom:-3px;
 }
