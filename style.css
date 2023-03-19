@@ -64,6 +64,9 @@ body {
   margin-bottom: 40px;
 }
 
+#update img {
+  width: 80%;
+}
 
 #update .marcador {
   position: absolute;
