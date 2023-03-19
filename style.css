@@ -1357,4 +1357,10 @@ body {
   text-align: left;
   padding-left: 20px;
   margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.page6 .configuration_options button span {
+  
 }
