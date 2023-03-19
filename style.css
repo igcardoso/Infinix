@@ -1012,6 +1012,18 @@ body {
     display: none;
   }
   
+  #content main {
+    padding: 10px 10px;
+    padding-top: 90px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 74px - 70px - 8px);
+    width: 100%;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+  
 }
   
 
@@ -1028,6 +1040,7 @@ body {
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
   }
+  
   #content main.activEsuBpage {
     padding-top: 10px;
   }
