@@ -79,7 +79,12 @@ window.onload = function() {
 
       users.doc(user.uid).set({
         name: user.displayName,
-        photograph: user.photoURL
+        photograph: user.photoURL,
+        light: '#EFEFEF',
+        blue: '#ffffff',
+        grey: '#F9F9F9',
+        darkGrey: '#000000',
+        dark: '#000000'
       });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
