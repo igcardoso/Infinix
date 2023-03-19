@@ -39,8 +39,7 @@ window.onload = function() {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
-      db.collection('users').onSnapshot((data)=> {
-        data.docs.map(doc => {
+      db.collection('users').doc(user.uid).onSnapshot((doc)=> {
           var body = document.querySelector("body");
           var style = document.createElement("div");
           style.innerHTML = `<style type="text/css" media="all"> 
@@ -74,7 +73,6 @@ window.onload = function() {
           body.appendChild(style)
 
           return doc.data();
-        });
       });
       
       var users = firebase.firestore().collection('users');
