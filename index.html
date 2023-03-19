@@ -34,23 +34,7 @@
 </head>
 <body>
 
-  <!-- botão de confirmação -->
-  <div style="display: none; width:100%; position: absolute; top: calc(50% - 100px); left: 0; z-index:200000;" id="confirmation">
-    <div style="font-family: sans-serif; background: #ffffff; margin: auto; border-radius: 1em; border: 1px solid var(--grey); text-align: center; width: 300px; height: 176px;">
-      <p style="padding:20px;">
-        Tem certeza que deseja sair?
-        Posteriormente caso não se lembre da senha terá
-        que contactar o administrador geral
-      </p>
-      <img src="images/icons8-reiniciar.gif" alt="atualizar" />
-      <div style="width: 100%; display: flex;">
-        <button id="cancel" style="margin: 10px; margin-top: 0;
-          border-radius: 8em ; border: 0; background: var(--blue); color: var(--light);  font-weight: 700; width:100%; height: 40px;" type="submit">Cancelar</button>
-        <button onclick="logout()" id="ok" style="margin: 10px; margin-top: 0; border-radius: 8em ; border: 0; background: var(--grey);
-          font-weight: 700; width:100%; height: 40px;" type="submit">Sim, ok</button>
-      </div>
-    </div>
-  </div>
+  <!-- popup de atualização -->
   <div id="update">
     <div class="marcador">
       <div></div>
@@ -58,6 +42,7 @@
     </div>
     <button>Atualizar</button>
     <p>Atualização obrigatória para correção de bugs na exibição. Ao atualizar está mensagem não tornará a aparecer até que uma nova atualização seja requisitada.</p>
+    <img src="images/icons8-reiniciar.gif" alt="atualizar" />
   </div>
   <!-- menu lateral -->
   <section class="hide" id="sidebar">
