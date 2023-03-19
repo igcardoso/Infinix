@@ -1304,7 +1304,7 @@ body {
 /* Página de ajustes */
 
 .page6 .container_user {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
 }
