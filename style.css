@@ -39,8 +39,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 2000000;
-  padding-left: 20px;
-  padding-right: 20px;
   padding: 20px;
   background: #ffffff;
   border-top-left-radius: 1.5em;
@@ -52,9 +50,12 @@ body {
 #update button {
   color: #ffffff;
   background: #329FFC;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
   border: 0;
   border-radius: 1.5em;
+  margin-bottom: 20px;
 }
 
 
