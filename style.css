@@ -1057,7 +1057,7 @@ body {
     background: none;
     position: fixed;
     top: auto;
-    bottom: 0;
+    bottom: 10px;
     left: 8px;
     right: 8px;
     height: calc(60px + 14px);
