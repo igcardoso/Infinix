@@ -499,6 +499,19 @@ body {
   margin-left: -10px;
 }
 
+.home .back svg {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  background: var(--light);
+  padding: 10px;
+  border-radius:
+  var(--border-radius);
+  transform: rotate(180deg);
+  margin-bottom:-3px;
+}
+
 .home .highlight {
   height: 100%;
 }
