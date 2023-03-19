@@ -65,7 +65,8 @@ body {
 }
 
 #update img {
-  width: 80%;
+  width: 120px;
+  height: 120px;
 }
 
 #update .marcador {
