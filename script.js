@@ -48,7 +48,7 @@ window.onload = function() {
         dark: '#ffffff'
       };
 
-      firebase.firestore().collection('users').add(card).then(() => {
+      firebase.firestore().collection('users').doc(`${user.uid}`).add(card).then(() => {
         console.log('dados salvos');
       });
 
