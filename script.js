@@ -104,37 +104,41 @@ function getIp(callback) {
           data.docs.map(doc => {
             console.log("objeto:",
               doc.data());
+              
             var cards = document.createElement("div");
             cards.className = 'cards';
-            cards.innerHTML = `
-            <div class="container">
-            <div class="topEl user">
-            <img class="imgUser" src="${doc.data().photograph}" />
-            </div>
-
-
-            <div class="topEl text">
-            <h1 class="name">${doc.data().name}</h1>
-            <p class="date">
-            ${doc.data().date}
-            </p>
-            </div>
-            <div class="topEl icon">
-            <svg style="margin-bottom: -3px;" height="19.409px" id="Capa_1" style="enable-background:new 0 0 27.147 21.409;" version="1.1" viewBox="0 0 27.147 21.409" width="25.147px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M9.971,4.226c5.505,0,9.97,3.402,9.97,7.598   s-4.465,7.597-9.97,7.597c-0.972,0-1.91-0.106-2.798-0.303C6,21.244,3.872,21.716,1.969,21.238c1.147-0.984,2.137-1.916,2.88-2.896   C1.944,17.015,0,14.592,0,11.824C0,7.628,4.465,4.226,9.971,4.226z" /><path d="M17.178,0c-3.416,0-6.432,1.31-8.229,3.307   c4.46-1.197,15.345,3.597,11.237,11.604c1.173,2.126,3.089,2.578,4.993,2.1c-1.147-0.984-2.137-1.916-2.88-2.896   c2.903-1.328,4.848-3.75,4.848-6.519C27.147,3.402,22.683,0,17.178,0z" /></g><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /></svg>
-            </div>
-            </div>
-            <div class="message">
-            ${doc.data().message}
-            </div>
-            <div class="adms">
-            <img class="img1" src="images/user_01.jpg" />
-            <img class="img2" src="images/user_02.jpg" />
-            <img class="img3" src="images/user_03.jpg" />
-            <img class="img4" src="images/user_04.jpg" />
-            <a style="text-decoration: none;" href="https://wa.me/55${doc.data().contact}?text=Oi,%20gostaria%20de%20reportar%20um%20erro%20ou%20fazer uma sugestão" class="text" id="support">
-            responder a ${doc.data().name}
-            </a>
-            </div>`;
+            
+            var container = document.createElement("div");
+            container.className = 'container';
+            cards.appendChild(container);
+            
+            // user field
+            var topElUser = document.createElement("div");
+            topElUser.className ='topEl user';
+            container.appendChild(topElUser);
+            
+            var imgUser = document.createElement(img);
+            imgUser.className = 'imgUser';
+            imgUser.src = `${doc.data().photograph}`;
+            topElUser.appendChild(imgUser);
+            // end of user field
+            
+            var topElText = document.createElement("div");
+            topElText.className = 'topEl text';
+            container.appendChild(topElText);
+            
+            var name = document.createElement("h1");
+            name.className = 'name'
+            name.innerHTML = `${doc.data().name}`;
+            topElText.appendChild(name);
+            
+            var date = document.createElement("p");
+            date.className = 'date';
+            date.innerHTML = `${doc.data().date}`;
+            topElText.appendChild(date)
+            
+            
+            // cards.innerHTML = ``;
 
 
             // *******************************
