@@ -1303,6 +1303,11 @@ body {
 
 /* Página de ajustes */
 
+.page6 .profile {
+  width: 40px;
+  height: 40px;
+}
+
 .page6 #logout {
   border: 0;
   border-radius: var(--border-radius);
