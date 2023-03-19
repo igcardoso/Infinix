@@ -1012,6 +1012,11 @@ body {
     display: none;
   }
   
+}
+  
+
+@media screen and (max-width: 768px) {
+  
   #content main {
     padding: 10px 10px;
     padding-top: 90px;
