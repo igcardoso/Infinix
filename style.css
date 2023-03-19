@@ -1055,6 +1055,7 @@ body {
 
   #sidebar {
     background: none;
+    backdrop-filter: blur(50px);
     position: fixed;
     top: auto;
     bottom: 10px;
