@@ -1244,11 +1244,6 @@ body {
 
 
 
-
-
-
-
-
 /*Pagina de controle*/
 
 .releases {
@@ -1297,4 +1292,21 @@ body {
 
 .releases .submit svg {
   fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* Página de ajustes */
+
+.page6 #logout {
+  border: 0;
+  border-radius: var(--border-radius);
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
 }
