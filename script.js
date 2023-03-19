@@ -41,23 +41,23 @@ window.onload = function() {
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
       const userLogin = user.email;
-
-      if (userLogin == "ioliveiracardoso76@gmail.com") {
-        document.querySelector(".side-menu .control").style.display = "flex";
-      } else if (userLogin == "aprogrammer155@gmail.com") {
-        document.querySelector(".side-menu .control").style.display = "flex";
-
-      } else if (userLogin == "anacllaralili@gmail.com") {
-        document.querySelector(".side-menu .control").style.display = "flex";
-
-      } else if (userLogin == "bimatosv@gmail.com") {
-        document.querySelector(".side-menu .control").style.display = "flex";
-
-      } else if (userLogin == "ssmn0504@gmail.com") {
-        document.querySelector(".side-menu .control").style.display = "flex";
-
-      } else {
-        document.querySelector(".side-menu .control").style.display = "none";
+      
+      switch (userLogin) {
+        case doc.data().firstAdmin:
+          document.querySelector(".side-menu .control").style.display = "flex";
+          break;
+        case doc.data().secondAdmin:
+          document.querySelector(".side-menu .control").style.display = "flex";
+          break;
+        case doc.data().thirdAdmin:
+          document.querySelector(".side-menu .control").style.display = "flex";
+          break;
+        case doc.data().fourthAdmin :
+          document.querySelector(".side-menu .control").style.display = "flex";
+          break;
+        
+        default:
+          document.querySelector(".side-menu .control").style.display = "none";
       }
       /*
 function getIp(callback) {
