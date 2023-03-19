@@ -269,7 +269,7 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li class="matter_name">${doc.data().name}</li>
           <li class="posting_date">Entrega: ${doc.data().date}</li>
           <li class="more" onclick="
-          var display = document.getElementById('${doc.data().name}affairs').style.display;
+          var display = document.getElementById('${doc.data().name}affairs${doc.data().date}').style.display;
 
           if (display == 'none') {
           document.getElementById('${doc.data().name}affairs${doc.data().date}').style.display = 'block';
@@ -304,12 +304,12 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           <li class="matter_name">${doc.data().name}</li>
           <li class="posting_date">Entrega: ${doc.data().date}</li>
           <li class="more" onclick="
-          var display = document.getElementById('${doc.data().name}evaluations').style.display;
+          var display = document.getElementById('${doc.data().name}evaluations${doc.data().date}').style.display;
 
           if (display == 'none') {
-          document.getElementById('${doc.data().name}evaluations').style.display = 'block';
+          document.getElementById('${doc.data().name}evaluations${doc.data().date}').style.display = 'block';
           } else {
-          document.getElementById('${doc.data().name}evaluations').style.display = 'none';
+          document.getElementById('${doc.data().name}evaluations${doc.data().date}').style.display = 'none';
           }
           "  class="plus"><i>mais...</i>
           </li>
