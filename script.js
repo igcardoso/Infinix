@@ -38,13 +38,15 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
-      db.collection('channels').add({
-        name: name,
-        link: link,
-        quality: quality,
-        type: type,
-        image: image
-      })
+      db.collection('users').doc(user.uid).add({
+        name: user.displayName,
+        photograph: user.photoURL,
+        light: '#3838387c',
+        blue: '#000000',
+        grey: '#000000',
+        darkGrey: '#ffffff',
+        dark: '#ffffff'
+      });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
