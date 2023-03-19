@@ -358,7 +358,7 @@ function getIp(callback) {
             e.preventDefault();
             window.alert("Adicionado com sucesso");
             var sender__notification = document.querySelector('[name=nameNotifications]').value;
-            var user__sender = document.querySelector('[name=userNotifications]').value;
+            
             var sender__date = document.querySelector('[name=dateNotifications]').value;
             var sender__tel = document.querySelector('[name=telNotifications]').value;
             var message__sender = document.querySelector('[name=messageNotifications]').value;
