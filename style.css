@@ -1328,7 +1328,7 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 60px;
+  top: 200px;
   left: 0;
 }
 
