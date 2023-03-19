@@ -346,7 +346,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
       document.querySelector("#publish__notification").addEventListener("click",
-        ()=> {
+        (e)=> {
+          e.preventDefault();
           window.alert("Adicionado com sucesso");
           var sender__notification = document.querySelector('[name=nameNotifications]').value;
           var user__sender = document.querySelector('[name=userNotifications]').value;
@@ -362,6 +363,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             message: message__sender,
             date: sender__date
           });
+          alert("Adicionado com sucesso"); 
+          form.reset()
         });
 
 
@@ -369,7 +372,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
       document.querySelector("#publish__tools").addEventListener("click",
-        ()=> {
+        (e)=> {
+          e.preventDefault();
           window.alert("Adicionado com sucesso");
           var nameTools = document.querySelector('[name=nameTools]').value;
           var linkTools = document.querySelector('[name=linkTools]').value;
@@ -380,6 +384,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             icon: "bx bx-link",
             link: linkTools
           });
+          alert("Adicionado com sucesso"); 
+          form.reset()
         });
 
 
