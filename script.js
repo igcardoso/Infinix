@@ -39,7 +39,7 @@ window.onload = function() {
 
       window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
-      var profile = document.querySelector("nav .profile");
+      var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
