@@ -39,7 +39,7 @@ window.onload = function() {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
       
-      db.collection("users").document(user.uid).add({
+      db.collection("users").document(user.uid).set({
         name: user.displayName,
         photograph: user.photoURL,
         light: '#3838387c',
