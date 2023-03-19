@@ -39,8 +39,46 @@ window.onload = function() {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
-      var users = firebase.firestore().collection('users');
+      db.collection('users').onSnapshot((data)=> {
+        data.docs.map(doc => {
+          var body = document.querySelector("body");
+          var style = document.createElement("div");
+          style.innerHTML = `<style type="text/css" media="all"> 
+          :root {
+          
+          --poppins: 'Raleway', sans-serif;
+          --lato: 'Lato', sans-serif;
+
+          --light: #EFEFEF;
+          --blue: #ffffff;
+          --blue-ios: #329FFC;
+          --light-blue: #CFE8FF;
+          --grey: #F9F9F9;
+          --dark-grey: #000000;
+          --dark: #000000;
+          --red: #DB504A;
+          --yellow: #FFCE26;
+          --light-yellow: #FFF2C6;
+          --orange: #FD7238;
+          --light-orange: #FFE0D3;
+          --white: #FFFFFF;
+          --box-shadow: 0px 0px 15px #8383833e;
+          --border-radius: 1.5em;
+          }
+
+          svg {
+          fill: var(--dark);
+          }
+
+          </style>`;
+          body.appendChild(style)
+
+          return doc.data();
+        });
+      });
       
+      var users = firebase.firestore().collection('users');
+
       users.doc(user.uid).set({
         name: user.displayName,
         photograph: user.photoURL,
@@ -50,7 +88,7 @@ window.onload = function() {
         darkGrey: '#ffffff',
         dark: '#ffffff'
       });
-      
+
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
       var settings_name = document.querySelector(".page6 .name");
