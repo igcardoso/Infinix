@@ -75,8 +75,7 @@ window.onload = function() {
         return doc.data();
       });
 
-      setTimeout(function() {
-        var users = firebase.firestore().collection('users');
+      var users = firebase.firestore().collection('users');
 
         users.doc(user.uid).set({
           name: user.displayName,
@@ -87,7 +86,6 @@ window.onload = function() {
           darkGrey: '#000000',
           dark: '#000000'
         });
-      }, 60000 * 60 * 24);
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
