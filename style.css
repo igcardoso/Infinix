@@ -1306,6 +1306,7 @@ body {
 .page6 .profile {
   width: 40px;
   height: 40px;
+  border-radius: var(--border-radius);
 }
 
 .page6 #logout {
