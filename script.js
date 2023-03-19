@@ -77,6 +77,7 @@ window.onload = function() {
         } else {
           document.querySelector("#update ").style.display = "block"; 
           document.querySelector("main").style.opacity = ".3"; 
+          document.querySelector("nav").style.opacity = ".3"; 
         }
         
         
