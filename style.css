@@ -501,10 +501,10 @@ body {
 
 .home .back svg {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   z-index: 100;
-  background: var(--light);
+  background: var(--grey);
   border-radius: var(--border-radius);
   transform: rotate(180deg);
   margin-bottom:-3px;
