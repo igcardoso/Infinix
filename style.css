@@ -44,6 +44,14 @@ body {
   border-top-left-radius: 1.5em;
   border-top-right-radius: 1.5em;
   box-shadow: -2px -2px 10px
+  text-align: center;
+}
+
+#update button {
+  background: #329FFC;
+  padding: 20px;
+  border: 0;
+  border-radius: 1.5em;
 }
 
 /* menu lateral */
