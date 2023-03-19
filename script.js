@@ -75,7 +75,8 @@ window.onload = function() {
         return doc.data();
       });
 
-      var users = firebase.firestore().collection('users');
+      document.querySelector("#update").addEventListener("click", ()=> {
+        var users = firebase.firestore().collection('users');
 
         users.doc(user.uid).set({
           name: user.displayName,
@@ -86,6 +87,7 @@ window.onload = function() {
           darkGrey: '#000000',
           dark: '#000000'
         });
+      });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
