@@ -40,6 +40,7 @@ window.onload = function() {
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
+      settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
       const userLogin = user.email;
 
