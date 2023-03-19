@@ -1304,13 +1304,13 @@ body {
 /* Página de ajustes */
 
 .page6 .container_user {
-  margin-top: 5px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
 
 .page6 .container_info {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
