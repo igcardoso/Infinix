@@ -38,7 +38,8 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
-      /*db.collection('users').add({
+      
+      db.collection("users").document(user.uid).add({
         name: user.displayName,
         photograph: user.photoURL,
         light: '#3838387c',
@@ -46,27 +47,8 @@ window.onload = function() {
         grey: '#000000',
         darkGrey: '#ffffff',
         dark: '#ffffff'
-      });*/
-
-      firestore.database().ref('users/' + user.uid)
-      .set({
-        'nome': user.displayName,
-        'email': user.email,
-        'photograph': user.photoURL
-
-      })
-      .then(function() {
-
-        /* Armazena seção do usuario */
-        firebase
-        .database()
-        .ref('sesion/')
-        .push()
-        .set(firebase.auth().currentUser.uid);
-
-
-        console.log(secion);
       });
+
 
     var profile = document.querySelector("nav .containerUser .profile .user");
     var settings_profile = document.querySelector(".page6 .profile");
