@@ -37,7 +37,7 @@ window.onload = function() {
   auth.onAuthStateChanged(user => {
     if (user) {
 
-      window.alert("Olá" + user.displayName + "O app está em manutenção e pode apresentar falhas.");
+      window.alert("Olá " + user.displayName + " o app está em manutenção e pode apresentar falhas.");
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector("main .page6 .profile");
