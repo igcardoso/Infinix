@@ -503,7 +503,7 @@ function getIp(callback) {
         var dark_mode = document.querySelector("#dark_mode");
 
         clear_mode.addEventListener("click", ()=> {
-          db.collection('highlights').doc(user.uid).update({
+          db.collection('users').doc(user.uid).update({
             light: '#EFEFEF',
             blue: '#ffffff',
             grey: '#F9F9F9',
