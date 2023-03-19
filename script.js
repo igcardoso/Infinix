@@ -357,7 +357,6 @@ function getIp(callback) {
           (e)=> {
             e.preventDefault();
             window.alert("Adicionado com sucesso");
-            var sender__notification = document.querySelector('[name=nameNotifications]').value;
             
             var sender__date = document.querySelector('[name=dateNotifications]').value;
             var sender__tel = document.querySelector('[name=telNotifications]').value;
@@ -365,7 +364,7 @@ function getIp(callback) {
 
 
             db.collection('comunicados').add({
-              name: sender__notification,
+              name: user.displayName,
               photograph: user.photoURL,
               contact: sender__tel,
               message: message__sender,
