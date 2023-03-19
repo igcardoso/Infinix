@@ -1363,7 +1363,8 @@ body {
 
 .page6 .configuration_options button span {
   width: 100%;
-  color: rgba(0,0,0,0.817);
+  color: #000000d0;
+  font-weight: 600;
 }
 
 .page6 .configuration_options button span:last-child {
@@ -1373,5 +1374,5 @@ body {
 }
 
 .page6 .configuration_options button span:last-child svg {
-  fill: #00000048;
+  fill: #000000d0;
 }
