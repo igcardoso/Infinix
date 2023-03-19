@@ -41,7 +41,7 @@ window.onload = function() {
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
-      var settings_name = document.querySelector(".page6 .profile .name");
+      var settings_name = document.querySelector(".page6 .name");
       
       
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
