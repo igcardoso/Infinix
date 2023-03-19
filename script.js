@@ -48,7 +48,7 @@ window.onload = function() {
         dark: '#ffffff'
       });*/
 
-      db.ref('users/' + user.uid)
+      firestore.database().ref('users/' + user.uid)
       .set({
         'nome': user.displayName,
         'email': user.email,
