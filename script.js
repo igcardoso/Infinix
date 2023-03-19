@@ -55,7 +55,7 @@ window.onload = function() {
         --grey: ${doc.data().grey};
         --dark-grey: ${doc.data().darkGrey};
         --dark: ${doc.data().dark};
-        --inverse-dark: ${doc.data().dark};
+        --inverse-dark: ${doc.data().inverseDark};
         --red: #DB504A;
         --yellow: #FFCE26;
         --light-yellow: #FFF2C6;
