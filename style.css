@@ -1323,6 +1323,11 @@ body {
   overflow: hidden;
 }
 
+.page6 .configuration_options {
+  display: flex;
+  flex-direction: column;
+}
+
 .page6 #logout {
   border: 0;
   border-radius: var(--border-radius);
