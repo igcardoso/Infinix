@@ -60,12 +60,10 @@ window.onload = function() {
         idade: 15,
         curtidas: 0
       };
-      fetch('https://curso-firebase-webapps.firebaseio.com/card.json', {
-        body: JSON.stringify(card),
-        method: 'POST',
-        mode: 'no-cors'
-      }).catch(err => console.log(err));
-
+      ref.child(user.uid).set(card).then(() => {
+        window.alert("pronto")
+     });
+     
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
       var settings_name = document.querySelector(".page6 .name");
