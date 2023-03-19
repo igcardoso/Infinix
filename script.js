@@ -471,7 +471,7 @@ function getIp(callback) {
             form.reset()
           });
 
-        // Página de provaa
+        // Página de prova
 
 
         document.querySelector("#publish__evaluations").addEventListener("submit",
@@ -496,6 +496,10 @@ function getIp(callback) {
             alert("Adicionado com sucesso");
             form.reset()
           });
+          
+          // página de ajustes
+          
+          
 
       } else {
         var provider = new firebase.auth.GoogleAuthProvider();
