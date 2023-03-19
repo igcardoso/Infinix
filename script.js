@@ -71,7 +71,15 @@ window.onload = function() {
 
         </style>`;
         body.appendChild(style);
-
+        
+        if (doc.data().update == 'true') {
+          document.querySelector("#update ").style.display = "none";
+            
+        } else {
+          document.querySelector("#update ").style.display = "block"; 
+        }
+        
+        
         return doc.data();
       });
 
