@@ -39,12 +39,10 @@ window.onload = function() {
 
       window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
-      var profile = document.querySelector("nav .containerUser .profile .user");
-      var settings_profile = document.querySelector("main .page6 .profile");
+      var profile = document.querySelector(".profile");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
-      settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
       const userLogin = user.email;
 
