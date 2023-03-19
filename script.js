@@ -135,7 +135,7 @@ function getIp(callback) {
             var date = document.createElement("p");
             date.className = 'date';
             date.innerHTML = `${doc.data().date}`;
-            topElText.appendChild(date)
+            topElText.appendChild(date);
             
             
             // cards.innerHTML = ``;
