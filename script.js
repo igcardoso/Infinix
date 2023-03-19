@@ -98,7 +98,7 @@ window.onload = function() {
           grey: '#F9F9F9',
           darkGrey: '#000000',
           dark: '#000000',
-          inverseDark: '#ffffff',
+          inverseDark: 'rgba(248,248,248,0.497)',
           update: 'true'
         });
       });
