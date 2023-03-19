@@ -1345,6 +1345,7 @@ body {
   width: 100%;
   padding: 8px;
   background: var(--light);
+  color: var(--dark);
   padding-left: 20px;
   font-weight: 500;
 }
@@ -1363,7 +1364,7 @@ body {
 
 .page6 .configuration_options button span {
   width: 100%;
-  color: rgba(0,0,0,0.617);
+  color: var(--dark);
   font-weight: 600;
 }
 
@@ -1374,5 +1375,5 @@ body {
 }
 
 .page6 .configuration_options button span:last-child svg {
-  fill: rgba(0,0,0,0.617);
+  fill: var(--dark);
 }
