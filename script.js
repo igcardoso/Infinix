@@ -272,13 +272,13 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
           var display = document.getElementById('${doc.data().name}affairs').style.display;
 
           if (display == 'none') {
-          document.getElementById('${doc.data().name}affairs').style.display = 'block';
+          document.getElementById('${doc.data().name}affairs${doc.data().date}').style.display = 'block';
           } else {
-          document.getElementById('${doc.data().name}affairs').style.display = 'none';
+          document.getElementById('${doc.data().name}affairs${doc.data().date}').style.display = 'none';
           }
           " class="plus"><i>mais...</i>
           </li>
-          <ul id="${doc.data().name}affairs">
+          <ul id="${doc.data().name}affairs${doc.data().date}">
           <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
           <li class="${doc.data().description}" >${doc.data().description}</li>
         <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
