@@ -98,7 +98,7 @@ window.onload = function() {
           grey: '#F9F9F9',
           darkGrey: '#000000',
           dark: '#000000',
-          inverseDark: '#f8f8f87f',
+          inverseDark: '#c5c5c5',
           update: 'true'
         });
       });
@@ -525,7 +525,7 @@ function getIp(callback) {
             grey: '#F9F9F9',
             darkGrey: '##000000',
             dark: '#000000',
-            inverseDark: '#f8f8f87f'
+            inverseDark: '#c5c5c5'
           });
         });
 
