@@ -38,8 +38,10 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
+
+      var users = firebase.firestore().collection('users');
       
-      var card = {
+      users.doc(`${user.uid}`).set({
         name: user.displayName,
         photograph: user.photoURL,
         light: '#3838387c',
@@ -47,10 +49,6 @@ window.onload = function() {
         grey: '#000000',
         darkGrey: '#ffffff',
         dark: '#ffffff'
-      };
-
-      firebase.firestore().collection('users').add(card).then(() => {
-        console.log('dados salvos');
       });
       
       var profile = document.querySelector("nav .containerUser .profile .user");
