@@ -85,7 +85,8 @@ window.onload = function() {
           blue: '#ffffff',
           grey: '#F9F9F9',
           darkGrey: '#000000',
-          dark: '#000000'
+          dark: '#000000',
+          update: 'true'
         });
       });
 
