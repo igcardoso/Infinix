@@ -1363,6 +1363,7 @@ body {
 
 .page6 .configuration_options button span {
   width: 100%;
+  color: #00000048;
 }
 
 .page6 .configuration_options button span:last-child {
