@@ -1336,6 +1336,7 @@ body {
   width: 100%;
   padding: 8px;
   background: var(--light);
+  padding-left: 30px;
 }
 
 .page6 .configuration_options button {
@@ -1344,6 +1345,7 @@ body {
   background: var(--grey);
   border: 0;
   text-align: left;
+  padding-left: 30px;
 }
 
 .page6 #logout {
