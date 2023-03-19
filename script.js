@@ -39,7 +39,7 @@ window.onload = function() {
 
       window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
-      var profile = document.querySelector(".profile");
+      var profile = document.querySelector("nav .profile");
       var nameOfTheStartMarker = document.querySelector(".home .elementsOfHome .head-title .left .breadcrumb li .name");
 
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
