@@ -1335,6 +1335,12 @@ body {
   background: var(--light);
 }
 
+.page6 .configuration_options button {
+  width: 100%;
+  padding: 8px;
+  background: var(--grey);
+}
+
 .page6 #logout {
   border: 0;
   border-radius: var(--border-radius);
