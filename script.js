@@ -40,41 +40,41 @@ window.onload = function() {
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
 
       db.collection('users').doc(user.uid).onSnapshot((doc)=> {
-          var body = document.querySelector("body");
-          var style = document.createElement("div");
-          style.innerHTML = `<style type="text/css" media="all"> 
-          :root {
-          
-          --poppins: 'Raleway', sans-serif;
-          --lato: 'Lato', sans-serif;
+        var body = document.querySelector("body");
+        var style = document.createElement("div");
+        style.innerHTML = `<style type="text/css" media="all">
+        :root {
 
-          --light: ${doc.data().light};
-          --blue: ${doc.data().blue};
-          --blue-ios: #329FFC;
-          --light-blue: #CFE8FF;
-          --grey: ${doc.data().grey};
-          --dark-grey: ${doc.data().darkGrey};
-          --dark: ${doc.data().dark};
-          --red: #DB504A;
-          --yellow: #FFCE26;
-          --light-yellow: #FFF2C6;
-          --orange: #FD7238;
-          --light-orange: #FFE0D3;
-          --white: #FFFFFF;
-          --box-shadow: 0px 0px 15px #8383833e;
-          --border-radius: 1.5em;
-          }
+        --poppins: 'Raleway', sans-serif;
+        --lato: 'Lato', sans-serif;
 
-          svg {
-          fill: var(--dark);
-          }
+        --light: ${doc.data().light};
+        --blue: ${doc.data().blue};
+        --blue-ios: #329FFC;
+        --light-blue: #CFE8FF;
+        --grey: ${doc.data().grey};
+        --dark-grey: ${doc.data().darkGrey};
+        --dark: ${doc.data().dark};
+        --red: #DB504A;
+        --yellow: #FFCE26;
+        --light-yellow: #FFF2C6;
+        --orange: #FD7238;
+        --light-orange: #FFE0D3;
+        --white: #FFFFFF;
+        --box-shadow: 0px 0px 15px #8383833e;
+        --border-radius: 1.5em;
+        }
 
-          </style>`;
-          body.appendChild(style);
+        svg {
+        fill: var(--dark);
+        }
 
-          return doc.data();
+        </style>`;
+        body.appendChild(style);
+
+        return doc.data();
       });
-      
+
       var users = firebase.firestore().collection('users');
 
       users.doc(user.uid).set({
@@ -496,10 +496,22 @@ function getIp(callback) {
             alert("Adicionado com sucesso");
             form.reset()
           });
-          
-          // página de ajustes
-          
-          
+
+        // página de ajustes
+
+        var clear_mode = document.querySelector("#clear_mode");
+        var dark_mode = document.querySelector("#dark_mode");
+
+        clear_mode.addEventListener("click", ()=> {
+          db.collection('highlights').doc(user.uid).update({
+            light: '#EFEFEF',
+            blue: '#ffffff',
+            grey: '#F9F9F9',
+            darkGrey: '##000000',
+            dark: '#000000'
+          });
+        });
+
 
       } else {
         var provider = new firebase.auth.GoogleAuthProvider();
