@@ -104,7 +104,6 @@ body {
   right: 8px;
   width: 280px;
   height: calc(100% - 16px);
-  background: none;
   z-index: 2000;
   font-family: var(--lato);
   transition: .3s ease;
