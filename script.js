@@ -48,7 +48,7 @@ window.onload = function() {
           --poppins: 'Raleway', sans-serif;
           --lato: 'Lato', sans-serif;
 
-          --light: #EFEFEF;
+          --light: ${doc.data().light};
           --blue: #ffffff;
           --blue-ios: #329FFC;
           --light-blue: #CFE8FF;
