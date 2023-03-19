@@ -276,7 +276,7 @@ function getIp(callback) {
             <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
             <li class="${doc.data().description}" >${doc.data().description}</li>
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
-            <li>${doc.data().stitches}</li>
+            <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
             </ul>
             </ul>`;
 
@@ -311,7 +311,7 @@ function getIp(callback) {
             <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
             <li class="${doc.data().description}">${doc.data().description}</li>
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-            <li>${doc.data().stitches}</li>
+            <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
             </ul>
             </ul>`;
 
