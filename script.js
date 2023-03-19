@@ -411,8 +411,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
 
 
       document.querySelector("#publish__evaluations").addEventListener("submit",
-        ()=> {
-          window.alert("Adicionado com sucesso");
+        (e)=> {
+          e.preventDefault();
           var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
           var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
           var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
@@ -429,6 +429,8 @@ db.collection('authorizedDevices').onSnapshot((data)=> {
             photograph: photographEvaluation,
             stitches: stitchesEvaluation
           });
+          alert("Adicionado com sucesso"); 
+          form.reset()
         });
 
     } else {
