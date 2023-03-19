@@ -1310,15 +1310,15 @@ body {
 }
 
 .page6 .container_info {
-  margin-top: 10px;
+  margin-top: 6px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .page6 .profile {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
