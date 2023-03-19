@@ -512,6 +512,16 @@ function getIp(callback) {
           });
         });
 
+        dark_mode.addEventListener("click", ()=> {
+          db.collection('users').doc(user.uid).update({
+            light: '#3838387c',
+            blue: '#000000',
+            grey: '#000000',
+            darkGrey: '#ffffff',
+            dark: '#ffffff'
+          });
+        });
+
 
       } else {
         var provider = new firebase.auth.GoogleAuthProvider();
