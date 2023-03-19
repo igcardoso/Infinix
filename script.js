@@ -38,7 +38,7 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
-      /*
+      
       var card = {
         name: user.displayName,
         photograph: user.photoURL,
@@ -49,21 +49,10 @@ window.onload = function() {
         dark: '#ffffff'
       };
 
-      firebase.firestore().collection('users').add(card).then(() => {
+      firebase.firestore().collection('users').child(user.uid).set(card).then(() => {
         console.log('dados salvos');
       });
-      */
-      var ref = firebase.database().ref('users');
-
-      var card = {
-        nome: igor,
-        idade: 15,
-        curtidas: 0
-      };
-      ref.child(user.uid).set(card).then(() => {
-        window.alert("pronto")
-     });
-     
+      
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
       var settings_name = document.querySelector(".page6 .name");
