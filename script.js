@@ -128,7 +128,7 @@ window.onload = function() {
       settings_mail.innerHTML = user.email;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
-      const userLogin = user.email;
+      const userLogin = user.tel;
 
 
       /*
