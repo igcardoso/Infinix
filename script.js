@@ -388,22 +388,22 @@ function getIp(callback) {
                 day.innerHTML = "Segunda: " + doc.data().name
                 break;
               case '2023-03-20':
-                day.innerHTML = "Terça" + doc.data().name
+                day.innerHTML = "Terça: " + doc.data().name
                 break;
               case '2023-03-21':
-                day.innerHTML = "Quinta" + doc.data().name
+                day.innerHTML = "Quinta: " + doc.data().name
                 break;
               case '2023-03-22':
-                day.innerHTML = "Sexta" + doc.data().name
+                day.innerHTML = "Sexta: " + doc.data().name
                 break;
               case '2023-03-23':
-                day.innerHTML = "Sábado" + doc.data().name
+                day.innerHTML = "Sábado: " + doc.data().name
                 break;
               case '2023-03-24':
-                day.innerHTML = "Domingo" + doc.data().name
+                day.innerHTML = "Domingo: " + doc.data().name
                 break;
               case '2023-03-25':
-                day.innerHTML = "Segunda" + doc.data().name
+                day.innerHTML = "Segunda: " + doc.data().name
                 break;
 
               default:
