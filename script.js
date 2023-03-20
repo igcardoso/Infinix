@@ -38,6 +38,12 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
+      db.collection('loading').doc('global').onSnapshot((doc)=> {
+        
+        if (doc.data().status == 'true') {
+          document.querySelector(".loading").style.left = "-1000%";
+        }
+      });
 
       db.collection('users').doc(user.uid).onSnapshot((doc)=> {
         var body = document.querySelector("body");
@@ -72,36 +78,37 @@ window.onload = function() {
 
         </style>`;
         body.appendChild(style);
-        
+
         if (doc.data().update == 'true') {
           document.querySelector("#update ").style.display = "none";
-          document.querySelector("main").style.opacity = "1"; 
+          document.querySelector("main").style.opacity = "1";
           document.querySelector("nav").style.opacity = "1";
         } else {
-          document.querySelector("#update ").style.display = "block"; 
-          document.querySelector("main").style.opacity = ".3"; 
-          document.querySelector("nav").style.opacity = ".3"; 
+          document.querySelector("#update ").style.display = "block";
+          document.querySelector("main").style.opacity = ".3";
+          document.querySelector("nav").style.opacity = ".3";
         }
-        
-        
+
+
         return doc.data();
       });
 
-      document.querySelector("#start_update").addEventListener("click", ()=> {
-        var users = firebase.firestore().collection('users');
+      document.querySelector("#start_update").addEventListener("click",
+        ()=> {
+          var users = firebase.firestore().collection('users');
 
-        users.doc(user.uid).set({
-          name: user.displayName,
-          photograph: user.photoURL,
-          light: '#EFEFEF',
-          blue: '#ffffff',
-          grey: '#F9F9F9',
-          darkGrey: '#000000',
-          dark: '#000000',
-          inverseDark: '#c5c5c5',
-          update: 'true'
+          users.doc(user.uid).set({
+            name: user.displayName,
+            photograph: user.photoURL,
+            light: '#EFEFEF',
+            blue: '#ffffff',
+            grey: '#F9F9F9',
+            darkGrey: '#000000',
+            dark: '#000000',
+            inverseDark: '#c5c5c5',
+            update: 'true'
+          });
         });
-      });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
       var settings_profile = document.querySelector(".page6 .profile");
