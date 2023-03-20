@@ -39,21 +39,11 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  animation: loading3s;
+  animation: loading 3s;
+  -webkit-backdrop-filter: blur(10px);
   text-align: center;
   z-index: 20000000;
   transition: 2s ease;
-}
-
-.loading::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  filter: blur(20px);
-  z-index: -1;
 }
 
 .loading .name-uiFace {
@@ -70,7 +60,7 @@ body {
   background: none;
   border: 2.6px solid #000000;
   border-radius: 8em;
-  animation: spiner.9s linear infinite;
+  animation: spiner .9s linear infinite;
 }
 
 @keyframes spiner {
