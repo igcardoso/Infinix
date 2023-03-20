@@ -84,9 +84,9 @@ body {
      position: absolute;
      top: 5px;
      left: 5px;
-     background: #000;
+     background: var(--dark);
      border-radius: 8em;
-     border: 2.5px solid #000;
+     border: 2.5px solid var(--dark);
    }
   
 
