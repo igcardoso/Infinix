@@ -378,6 +378,7 @@ function getIp(callback) {
             day.style.padding = "20px";
             day.style.width = "100%";
             day.style.background = "red";
+            day.style.color = "blue";
             
             if(doc.data().date == '2023/03/23') {
               day.innerHTML = "Quarta" + doc.data().name
