@@ -371,30 +371,18 @@ function getIp(callback) {
             // *******************************
 
             document.querySelector("#affairs").appendChild(Affairs);
-
-
-            var Xmas95 = new Date('Março 23, 2023 17:54:00');
-            var weekday = Xmas95.getDay();
-
-            console.log(weekday)
-            switch (weekday) {
-              case 1:
-               
-                document.querySelector(".page2").innerHTML = "Segunda Entrega da atividade de: " + doc.data().name
-                
-                break;
-              case 2:
-                document.querySelector(".page2").innerHTML = "Terça Entrega da atividade de: " + doc.data().name
-                break;
-              case 3:
-                document.querySelector(".page2").innerHTML = "Quarta Entrega da atividade de: " + doc.data().name
-                break;
-
-              default:
-                console.log("erro")
-                console.log("Entrega da atividade de: " + doc.data().name)
-              }
-
+            
+            var page2 = document.querySelector(".page2");
+            
+            var day = document.createElement("div");
+            day.style.padding = "20px";
+            day.style.width = "100%";
+            day.style.background = "red";
+            
+            if(doc.data().date == '2023/03/23') {
+              day.innerHTML = "Quarta" + doc.data().name
+            }
+            
               return doc.data();
             });
           });
