@@ -43,7 +43,7 @@ body {
   background: #ffffff;
   text-align: center;
   z-index: 20000000;
-  transition: 1s ease;
+  transition: 2s ease;
 }
 
 .loading .name-uiFace {
