@@ -334,7 +334,7 @@ body {
   margin-top: auto;
   margin-bottom: 0;
   margin: 8px;
-  z-index: 2000;
+  z-index: 1000;
   border-radius: var(--border-radius);
 }
 /*
@@ -1456,12 +1456,10 @@ body {
 }
 
 .page6 .configuration_options {
-  width: 100%;
+  width: calc(100% + 20px);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 300px;
-  left: 0;
+  margin-left: -20px;
   z-index: 1;
 }
 
