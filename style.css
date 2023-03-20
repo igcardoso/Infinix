@@ -1401,7 +1401,7 @@ body {
 }
 
 .releases .submit svg {
-  fill: var(--inverse-dark);
+  fill: var(--light);
 }
 
 
