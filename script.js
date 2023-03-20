@@ -42,7 +42,7 @@ window.onload = function() {
         
         if (doc.data().status == 'true') {
           setTimeout(function() {
-            document.querySelector(".loading").style.left = "-1000%"; 
+            document.querySelector(".loading").style.left = "-1000%";
           }, 1000);
         }
       });
