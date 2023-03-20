@@ -41,7 +41,9 @@ window.onload = function() {
       db.collection('loading').doc('global').onSnapshot((doc)=> {
         
         if (doc.data().status == 'true') {
-          document.querySelector(".loading").style.left = "-1000%";
+          setTimeout(function() {
+            document.querySelector(".loading").style.left = "-1000%"; 
+          }, 1000);
         }
       });
 
