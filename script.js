@@ -39,7 +39,7 @@ window.onload = function() {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
       db.collection('loading').doc('global').onSnapshot((doc)=> {
-        
+
         if (doc.data().status == 'true') {
           setTimeout(function() {
             document.querySelector(".loading").style.left = "-1000%";
@@ -372,198 +372,222 @@ function getIp(callback) {
 
             document.querySelector("#affairs").appendChild(Affairs);
 
-            return doc.data();
+
+            var Xmas95 = new Date('Março 23, 2023 17:54:00');
+            var weekday = Xmas95.getDay();
+
+            console.log(weekday)
+            switch (weekday) {
+              case 1:
+                console.log("Segunda");
+                console.log("Entrega da atividade de: " + doc.data().name)
+                break;
+              case 2:
+                console.log("Terça");
+                console.log("Entrega da atividade de: " + doc.data().name)
+                break;
+              case 3:
+                console.log("Quarta");
+                console.log("Entrega da atividade de: " + doc.data().name)
+                break;
+
+              default:
+                console.log("erro")
+                console.log("Entrega da atividade de: " + doc.data().name)
+              }
+
+              return doc.data();
+            });
           });
-        });
 
-        db.collection('evaluation').onSnapshot((data)=> {
+          db.collection('evaluation').onSnapshot((data)=> {
 
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-            var evaluation = document.createElement("div");
-            evaluation.innerHTML = `<ul>
-            <li class="matter_name">${doc.data().name}</li>
-            <li class="posting_date">Entrega: ${doc.data().date}</li>
-            <li class="more" onclick="
-            var display = document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display;
+            data.docs.map(doc => {
+              console.log("objeto:",
+                doc.data());
+              var evaluation = document.createElement("div");
+              evaluation.innerHTML = `<ul>
+              <li class="matter_name">${doc.data().name}</li>
+              <li class="posting_date">Entrega: ${doc.data().date}</li>
+              <li class="more" onclick="
+              var display = document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display;
 
-            if (display == 'none') {
-            document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'block';
-            } else {
-            document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'none';
+              if (display == 'none') {
+              document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'block';
+              } else {
+              document.getElementById('${doc.data().date}${doc.data().name}evaluations').style.display = 'none';
+              }
+              "  class="plus"><i>mais...</i>
+              </li>
+              <ul id="${doc.data().date}${doc.data().name}evaluations">
+              <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
+              <li class="${doc.data().description}">${doc.data().description}</li>
+              <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
+              <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
+              </ul>
+              </ul>`;
+
+              // *******************************
+
+              document.querySelector("#evaluation").appendChild(evaluation);
+
+              return doc.data();
+            });
+          });
+
+          db.collection('timetables').onSnapshot((data)=> {
+
+            data.docs.map(doc => {
+              console.log("objeto:",
+                doc.data());
+
+              document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
+
+              return doc.data();
+            });
+          });
+
+
+          // Página de controle
+
+
+          document.querySelector("#publish__notification").addEventListener("submit",
+            (e)=> {
+              e.preventDefault();
+              window.alert("Adicionado com sucesso");
+
+              var sender__date = document.querySelector('[name=dateNotifications]').value;
+              var sender__tel = document.querySelector('[name=telNotifications]').value;
+              var message__sender = document.querySelector('[name=messageNotifications]').value;
+
+
+              db.collection('comunicados').add({
+                name: user.displayName,
+                photograph: user.photoURL,
+                contact: sender__tel,
+                message: message__sender,
+                date: sender__date
+              });
+              alert("Adicionado com sucesso");
+              form.reset()
+            });
+
+
+          // Página de ferramentas
+
+
+          document.querySelector("#publish__tools").addEventListener("submit",
+            (e)=> {
+              e.preventDefault();
+              window.alert("Adicionado com sucesso");
+              var nameTools = document.querySelector('[name=nameTools]').value;
+              var linkTools = document.querySelector('[name=linkTools]').value;
+
+
+              db.collection('websites').add({
+                name: nameTools,
+                icon: "bx bx-link",
+                link: linkTools
+              });
+              alert("Adicionado com sucesso");
+              form.reset()
+            });
+
+
+          // Página de trabalhos
+
+
+          document.querySelector("#publish__work").addEventListener("submit",
+            (e)=> {
+              e.preventDefault();
+              var nameWork = document.querySelector('[name=nameWork]').value;
+              var dateWork = document.querySelector('[name=dateWork]').value;
+              var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
+              var photographWork = document.querySelector('[name=photographWork]').value;
+              var stitchesWork = document.querySelector('[name=stitchesWork]').value;
+              var descriptionWork = document.querySelector('[name=descriptionWork]').value;
+
+
+              db.collection('affairs').add({
+                date: dateWork,
+                description: descriptionWork,
+                indexing_files: indexing_filesWork,
+                name: nameWork,
+                photograph: photographWork,
+                stitches: stitchesWork
+              });
+              alert("Adicionado com sucesso");
+              form.reset()
+            });
+
+          // Página de prova
+
+
+          document.querySelector("#publish__evaluations").addEventListener("submit",
+            (e)=> {
+              e.preventDefault();
+              var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
+              var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
+              var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
+              var photographEvaluation = document.querySelector('[name=photographEvaluation]').value;
+              var stitchesEvaluation = document.querySelector('[name=stitchesEvaluation]').value;
+              var descriptionEvaluation = document.querySelector('[name=descriptionEvaluation]').value;
+
+
+              db.collection('evaluation').add({
+                date: dateEvaluation,
+                description: descriptionEvaluation,
+                indexing_files: indexing_filesEvaluation,
+                name: nameEvaluation,
+                photograph: photographEvaluation,
+                stitches: stitchesEvaluation
+              });
+              alert("Adicionado com sucesso");
+              form.reset()
+            });
+
+          // página de ajustes
+
+          var clear_mode = document.querySelector("#clear_mode");
+          var dark_mode = document.querySelector("#dark_mode");
+
+          clear_mode.addEventListener("click", ()=> {
+            db.collection('users').doc(user.uid).update({
+              light: '#EFEFEF',
+              blue: '#ffffff',
+              grey: '#F9F9F9',
+              darkGrey: '##000000',
+              dark: '#000000',
+              inverseDark: '#c5c5c5'
+            });
+          });
+
+          dark_mode.addEventListener("click", ()=> {
+            db.collection('users').doc(user.uid).update({
+              light: '#3838387c',
+              blue: '#000000',
+              grey: '#000000',
+              darkGrey: '#ffffff',
+              dark: '#ffffff',
+              inverseDark: '#f8f8f87f'
+            });
+          });
+
+
+        } else {
+          var provider = new firebase.auth.GoogleAuthProvider();
+
+          firebase.auth().signInWithRedirect(provider).then(resposta => {
+            if (resposta.credential) {
+              const token = resposta.credential.accessToken;
             }
-            "  class="plus"><i>mais...</i>
-            </li>
-            <ul id="${doc.data().date}${doc.data().name}evaluations">
-            <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
-            <li class="${doc.data().description}">${doc.data().description}</li>
-            <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
-            <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
-            </ul>
-            </ul>`;
-
-            // *******************************
-
-            document.querySelector("#evaluation").appendChild(evaluation);
-
-            return doc.data();
-          });
-        });
-
-        db.collection('timetables').onSnapshot((data)=> {
-
-          data.docs.map(doc => {
-            console.log("objeto:",
-              doc.data());
-
-            document.querySelector("#timetables").innerHTML = `<img onclick="window.location.href = 'images/${doc.data().image}.jpg'" style="width: 100%; border-radius: var(--border-radius);" src="images/${doc.data().image}.jpg" alt="Horários" />`;
-
-            return doc.data();
-          });
-        });
-
-
-        // Página de controle
-
-
-        document.querySelector("#publish__notification").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            window.alert("Adicionado com sucesso");
-
-            var sender__date = document.querySelector('[name=dateNotifications]').value;
-            var sender__tel = document.querySelector('[name=telNotifications]').value;
-            var message__sender = document.querySelector('[name=messageNotifications]').value;
-
-
-            db.collection('comunicados').add({
-              name: user.displayName,
-              photograph: user.photoURL,
-              contact: sender__tel,
-              message: message__sender,
-              date: sender__date
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-
-        // Página de ferramentas
-
-
-        document.querySelector("#publish__tools").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            window.alert("Adicionado com sucesso");
-            var nameTools = document.querySelector('[name=nameTools]').value;
-            var linkTools = document.querySelector('[name=linkTools]').value;
-
-
-            db.collection('websites').add({
-              name: nameTools,
-              icon: "bx bx-link",
-              link: linkTools
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-
-        // Página de trabalhos
-
-
-        document.querySelector("#publish__work").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            var nameWork = document.querySelector('[name=nameWork]').value;
-            var dateWork = document.querySelector('[name=dateWork]').value;
-            var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
-            var photographWork = document.querySelector('[name=photographWork]').value;
-            var stitchesWork = document.querySelector('[name=stitchesWork]').value;
-            var descriptionWork = document.querySelector('[name=descriptionWork]').value;
-
-
-            db.collection('affairs').add({
-              date: dateWork,
-              description: descriptionWork,
-              indexing_files: indexing_filesWork,
-              name: nameWork,
-              photograph: photographWork,
-              stitches: stitchesWork
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-        // Página de prova
-
-
-        document.querySelector("#publish__evaluations").addEventListener("submit",
-          (e)=> {
-            e.preventDefault();
-            var nameEvaluation = document.querySelector('[name=nameEvaluation]').value;
-            var dateEvaluation = document.querySelector('[name=dateEvaluation]').value;
-            var indexing_filesEvaluation = document.querySelector('[name=indexing_filesEvaluation]').value;
-            var photographEvaluation = document.querySelector('[name=photographEvaluation]').value;
-            var stitchesEvaluation = document.querySelector('[name=stitchesEvaluation]').value;
-            var descriptionEvaluation = document.querySelector('[name=descriptionEvaluation]').value;
-
-
-            db.collection('evaluation').add({
-              date: dateEvaluation,
-              description: descriptionEvaluation,
-              indexing_files: indexing_filesEvaluation,
-              name: nameEvaluation,
-              photograph: photographEvaluation,
-              stitches: stitchesEvaluation
-            });
-            alert("Adicionado com sucesso");
-            form.reset()
-          });
-
-        // página de ajustes
-
-        var clear_mode = document.querySelector("#clear_mode");
-        var dark_mode = document.querySelector("#dark_mode");
-
-        clear_mode.addEventListener("click", ()=> {
-          db.collection('users').doc(user.uid).update({
-            light: '#EFEFEF',
-            blue: '#ffffff',
-            grey: '#F9F9F9',
-            darkGrey: '##000000',
-            dark: '#000000',
-            inverseDark: '#c5c5c5'
-          });
-        });
-
-        dark_mode.addEventListener("click", ()=> {
-          db.collection('users').doc(user.uid).update({
-            light: '#3838387c',
-            blue: '#000000',
-            grey: '#000000',
-            darkGrey: '#ffffff',
-            dark: '#ffffff',
-            inverseDark: '#f8f8f87f'
-          });
-        });
-
-
-      } else {
-        var provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithRedirect(provider).then(resposta => {
-          if (resposta.credential) {
-            const token = resposta.credential.accessToken;
-          }
-          const user = resposta.user;
-        }).catch(error => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          const email = error.email;
-          const credential = error.credential;
-        })
-      }
-    })
+            const user = resposta.user;
+          }).catch(error => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            const email = error.email;
+            const credential = error.credential;
+          })
+        }
+      })
   }
