@@ -248,9 +248,9 @@ developer4.addEventListener("mouseout", function() {
 });
 
 document.querySelector("#terms_of_use").addEventListener("click", ()=> {
-  window.location.href = "pages/terms_of_use.html";
+  window.open('pages/terms_of_use.html', '_blank');
 });
 
 document.querySelector("#privacy_policy").addEventListener("click", ()=> {
-  window.location.href = "pages/privacy_policy.html";
+   window.open('pages/privacy_policy.html', '_blank');
 });
