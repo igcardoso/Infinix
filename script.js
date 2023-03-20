@@ -379,16 +379,15 @@ function getIp(callback) {
             console.log(weekday)
             switch (weekday) {
               case 1:
-                console.log("Segunda");
-                console.log("Entrega da atividade de: " + doc.data().name)
+               
+                document.querySelector("#page2").innerHTML = "Segunda Entrega da atividade de: " + doc.data().name
+                
                 break;
               case 2:
-                console.log("Terça");
-                console.log("Entrega da atividade de: " + doc.data().name)
+                document.querySelector("#page2").innerHTML = "Terça Entrega da atividade de: " + doc.data().name
                 break;
               case 3:
-                console.log("Quarta");
-                console.log("Entrega da atividade de: " + doc.data().name)
+                document.querySelector("#page2").innerHTML = "Quarta Entrega da atividade de: " + doc.data().name
                 break;
 
               default:
