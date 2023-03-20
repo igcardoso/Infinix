@@ -371,20 +371,48 @@ function getIp(callback) {
             // *******************************
 
             document.querySelector("#affairs").appendChild(Affairs);
-            
+
             var page2 = document.querySelector("#page2");
-            
+
             var day = document.createElement("div");
             day.style.padding = "20px";
             day.style.width = "100%";
+            day.style.height = "60px";
             day.style.background = "red";
             day.style.color = "blue";
-           if(doc.data().date == '2023-03-22') {
-              day.innerHTML = "Terça" + doc.data().name
-          }
-            
-            page2.appendChild(day)
-            
+
+            switch (doc.data().date) {
+              case '2023-03-21':
+                day.innerHTML = "Segunda" + doc.data().name
+                break;
+              case '2023-03-22':
+                day.innerHTML = "Segunda" + doc.data().name
+                break;
+              case '2023-03-23':
+                day.innerHTML = "Terça" + doc.data().name
+                break;
+              case '2023-03-24':
+                day.innerHTML = "Quinta" + doc.data().name
+                break;
+              case '2023-03-25':
+                day.innerHTML = "Sexta" + doc.data().name
+                break;
+              case '2023-03-26':
+                day.innerHTML = "Sábado" + doc.data().name
+                break;
+              case '2023-03-27':
+                day.innerHTML = "Domingo" + doc.data().name
+                break;
+              case '2023-03-28':
+                day.innerHTML = "Segunda" + doc.data().name
+                break;
+
+              default:
+                // code
+              }
+
+              page2.appendChild(day)
+
               return doc.data();
             });
           });
