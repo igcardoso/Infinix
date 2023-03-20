@@ -1144,6 +1144,9 @@ body {
   }
 
 
+  #sidebar .side-menu li.active {
+    background: var(--dark);
+  }
   #sidebar .side-menu li.active::before {
     display: none;
   }
