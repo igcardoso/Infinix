@@ -377,9 +377,11 @@ function getIp(callback) {
             var day = document.createElement("div");
             day.style.padding = "20px";
             day.style.width = "100%";
+            day.style.borderRadius = "var(--border-radius)";
+            day.style.marginTop = "20px";
             day.style.height = "60px";
-            day.style.background = "red";
-            day.style.color = "blue";
+            day.style.background = "var(--light)";
+            day.style.color = "var(--dark)";
 
             switch (doc.data().date) {
               case '2023-03-21':
