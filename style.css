@@ -652,7 +652,7 @@ body {
   font-weight: 700;
   font-size: 15px;
   background: var(--light);
-  width: 20%;
+  width: 100%;
   color: var(--dark);
   padding: 15px;
   border-radius: var(--border-radius);
