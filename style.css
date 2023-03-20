@@ -47,7 +47,6 @@ body {
 
 .loading::before {
   content: '';
-  margin: -35px;
   position: absolute;
   top: 0;
   right: 0;
