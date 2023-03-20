@@ -38,12 +38,12 @@ window.onload = function() {
     if (user) {
 
       // window.alert("Olá " + user.displayName + ", o app está em manutenção e pode apresentar falhas.");
-      db.collection('loading').doc('global').onSnapshot((doc)=> {
+     /* db.collection('loading').doc('global').onSnapshot((doc)=> {
         
         if (doc.data().status == 'true') {
           document.querySelector(".loading").style.left = "-1000%";
         }
-      });
+      });*/
 
       db.collection('users').doc(user.uid).onSnapshot((doc)=> {
         var body = document.querySelector("body");
