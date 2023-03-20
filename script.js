@@ -372,7 +372,7 @@ function getIp(callback) {
 
             document.querySelector("#affairs").appendChild(Affairs);
             
-            var page2 = document.querySelector(".page2");
+            var page2 = document.querySelector("#page2");
             
             var day = document.createElement("div");
             day.style.padding = "20px";
