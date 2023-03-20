@@ -1330,7 +1330,7 @@ body {
 
 #containment-card-notifications .cards .adms .text {
   position: absolute;
-  color: var(--inverse-dark);
+  color: var(--grey);
   background: var(--dark);
   padding: 5px 10px 5px 10px;
   border-radius: var(--border-radius);
