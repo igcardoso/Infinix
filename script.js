@@ -383,6 +383,8 @@ function getIp(callback) {
               day.innerHTML = "Quarta" + doc.data().name
             }
             
+            page2.appendChild(day)
+            
               return doc.data();
             });
           });
