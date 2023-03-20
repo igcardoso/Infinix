@@ -1147,7 +1147,7 @@ body {
   #sidebar .side-menu li.active {
     background: var(--dark);
   }
-  #sidebar .side-menu li.active button {
+  #sidebar .side-menu li.active .options {
     background: none;
   }
   #sidebar .side-menu li.active i {
