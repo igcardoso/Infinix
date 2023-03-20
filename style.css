@@ -1147,7 +1147,7 @@ body {
   #sidebar .side-menu li.active {
     background: var(--dark);
   }
-  #sidebar .side-menu li.active i {
+  #sidebar .side-menu li.active i, button {
     background: var(--dark);
   }
   #sidebar .side-menu li.active::before {
