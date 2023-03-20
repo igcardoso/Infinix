@@ -68,7 +68,7 @@ body {
      width: 24px;
      height: 24px;
      background: none;
-     border: 2.6px solid #000;
+     border: 2.6px solid var(--dark);
      border-radius: 8em;
      animation: spiner .9s linear infinite;
    }
