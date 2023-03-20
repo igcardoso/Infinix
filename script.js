@@ -220,7 +220,7 @@ function getIp(callback) {
               <img class="img3" src="images/user_03.jpg" />
               <img class="img4" src="images/user_04.jpg" />
               <a style="text-decoration: none;" href="https://wa.me/55${doc.data().contact}?text=Oi,%20gostaria%20de%20reportar%20um%20erro%20ou%20fazer uma sugestão" class="text" id="support">
-              responder a ${doc.data().name}
+              responder
               </a>
               </div>`;
 
