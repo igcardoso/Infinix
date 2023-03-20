@@ -125,7 +125,7 @@ window.onload = function() {
       settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_name.innerHTML = user.displayName;
       uid.innerHTML = user.uid;
-      settings_mail.innerHTML = user.tel;
+      settings_mail.innerHTML = user.email;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
       const userLogin = user.email;
