@@ -379,7 +379,7 @@ function getIp(callback) {
             day.style.width = "100%";
             day.style.background = "red";
             day.style.color = "blue";
-           if(doc.data().date == '2023/03/22') {
+           if(doc.data().date == '2023-03-22') {
               day.innerHTML = "Terça" + doc.data().name
           }
             
