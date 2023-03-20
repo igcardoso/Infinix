@@ -339,7 +339,7 @@ function getIp(callback) {
           });
         });
 
-        db.collection('affairs').onSnapshot((data)=> {
+        db.collection('affairs').orderBy("date", "desc").onSnapshot((data)=> {
 
           data.docs.map(doc => {
             console.log("objeto:",
