@@ -33,13 +33,13 @@ body {
 }
 
 
-.loading{
+.loading {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  animation: loading 3s;
+  animation: loading3s;
   background: #ffffff;
   text-align: center;
   z-index: 20000000;
@@ -51,44 +51,34 @@ body {
   font-weight: 700;
 }
 
-@keyframes loading {
 
-    0%,
-    25%,
-    50%,
-    75%,
-    100%{
-      left: 0;
-    }
-  }
-  
-   .lds-spinner {
-     margin: 70% auto 1%;
-     position: relative;
-     width: 24px;
-     height: 24px;
-     background: none;
-     border: 2.6px solid #000000;
-     border-radius: 8em;
-     animation: spiner .9s linear infinite;
-   }
-   
+.lds-spinner {
+  margin: 70% auto 1%;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: 2.6px solid #000000;
+  border-radius: 8em;
+  animation: spiner.9s linear infinite;
+}
+
 @keyframes spiner {
-  
-    100% {
-      transform: rotate(360deg);
-    }
+
+  100% {
+    transform: rotate(360deg);
   }
-   
-   .lds-spinner div {
-     position: absolute;
-     top: 5px;
-     left: 5px;
-     background: #000000;
-     border-radius: 8em;
-     border: 2.5px solid #000000;
-   }
-  
+}
+
+.lds-spinner div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #000000;
+  border-radius: 8em;
+  border: 2.5px solid #000000;
+}
+
 
 #update {
   position: fixed;
@@ -110,7 +100,7 @@ body {
   background: #329FFC;
   padding: 10px;
   padding-left: 20px;
-  padding-right: 20px; 
+  padding-right: 20px;
   border: 0;
   border-radius: 1.5em;
   margin-bottom: 20px;
@@ -624,7 +614,7 @@ body {
   left: 20px;
   z-index: 100;
   transform: rotate(180deg);
-  margin-bottom:-3px;
+  margin-bottom: -3px;
 }
 
 .home .highlight {
@@ -767,7 +757,7 @@ body {
   padding: 10px;
   color: var(--grey);
   margin: 18px auto 18px;
-  border-radius:  var(--border-radius);
+  border-radius: var(--border-radius);
   position: relative;
 }
 
@@ -1070,9 +1060,9 @@ body {
     display: none;
   }
 }
-  
+
 @media screen and (max-width: 576px) {
-  
+
   #content main {
     padding: 10px 10px;
     padding-top: 90px;
@@ -1084,7 +1074,7 @@ body {
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
   }
-  
+
   #content main.activEsuBpage {
     padding-top: 10px;
   }
@@ -1204,8 +1194,8 @@ body {
 
   #content nav form.show ~ .notification {
     display: none;
-  } 
-  
+  }
+
   #content nav form.show ~ .containerUser {
     display: none;
   }
@@ -1443,7 +1433,7 @@ body {
 
 .page6 .container_info .mail {
   font-size: 14px;
-  color: var(--dark) /*#00000048*/;
+  color: var(--dark)/*#00000048*/;
   opacity: .7;
 }
 
