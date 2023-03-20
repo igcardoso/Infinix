@@ -36,7 +36,7 @@ menuBar.addEventListener('click', function () {
     sidebar.classList.toggle('hide');
     sidebar.classList.remove('mobileHide');
   }
-})
+});
 
 
 
@@ -71,7 +71,7 @@ searchButton.addEventListener('click', function (e) {
       searchButtonIcon.innerHTML = ""
     }
   }
-})
+});
 
 
 
@@ -97,7 +97,7 @@ window.addEventListener('resize', function () {
   } else {
     sidebar.classList.replace('hide', 'mobileHide');
   }
-})
+});
 
 
 // ação de mudança de página ao clicar em uma opção no menu lateral
@@ -191,7 +191,7 @@ document.querySelector("nav .op7").addEventListener("click", function() {
 
 document.querySelector("#logout").addEventListener("click", function() {
   document.querySelector("#confirmation").display = "block"
-})
+});
 
 // Interações básicas
 
@@ -204,45 +204,53 @@ var label = document.querySelector("#content .home .containment-support label");
 developer1.addEventListener("mouseup", function() {
   label.innerHTML = "@Igor O. Cardoso | developer"
   label.style.opacity = "1"
-})
+});
 
 developer1.addEventListener("mouseout", function() {
   label.innerHTML = ""
   label.style.opacity = "0"
-})
+});
 
 // img2
 
 developer2.addEventListener("mouseup", function() {
   label.innerHTML = "@Sarah | adm"
   label.style.opacity = "1"
-})
+});
 
 developer2.addEventListener("mouseout", function() {
   label.innerHTML = ""
   label.style.opacity = "0"
-})
+});
 
 // img3
 
 developer3.addEventListener("mouseup", function() {
   label.innerHTML = "@Clara | adm"
   label.style.opacity = "1"
-})
+});
 
 developer3.addEventListener("mouseout", function() {
   label.innerHTML = ""
   label.style.opacity = "0"
-})
+});
 
 // img4
 
 developer4.addEventListener("mouseup", function() {
   label.innerHTML = "@Bruno Rios | developer"
   label.style.opacity = "1"
-})
+});
 
 developer4.addEventListener("mouseout", function() {
   label.innerHTML = ""
   label.style.opacity = "0"
-})
+});
+
+document.querySelector("#terms_of_use").addEventListener("click", ()=> {
+  window.location.href = "pages/terms_of_use.html";
+});
+
+document.querySelector("#privacy_policy").addEventListener("click", ()=> {
+  window.location.href = "pages/privacy_policy.html";
+});
