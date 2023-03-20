@@ -384,28 +384,25 @@ function getIp(callback) {
             day.style.color = "var(--dark)";
 
             switch (doc.data().date) {
-              case '2023-03-21':
-                day.innerHTML = "Segunda" + doc.data().name
+              case '2023-03-19':
+                day.innerHTML = "Segunda: " + doc.data().name
                 break;
-              case '2023-03-22':
-                day.innerHTML = "Segunda" + doc.data().name
-                break;
-              case '2023-03-23':
+              case '2023-03-20':
                 day.innerHTML = "Terça" + doc.data().name
                 break;
-              case '2023-03-24':
+              case '2023-03-21':
                 day.innerHTML = "Quinta" + doc.data().name
                 break;
-              case '2023-03-25':
+              case '2023-03-22':
                 day.innerHTML = "Sexta" + doc.data().name
                 break;
-              case '2023-03-26':
+              case '2023-03-23':
                 day.innerHTML = "Sábado" + doc.data().name
                 break;
-              case '2023-03-27':
+              case '2023-03-24':
                 day.innerHTML = "Domingo" + doc.data().name
                 break;
-              case '2023-03-28':
+              case '2023-03-25':
                 day.innerHTML = "Segunda" + doc.data().name
                 break;
 
