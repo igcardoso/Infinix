@@ -94,45 +94,6 @@ window.onload = function() {
 
         return doc.data();
       });
-      
-      // termos de uso e política de privacidade 
-      
-      db.collection('users').doc(user.uid).onSnapshot((doc)=> {
-        var terms_and_policy = document.querySelector("#terms_and_policy");
-        var style_terms_and_policy = document.createElement("div");
-        style.innerHTML = `<style type="text/css" media="all">
-        :root {
-
-        --poppins: 'Raleway', sans-serif;
-        --lato: 'Lato', sans-serif;
-
-        --light: ${doc.data().light};
-        --blue: ${doc.data().blue};
-        --blue-ios: #329FFC;
-        --light-blue: #CFE8FF;
-        --grey: ${doc.data().grey};
-        --dark-grey: ${doc.data().darkGrey};
-        --dark: ${doc.data().dark};
-        --inverse-dark: ${doc.data().inverseDark};
-        --red: #DB504A;
-        --yellow: #FFCE26;
-        --light-yellow: #FFF2C6;
-        --orange: #FD7238;
-        --light-orange: #FFE0D3;
-        --white: #FFFFFF;
-        --box-shadow: 0px 0px 15px #8383833e;
-        --border-radius: 1.5em;
-        }
-
-        svg {
-        fill: var(--dark);
-        }
-
-        </style>`;
-        terms_and_policy.appendChild(style_terms_and_policy);
-
-        return doc.data();
-      });
 
       document.querySelector("#start_update").addEventListener("click",
         ()=> {
