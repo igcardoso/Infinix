@@ -1290,7 +1290,8 @@ body {
 
 #containment-card-notifications .cards .container .text p {
   font-size: 13px;
-  color: #00000048;
+  color: var(--dark);
+  opacity: .7;
 }
 
 #containment-card-notifications .cards .message {
@@ -1329,8 +1330,8 @@ body {
 
 #containment-card-notifications .cards .adms .text {
   position: absolute;
-  color: #ffffff;
-  background: #000000;
+  color: var(--light);
+  background: var(--dark);
   padding: 5px 10px 5px 10px;
   border-radius: var(--border-radius);
   top: 0px;
