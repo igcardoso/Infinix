@@ -125,10 +125,10 @@ window.onload = function() {
       settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_name.innerHTML = user.displayName;
       uid.innerHTML = user.uid;
-      settings_mail.innerHTML = user.email;
+      settings_mail.innerHTML = user.tel;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
-      const userLogin = user.tel;
+      const userLogin = user.email;
 
 
       /*
