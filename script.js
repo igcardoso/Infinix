@@ -113,7 +113,6 @@ window.onload = function() {
         });
 
       var profile = document.querySelector("nav .containerUser .profile .user");
-      var uid = document.querySelector("#uid");
       var settings_profile = document.querySelector(".page6 .profile");
       var settings_name = document.querySelector(".page6 .name");
       var settings_mail = document.querySelector(".page6 .mail");
@@ -124,7 +123,6 @@ window.onload = function() {
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_name.innerHTML = user.displayName;
-      uid.innerHTML = user.tel;
       settings_mail.innerHTML = user.email;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
