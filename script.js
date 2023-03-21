@@ -531,7 +531,7 @@ function getIp(callback) {
               var descriptionWork = document.querySelector('[name=descriptionWork]').value;
 
 
-              db.collection('affairs').set({
+              db.collection('affairs').add({
                 day: dayWork,
                 month: monthWork,
                 year: yearWork,
