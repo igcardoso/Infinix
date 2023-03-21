@@ -383,7 +383,7 @@ function getIp(callback) {
             day.style.background = "var(--light)";
             day.style.color = "var(--dark)";
             
-            var dSemana = doc.data().day + "-" + doc.data().month + "-" + doc.data().year
+            var dSemana = doc.data().year + "-" + doc.data().month + "-" + doc.data().day
 
             switch (dSemana) {
               case '2023-03-20':
