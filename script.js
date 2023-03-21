@@ -382,8 +382,10 @@ function getIp(callback) {
             day.style.height = "60px";
             day.style.background = "var(--light)";
             day.style.color = "var(--dark)";
+            
+            var dSemana = doc.data().day + "-" + doc.data().month + "-" + doc.data().year
 
-            switch (doc.data().date) {
+            switch (dSemana) {
               case '2023-03-20':
                 day.innerHTML = "Segunda: " + doc.data().name
                 break;
