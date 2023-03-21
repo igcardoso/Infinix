@@ -520,7 +520,9 @@ function getIp(callback) {
             (e)=> {
               e.preventDefault();
               var nameWork = document.querySelector('[name=nameWork]').value;
-              var dateWork = document.querySelector('[name=dateWork]').value;
+              var dayWork = document.querySelector('[name=dayWork]').value;
+              var monthWork = document.querySelector('[name=monthWork]').value;
+              var yearWork = document.querySelector('[name=yearWork]').value;
               var indexing_filesWork = document.querySelector('[name=indexing_filesWork]').value;
               var photographWork = document.querySelector('[name=photographWork]').value;
               var stitchesWork = document.querySelector('[name=stitchesWork]').value;
