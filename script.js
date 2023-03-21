@@ -349,7 +349,7 @@ function getIp(callback) {
             Affairs.innerHTML = `
             <ul>
             <li class="matter_name">${doc.data().name}</li>
-            <li class="posting_date">Entrega: ${doc.data().date}</li>
+            <li class="posting_date">Entrega: ${doc.data().day}/${doc.data().month}/${doc.data().year}</li>
             <li class="more" onclick="
             var display = document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display;
 
