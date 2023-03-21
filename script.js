@@ -528,7 +528,9 @@ function getIp(callback) {
 
 
               db.collection('affairs').add({
-                date: dateWork,
+                day: day,
+                month: month,
+                year: year,
                 description: descriptionWork,
                 indexing_files: indexing_filesWork,
                 name: nameWork,
