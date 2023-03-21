@@ -400,6 +400,18 @@ function getIp(callback) {
               case 3:
                 day.innerHTML = "Quarta: " + doc.data().name
                 break;
+              case 4:
+                day.innerHTML = "Quinta: " + doc.data().name
+                break;
+              case 5:
+                day.innerHTML = "Sexta: " + doc.data().name
+                break;
+              case 6:
+                day.innerHTML = "Sábado: " + doc.data().name
+                break;
+              case 7:
+                day.innerHTML = "Domingo: " + doc.data().name
+                break;
 
               default:
                 console.log("erro")
