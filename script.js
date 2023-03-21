@@ -345,22 +345,23 @@ function getIp(callback) {
             console.log("objeto:",
               doc.data());
             var Affairs = document.createElement("div");
+            var shar7 = doc.data().day + doc.data().month + doc.data().year
 
             Affairs.innerHTML = `
             <ul>
             <li class="matter_name">${doc.data().name}</li>
             <li class="posting_date">Entrega: ${doc.data().day}/${doc.data().month}/${doc.data().year}</li>
             <li class="more" onclick="
-            var display = document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display;
+            var display = document.getElementById('${shar7}${doc.data().name}affairs').style.display;
 
             if (display == 'none') {
-            document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'block';
+            document.getElementById('${shar7}${doc.data().name}affairs').style.display = 'block';
             } else {
-            document.getElementById('${doc.data().date}${doc.data().name}affairs').style.display = 'none';
+            document.getElementById('${shar7}${doc.data().name}affairs').style.display = 'none';
             }
             " class="plus"><i>mais...</i>
             </li>
-            <ul id="${doc.data().date}${doc.data().name}affairs">
+            <ul id="${shar7}${doc.data().name}affairs">
             <li class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Arquivos</li>
             <li class="${doc.data().description}" >${doc.data().description}</li>
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
