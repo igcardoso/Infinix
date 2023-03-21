@@ -383,9 +383,29 @@ function getIp(callback) {
             day.style.height = "60px";
             day.style.background = "var(--light)";
             day.style.color = "var(--dark)";
-            
+
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
 
+            var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 01:00:00`);
+            var weekday = Xmas95.getDay();
+
+            console.log(weekday)
+            switch (weekday) {
+              case 1:
+                console.log("Segunda");
+                console.log("Entrega da atividade de: " + doc.data().name)
+                break;
+              case 2:
+                console.log("Terça");
+                break;
+              case 3:
+                console.log("Quarta");
+                break;
+
+              default:
+                console.log("erro")
+              }
+              /*
             switch (dSemana) {
               case '2023-03-20':
                 day.innerHTML = "Segunda: " + doc.data().name
@@ -415,7 +435,7 @@ function getIp(callback) {
               default:
                 // code
               }
-
+*/
               page2.appendChild(day)
 
               return doc.data();
