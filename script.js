@@ -527,7 +527,7 @@ function getIp(callback) {
               var descriptionWork = document.querySelector('[name=descriptionWork]').value;
 
 
-              db.collection('affairs').add({
+              db.collection('affairs').set({
                 day: day,
                 month: month,
                 year: year,
