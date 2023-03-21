@@ -530,9 +530,9 @@ function getIp(callback) {
 
 
               db.collection('affairs').set({
-                day: day,
-                month: month,
-                year: year,
+                day: dayWork,
+                month: monthWork,
+                year: yearWork,
                 description: descriptionWork,
                 indexing_files: indexing_filesWork,
                 name: nameWork,
