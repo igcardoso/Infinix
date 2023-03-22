@@ -1498,5 +1498,5 @@ body {
 }
 
 .page6 .configuration_options button span:last-child svg {
-  fill: var(--dark);
+  fill: rgb(110,255,73);
 }
