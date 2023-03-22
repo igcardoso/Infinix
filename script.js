@@ -610,7 +610,7 @@ function getIp(callback) {
 
           clear_mode.addEventListener("click", ()=> {
             clear_mode.style.display = "none";
-            dark_mode.style.display = "none";
+            dark_mode.style.display = "flex";
             db.collection('users').doc(user.uid).update({
               light: '#EFEFEF',
               blue: '#ffffff',
@@ -623,7 +623,7 @@ function getIp(callback) {
 
           dark_mode.addEventListener("click", ()=> {
             dark_mode.style.display = "none"; 
-            clear_mode.style.display = "block"; 
+            clear_mode.style.display = "flex"; 
             db.collection('users').doc(user.uid).update({
               light: '#3838387c',
               blue: '#000000',
