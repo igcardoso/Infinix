@@ -1496,7 +1496,3 @@ body {
   text-align: right;
   margin-right: 20px;
 }
-
-.page6 .configuration_options button span:last-child svg {
-  fill: rgb(110,255,73);
-}
