@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
+  transition: background .6s;
 }
 
 li {
@@ -29,7 +30,6 @@ html {
 
 body {
   background: var(--blue);
-  transition: background 1s;
   overflow-x: hidden;
 }
 
