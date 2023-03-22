@@ -123,7 +123,7 @@ window.onload = function() {
       profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_profile.innerHTML = `<img style="background: var(--light); width: 100%;" src="${user.photoURL}" />`;
       settings_name.innerHTML = user.displayName;
-      settings_mail.innerHTML = user.phone_number;
+      settings_mail.innerHTML = user.email;
       nameOfTheStartMarker.innerHTML = "Olá, " + user.displayName;
 
       const userLogin = user.email;
