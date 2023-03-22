@@ -29,6 +29,7 @@ html {
 
 body {
   background: var(--blue);
+  transition: background 1s;
   overflow-x: hidden;
 }
 
