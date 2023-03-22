@@ -9,7 +9,7 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
-  transition: background .3s;
+  transition: background .1s;
 }
 
 li {
