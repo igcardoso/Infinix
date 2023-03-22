@@ -609,6 +609,7 @@ function getIp(callback) {
           var dark_mode = document.querySelector("#dark_mode");
 
           clear_mode.addEventListener("click", ()=> {
+            clear_mode.style.display = "none";
             db.collection('users').doc(user.uid).update({
               light: '#EFEFEF',
               blue: '#ffffff',
@@ -620,6 +621,7 @@ function getIp(callback) {
           });
 
           dark_mode.addEventListener("click", ()=> {
+            dark_mode.style.display = "none"; 
             db.collection('users').doc(user.uid).update({
               light: '#3838387c',
               blue: '#000000',
