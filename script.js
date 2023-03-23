@@ -387,10 +387,15 @@ function getIp(callback) {
             day.style.background = "var(--light)";
             day.style.color = "var(--dark)";
 
+
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
 
             var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 01:00:00`);
             var weekday = Xmas95.getDay();
+
+            if (Xmas95 == new Date()) {
+              day.style.background = "#0f43ee7a";
+            }
 
             console.log(weekday)
             switch (weekday) {
