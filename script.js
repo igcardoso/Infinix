@@ -400,6 +400,7 @@ function getIp(callback) {
             dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
 
             var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
+            var dyHoje = dHoje.getDay();
 
             if (dHoje == "4") {
               alert("hello!")
