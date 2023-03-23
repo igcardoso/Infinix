@@ -1457,10 +1457,10 @@ body {
 }
 
 .page6 .configuration_options {
-  width: 100%;
+  width: calc(100% + 10px);
   display: flex;
   flex-direction: column;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 .page6 .configuration_options .session_title {
