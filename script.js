@@ -404,8 +404,8 @@ function getIp(callback) {
             console.log("ooiiiiii" + dyHoje)
 
 
-            if (dHoje == "4") {
-              console.log("teste ttttttt" + dyHoje)
+            if (dyHoje == "4") {
+              day.style.background = "#1a8eec98";
             }
 
             switch (weekday) {
