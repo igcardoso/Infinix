@@ -395,6 +395,7 @@ function getIp(callback) {
 
             var newDate = new Date();
             var dataDHoje = newDate.getDay;
+            console.log(dataDHoje);
 
             if (weekday == dataDHoje) {
               day.style.background = "red";
