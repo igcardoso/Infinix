@@ -401,13 +401,8 @@ function getIp(callback) {
 
             var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
 
-
-            
-
-            switch (weekday) {
-              case '4':
-                window.alert("hoje tem eletro");
-                break;
+            if (dHoje == "4") {
+              alert("hello!")
             }
 
             switch (weekday) {
