@@ -177,6 +177,9 @@ function getIp(callback) {
             case doc.data().fourthAdmin:
               document.querySelector(".side-menu .control").style.display = "flex";
               break;
+            case doc.data().sixthAdmin:
+              document.querySelector(".side-menu .control").style.display = "flex";
+              break;
 
             default:
               document.querySelector(".side-menu .control").style.display = "none";
