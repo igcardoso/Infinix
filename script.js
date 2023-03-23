@@ -397,7 +397,7 @@ function getIp(callback) {
             var dayAtual = String(data.getDate()).padStart(2, '0');
             var monthAtual = String(data.getMonth() + 1).padStart(2, '0');
             var yearAtual = data.getFullYear();
-            dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
+            // dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
 
             var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
             var dyHoje = dHoje.getDay();
@@ -405,7 +405,7 @@ function getIp(callback) {
 
 
             if (dHoje == "4") {
-              window.alert("hello!")
+              console.log("teste ttttttt" + dyHoje)
             }
 
             switch (weekday) {
