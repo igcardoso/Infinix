@@ -393,18 +393,23 @@ function getIp(callback) {
             var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 01:00:00`);
             var weekday = Xmas95.getDay();
 
-            var dHoje = new Date('Março 1, 2023 01:00:00');
-            var dyHoje = dHoje.getDay;
-            var newDate = new Date('Março ' + dHoje + ', 2023 01:00:00');
-            var dataDHoje = newDate.getDay;
+            var data = new Date();
+            var dayAtual = String(data.getDate()).padStart(2, '0');
+            var monthAtual = String(data.getMonth() + 1).padStart(2, '0');
+            var yearAtual = data.getFullYear();
+            dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
+
+            var dHoje = new date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
+
+
             
 
-            if (weekday == dataDHoje) {
-              day.style.background = "red";
-            } else {
-              console.log("error")
+            switch (weekday) {
+              case '4':
+                window.alert("hoje tem eletro");
+                break;
             }
-            console.log(weekday)
+
             switch (weekday) {
               case 1:
                 day.innerHTML = "Segunda: " + doc.data().name
