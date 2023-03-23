@@ -395,7 +395,7 @@ function getIp(callback) {
 
             var dHoje = new Date('Março 1, 2023 01:00:00');
             var dyHoje = dHoje.getDay;
-            var newDate = new Date('Março ' + ${dHoje} + ', 2023 01:00:00');
+            var newDate = new Date('Março ' + dHoje + ', 2023 01:00:00');
             var dataDHoje = newDate.getDay;
             
 
