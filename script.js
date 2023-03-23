@@ -408,6 +408,10 @@ function getIp(callback) {
               day.style.background = "#1a8eec98";
             }
 
+            if (weekday < dyHoje) {
+              day.style.display = "none";
+            }
+
             switch (weekday) {
               case 1:
                 day.innerHTML = "Segunda: " + doc.data().name
