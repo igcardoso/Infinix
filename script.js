@@ -406,6 +406,7 @@ function getIp(callback) {
 
             if (dyHoje == weekday) {
               day.style.background = "#1a8eec98";
+              day.innerHTML = "Hoje: " + doc.data().name
             }
 
             if (weekday < dyHoje) {
