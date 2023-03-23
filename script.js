@@ -405,7 +405,7 @@ function getIp(callback) {
 
 
             if (dHoje == "4") {
-              alert("hello!")
+              window.alert("hello!")
             }
 
             switch (weekday) {
