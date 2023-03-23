@@ -393,10 +393,14 @@ function getIp(callback) {
             var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 01:00:00`);
             var weekday = Xmas95.getDay();
 
-            if (Xmas95 == new Date()) {
-              day.style.background = "#0f43ee7a";
-            }
+            var newDate = new Date();
+            var dataDHoje = newDate.getDay;
 
+            if (weekday == "4") {
+              day.style.background = "red";
+            } else {
+              console.log("error")
+            }
             console.log(weekday)
             switch (weekday) {
               case 1:
