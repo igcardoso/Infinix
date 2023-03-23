@@ -404,15 +404,6 @@ function getIp(callback) {
             console.log("ooiiiiii" + dyHoje)
 
 
-            if (dyHoje == weekday) {
-              day.style.background = "#1a8eec98";
-              day.innerHTML = "Hoje: " + doc.data().name
-            }
-
-            if (weekday < dyHoje) {
-              day.style.display = "none";
-            }
-
             switch (weekday) {
               case 1:
                 day.innerHTML = "Segunda: " + doc.data().name
@@ -439,37 +430,16 @@ function getIp(callback) {
               default:
                 console.log("erro")
               }
-              /*
-            switch (dSemana) {
-              case '2023-03-20':
-                day.innerHTML = "Segunda: " + doc.data().name
-                break;
-              case '2023-03-21':
-                day.innerHTML = "Terça: " + doc.data().name
-                break;
-              case '2023-03-22':
-                day.innerHTML = "Quarta: " + doc.data().name
-                break;
-              case '2023-03-23':
-                day.innerHTML = "Quinta: " + doc.data().name
-                break;
-              case '2023-03-24':
-                day.innerHTML = "Sexta: " + doc.data().name
-                break;
-              case '2023-03-25':
-                day.innerHTML = "Sábado: " + doc.data().name
-                break;
-              case '2023-03-26':
-                day.innerHTML = "Domingo: " + doc.data().name
-                break;
-              case '2023-03-27':
-                day.innerHTML = "Segunda: " + doc.data().name
-                break;
 
-              default:
-                // code
+              if (dyHoje == weekday) {
+                day.style.background = "#1a8eec98";
+                day.innerHTML = "Hoje: " + doc.data().name
               }
-*/
+  
+              if (weekday < dyHoje) {
+                day.style.display = "none";
+              }
+  
               page2.appendChild(day)
 
               return doc.data();
