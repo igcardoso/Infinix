@@ -393,8 +393,11 @@ function getIp(callback) {
             var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 01:00:00`);
             var weekday = Xmas95.getDay();
 
+            var dHoje = new Date('Março 1, 2023 01:00:00');
+            var dyHoje = dHoje.getDay;
             var newDate = new Date('Março 1, 2023 01:00:00');
             var dataDHoje = newDate.getDay;
+            
 
             if (weekday == dataDHoje) {
               day.style.background = "red";
