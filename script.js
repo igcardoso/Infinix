@@ -399,7 +399,7 @@ function getIp(callback) {
             var yearAtual = data.getFullYear();
             dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
 
-            var dHoje = new date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
+            var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
 
 
             
