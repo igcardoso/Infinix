@@ -1501,6 +1501,7 @@ body {
 
 .my_week {
   width: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   font-weight: 800;
@@ -1512,5 +1513,4 @@ body {
 .my_week div {
   height: 100%;
   border: 2px solid red;
-  margin: 10px;
 }
