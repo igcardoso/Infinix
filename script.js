@@ -433,7 +433,7 @@ function getIp(callback) {
 
               if (dyHoje == weekday) {
                 day.style.background = "var(--blue-ios)";
-                day.style.color = "var(--inverse-dark)";
+                day.style.color = "var(--light)";
                 day.innerHTML = "Hoje: " + doc.data().name
               }
   
