@@ -1514,3 +1514,7 @@ body {
   height: 100%;
   border: 2px solid red;
 }
+
+.my_week div:last-child {
+  font-size: 15px;
+}
