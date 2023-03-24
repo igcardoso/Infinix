@@ -379,6 +379,7 @@ function getIp(callback) {
             var page2 = document.querySelector("#page2");
 
             var day = document.createElement("div");
+            day.classList.add('my_week');
             
             var matter = document.createElement("div");
             matter.classList.add('matter');
