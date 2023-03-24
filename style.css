@@ -1503,6 +1503,9 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 800;
+  background: var(--light);
+  color: var(--dark);
+  border-radius: var(--border-radius);
 }
 
 .my_week div {
