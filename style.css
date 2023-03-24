@@ -1507,4 +1507,5 @@ body {
 
 .my_week div {
   height: 100%;
+  border: 2px solid red;
 }
