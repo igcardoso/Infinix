@@ -1504,3 +1504,7 @@ body {
   flex-direction: column;
   font-weight: 800;
 }
+
+.my_week div {
+  height: 100%;
+}
