@@ -1502,13 +1502,14 @@ body {
 .my_week {
   width: 100%;
   padding: 10px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   font-weight: 800;
   background: var(--light);
   color: var(--dark);
   border-radius: var(--border-radius);
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .my_week div {
