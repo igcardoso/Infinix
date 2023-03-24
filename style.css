@@ -1500,5 +1500,7 @@ body {
 /* página minha semana */
 
 .my_week {
+  display: flex;
+  flex-direction: column;
   font-weight: 800;
 }
