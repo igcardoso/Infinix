@@ -1508,6 +1508,7 @@ body {
   background: var(--light);
   color: var(--dark);
   border-radius: var(--border-radius);
+  margin-top: 40px;
 }
 
 .my_week div {
