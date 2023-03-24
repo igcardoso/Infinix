@@ -1457,7 +1457,7 @@ body {
 }
 
 .page6 .configuration_options {
-  width: calc(100% + 20px);
+  width: 110%;
   display: flex;
   flex-direction: column;
   margin-left: -10px;
@@ -1495,4 +1495,10 @@ body {
   width: 100%;
   text-align: right;
   margin-right: 20px;
+}
+
+/* página minha semana */
+
+.my_week {
+  font-weight: 800;
 }
