@@ -379,6 +379,7 @@ function getIp(callback) {
             var page2 = document.querySelector("#page2");
 
             var day = document.createElement("div");
+            day.classList("my_week")
             day.style.padding = "20px";
             day.style.width = "100%";
             day.style.borderRadius = "var(--border-radius)";
