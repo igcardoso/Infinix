@@ -420,25 +420,32 @@ function getIp(callback) {
 
             switch (weekday) {
               case 1:
-                name_container.innerHTML = "Segunda: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Segunda";
                 break;
               case 2:
-                name_container.innerHTML = "Terça: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Terça"; 
                 break;
               case 3:
-                name_container.innerHTML = "Quarta: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Quarta";
                 break;
               case 4:
-                name_container.innerHTML = "Quinta: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Quinta";
                 break;
               case 5:
-                name_container.innerHTML = "Sexta: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Sexta";
                 break;
               case 6:
-                name_container.innerHTML = "Sábado: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Sábado";
                 break;
               case 7:
-                name_container.innerHTML = "Domingo: " + doc.data().name
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Domingo";
                 break;
 
               default:
