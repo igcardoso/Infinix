@@ -379,14 +379,7 @@ function getIp(callback) {
             var page2 = document.querySelector("#page2");
 
             var day = document.createElement("div");
-            day.classList.add("my_week")
-            day.style.padding = "20px";
-            day.style.width = "100%";
-            day.style.borderRadius = "var(--border-radius)";
-            day.style.marginTop = "20px";
-            day.style.height = "60px";
-            day.style.background = "var(--light)";
-            day.style.color = "var(--dark)";
+            
             var matter = document.createElement("div");
             matter.classList.add('matter');
             day.appendChild(matter);
