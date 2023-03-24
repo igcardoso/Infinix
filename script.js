@@ -390,9 +390,16 @@ function getIp(callback) {
             var matter = document.createElement("div");
             matter.classList.add('matter');
             day.appendChild(matter);
-            var name_container = document.createElement("h1");
+            var name_container = document.createElement("p");
             name_container.classList.add('name_container');
             matter.appendChild(name_container);
+            
+            var day_date = document.createElement("div");
+            day_date.classList.add('day_date');
+            day.appendChild(day_date);
+            var name_containerDayDate = document.createElement("p");
+            name_containerDayDate.classList.add('name_container');
+            day_date.appendChild(name_containerDayDate);
 
 
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
