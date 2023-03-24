@@ -401,7 +401,7 @@ function getIp(callback) {
 
             var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual} 01:00:00`)
             var dyHoje = dHoje.getDay();
-            console.log("ooiiiiii" + dyHoje)
+            
 
 
             switch (weekday) {
