@@ -421,31 +421,31 @@ function getIp(callback) {
             switch (weekday) {
               case 1:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Segunda";
+                name_containerDayDate.innerHTML = "Segunda" + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 2:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Terça"; 
+                name_containerDayDate.innerHTML = "Terça" + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 3:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Quarta";
+                name_containerDayDate.innerHTML = "Quarta" + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 4:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Quinta";
+                name_containerDayDate.innerHTML = "Quinta" + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 5:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Sexta";
+                name_containerDayDate.innerHTML = "Sexta"  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 6:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Sábado";
+                name_containerDayDate.innerHTML = "Sábado" + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
               case 7:
                 name_container.innerHTML = doc.data().name
-                name_containerDayDate.innerHTML = "Domingo";
+                name_containerDayDate.innerHTML = "Domingo"  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
 
               default:
