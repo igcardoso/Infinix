@@ -449,7 +449,7 @@ function getIp(callback) {
                 break;
 
               default:
-                console.log("erro")
+                console.log("error")
               }
 
               if (dyHoje == weekday) {
