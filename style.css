@@ -1513,9 +1513,8 @@ body {
 
 .my_week div {
   height: 100%;
-  border: 2px solid red;
 }
 
 .my_week .day_date {
-  font-size: 12px;
+  font-size: 13px;
 }
