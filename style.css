@@ -1516,6 +1516,6 @@ body {
   border: 2px solid red;
 }
 
-.my_week div:last-child {
+.my_week .day_date {
   font-size: 15px;
 }
