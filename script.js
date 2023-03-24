@@ -387,6 +387,12 @@ function getIp(callback) {
             day.style.height = "60px";
             day.style.background = "var(--light)";
             day.style.color = "var(--dark)";
+            var matter = document.createElement("div");
+            matter.classList.add('matter');
+            day.appendChild(matter);
+            var name_container = document.createElement("h1");
+            name_container.classList.add('name_container');
+            matter.appendChild(name_container);
 
 
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
@@ -407,25 +413,25 @@ function getIp(callback) {
 
             switch (weekday) {
               case 1:
-                day.innerHTML = "Segunda: " + doc.data().name
+                name_container.innerHTML = "Segunda: " + doc.data().name
                 break;
               case 2:
-                day.innerHTML = "Terça: " + doc.data().name
+                name_container.innerHTML = "Terça: " + doc.data().name
                 break;
               case 3:
-                day.innerHTML = "Quarta: " + doc.data().name
+                name_container.innerHTML = "Quarta: " + doc.data().name
                 break;
               case 4:
-                day.innerHTML = "Quinta: " + doc.data().name
+                name_container.innerHTML = "Quinta: " + doc.data().name
                 break;
               case 5:
-                day.innerHTML = "Sexta: " + doc.data().name
+                name_container.innerHTML = "Sexta: " + doc.data().name
                 break;
               case 6:
-                day.innerHTML = "Sábado: " + doc.data().name
+                name_container.innerHTML = "Sábado: " + doc.data().name
                 break;
               case 7:
-                day.innerHTML = "Domingo: " + doc.data().name
+                name_container.innerHTML = "Domingo: " + doc.data().name
                 break;
 
               default:
