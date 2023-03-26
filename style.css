@@ -871,7 +871,7 @@ body {
 }
 
 #content main .box-info li .bx {
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   font-size: 36px;
   padding: 10px;
   display: flex;
