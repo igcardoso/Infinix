@@ -860,6 +860,7 @@ body {
   border-radius: 20px;
   border: 1px solid var(--dark);
   display: flex;
+  flex-direction: row;
   align-items: center;
   grid-gap: 24px;
 }
@@ -880,6 +881,10 @@ body {
 #content main .box-info li /*:nth-child(1)*/ .bx {
   background: var(--light);
   color: var(--dark);
+}
+
+#content main .box-info li .text {
+  width: 100%;
 }
 
 #content main .box-info li .text h3 {
