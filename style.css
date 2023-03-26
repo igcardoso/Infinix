@@ -859,6 +859,7 @@ body {
   padding-top: 48px;
   background: var(--light);
   border-radius: var(--border-radius);
+  border: 2px solid var(--grey);
   display: flex;
   flex-direction: row;
   align-items: center;
