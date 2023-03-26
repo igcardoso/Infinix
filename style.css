@@ -879,6 +879,9 @@ body {
   align-items: center;
   background: var(--grey);
   color: var(--dark);
+}
+
+#content main .box-info li .bx_home_tools {
   margin-top: -58px;
 }
 
