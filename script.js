@@ -280,6 +280,7 @@ function getIp(callback) {
             <div></div>
             <div></div>
             </div>
+            <p class="administration">ADMINISTRAÇÃO</p>
             <span class="text">
             <h3>${doc.data().name}</h3>
             <p>
