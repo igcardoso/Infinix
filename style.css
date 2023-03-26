@@ -10,6 +10,7 @@
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
   transition: background .1s;
+  border: 2px solid red;
 }
 
 li {
@@ -1104,7 +1105,7 @@ body {
   }
 
   #sidebar {
-    background: var(--grey);
+    background: var(--grey);m
     position: fixed;
     top: auto;
     bottom: 10px;
