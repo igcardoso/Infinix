@@ -1105,7 +1105,7 @@ body {
   }
 
   #sidebar {
-    background: var(--grey);m
+    background: var(--grey);
     position: fixed;
     top: auto;
     bottom: 10px;
