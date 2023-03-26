@@ -169,7 +169,7 @@ body {
 
 /* width inicial de celulares em orientação paisagem */
 #sidebar.mobileHide {
-  width: calc(100% - 40px);
+  width: calc(100% - 30px);
 }
 
 /* grade com logo e nome da instituição*/
