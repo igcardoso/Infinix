@@ -881,6 +881,8 @@ body {
 #content main .box-info li /*:nth-child(1)*/ .bx {
   background: var(--light);
   color: var(--dark);
+  width: 60px;
+  height: 60px;
 }
 
 #content main .box-info li .text {
