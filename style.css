@@ -882,6 +882,10 @@ body {
   color: var(--dark);
 }
 
+#content main .box-info li .bx_home_tools {
+  margin: 0;
+}
+
 #content main .box-info li .text {
   width: 100%;
 }
