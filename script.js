@@ -280,13 +280,13 @@ function getIp(callback) {
             <div></div>
             <div></div>
             </div>
-            <i class='${doc.data().icon}'></i>
             <span class="text">
             <h3>${doc.data().name}</h3>
             <p>
             <label>Atualizado:</label> ${doc.data().update_date}
             </p>
             </span>
+            <i class='${doc.data().icon}'></i> 
             `;
 
             highlights.addEventListener("click",
