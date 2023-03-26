@@ -281,6 +281,7 @@ function getIp(callback) {
             <div></div>
             </div>
             <span class="text">
+            <img style="border-radius: 8em; " width="50px" height="50px" src="images/logo.jpg" />
             <p class="administration">ADMINISTRAÇÃO</p> 
             <h3>${doc.data().name}</h3>
             <p>
