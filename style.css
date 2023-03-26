@@ -856,6 +856,7 @@ body {
 #content main .box-info li {
   position: relative;
   padding: 24px;
+  padding-top: 48px;
   background: var(--grey);
   border-radius: 20px;
   border: 1px solid var(--dark);
