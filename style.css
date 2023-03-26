@@ -879,6 +879,7 @@ body {
   align-items: center;
   background: var(--light);
   color: var(--dark);
+  margin-top: -40px;
 }
 
 #content main .box-info li .text {
