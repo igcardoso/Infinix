@@ -900,6 +900,7 @@ body {
   color: var(--dark);
   font-size: 9.5px;
   font-weight: 200;
+  opacity: .7;
   margin-bottom: 5px;
 }
 
