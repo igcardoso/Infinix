@@ -849,11 +849,11 @@ body {
   width: 20px;
 }
 
-#content .box-info .marcador div:nth-child(2) {
+#content main .box-info .marcador div:nth-child(2) {
   width: 16px;
 }
 
-#content .box-info li {
+#content main .box-info li {
   position: relative;
   padding: 24px;
   padding-top: 48px;
@@ -866,11 +866,11 @@ body {
   grid-gap: 24px;
 }
 
-#content .box-info li:hover {
+#content main .box-info li:hover {
   border: 1.5px solid var(--dark);
 }
 
-#content .box-info li .bx {
+#content main .box-info li .bx {
   border-radius: 10px;
   font-size: 16px;
   padding: 10px;
@@ -882,22 +882,22 @@ body {
   margin-top: -58px;
 }
 
-#content .box-info li .text {
+#content main .box-info li .text {
   width: 100%;
 }
 
-#content .box-info li .text h3 {
+#content main .box-info li .text h3 {
   font-size: 20px;
   font-weight: 600;
   color: var(--dark);
 }
 
-#content .box-info li .text p {
+#content main .box-info li .text p {
   color: var(--dark);
   font-size: 13px;
 }
 
-#content .box-info li .text .administration {
+#content main .box-info li .text .administration {
   color: var(--dark);
   font-size: 9.5px;
   font-weight: 200;
@@ -905,7 +905,7 @@ body {
   margin-bottom: 5px;
 }
 
-#content .box-info li .text p label {
+#content main .box-info li .text p label {
   font-weight: 300;
 }
 
