@@ -1126,6 +1126,7 @@ body {
 
   #sidebar .side-menu li {
     margin-left: 0;
+    margin-right: 0;
     margin: auto;
     border-radius: var(--border-radius);
   }
@@ -1138,7 +1139,7 @@ body {
   #sidebar .side-menu.top {
     display: flex;
     flex-direction: row;
-    margin: 12px;
+    margin: 0px;
     position: fixed;
     width: calc(100% - 24px);
   }
