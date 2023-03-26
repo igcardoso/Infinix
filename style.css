@@ -873,18 +873,12 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 10px;
-  font-size: 36px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#content main .box-info li /*:nth-child(1)*/ .bx {
   background: var(--light);
   color: var(--dark);
-  border-radius: var(--border-radius);
-  width: 60px;
-  height: 60px;
-  font-size: 14px;
 }
 
 #content main .box-info li .text {
