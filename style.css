@@ -1538,5 +1538,7 @@ body {
 }
 
 .my_week .day_date {
+  font-weight: 400;
   font-size: 13px;
+  opacity: .7;
 }
