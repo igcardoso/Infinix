@@ -1109,9 +1109,8 @@ body {
     position: fixed;
     top: auto;
     bottom: 10px;
-    left: 20px;
-    right: 20px;
-    width: calc(100% - 40px);
+    left: 8px;
+    right: 8px;
     height: calc(60px + 14px);
     z-index: 2000;
     font-family: var(--lato);
