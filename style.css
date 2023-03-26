@@ -886,8 +886,8 @@ body {
 }
 
 #content main .box-info li .text h3 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   color: var(--dark);
 }
 
