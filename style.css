@@ -1457,7 +1457,7 @@ body {
 }
 
 .page6 .configuration_options {
-  width: 110%;
+  width: calc(100% + 10px);
   display: flex;
   flex-direction: column;
   margin-left: -10px;
