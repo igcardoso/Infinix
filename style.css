@@ -1104,7 +1104,7 @@ body {
   }
 
   #sidebar {
-    background: none;
+    background: var(--grey);
     position: fixed;
     top: auto;
     bottom: 10px;
