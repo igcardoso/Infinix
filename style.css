@@ -857,9 +857,8 @@ body {
   position: relative;
   padding: 24px;
   padding-top: 48px;
-  background: var(--grey);
-  border-radius: 20px;
-  border: 1px solid var(--dark);
+  background: var(--light);
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: row;
   align-items: center;
