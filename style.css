@@ -896,6 +896,12 @@ body {
   font-size: 13px;
 }
 
+#content main .box-info li .text .administration {
+  color: var(--dark);
+  font-size: 13px;
+  font-weight: 200;
+}
+
 #content main .box-info li .text p label {
   font-weight: 300;
 }
