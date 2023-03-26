@@ -870,10 +870,9 @@ body {
 }
 
 #content main .box-info li .bx {
-  width: 80px;
-  height: 80px;
   border-radius: 10px;
   font-size: 16px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
