@@ -287,7 +287,7 @@ function getIp(callback) {
             <label>Atualizado:</label> ${doc.data().update_date}
             </p>
             </span>
-            <i class='${doc.data().icon}'></i> 
+            <i class='bx_home_tools ${doc.data().icon}'></i> 
             `;
 
             highlights.addEventListener("click",
