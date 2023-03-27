@@ -448,7 +448,7 @@ function getIp(callback) {
                 console.log("error")
               }
              
-              if (dyHoje == weekday + 1) {
+              if (dyHoje + 1 == weekday) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
