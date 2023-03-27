@@ -443,6 +443,18 @@ function getIp(callback) {
                 name_container.innerHTML = doc.data().name
                 name_containerDayDate.innerHTML = "Domingo: "  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
                 break;
+              case 8:
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Domingo: "  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
+                break;
+              case 9:
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Domingo: "  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
+                break;
+              case 10:
+                name_container.innerHTML = doc.data().name
+                name_containerDayDate.innerHTML = "Domingo: "  + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
+                break;
 
               default:
                 console.log("error")
