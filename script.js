@@ -447,12 +447,13 @@ function getIp(callback) {
               default:
                 console.log("error")
               }
+              
+              window.alert(dyHoje)
 
               if (dyHoje == weekday) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-                alert(dyHoje)
               }
   
               if (weekday < dyHoje) {
