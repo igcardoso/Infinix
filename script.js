@@ -452,6 +452,7 @@ function getIp(callback) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
+                alert(dyHoje)
               }
   
               if (weekday < dyHoje) {
