@@ -448,11 +448,11 @@ function getIp(callback) {
                 console.log("error")
               }
              
-              if (dyHoje == weekday) {
+              if (doc.data().day == dayAtual) {
                 day.style.background = "#fa3400";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (dyHoje + 1 == weekday) {
+              } else if (doc.data().day == dayAtual + 1) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
