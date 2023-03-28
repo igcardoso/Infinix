@@ -400,7 +400,7 @@ function getIp(callback) {
 
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
 
-            var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year} 00:00:00`);
+            var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year}`);
             var weekday = Xmas95.getDay();
 
             var data = new Date();
