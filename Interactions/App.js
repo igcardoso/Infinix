@@ -254,3 +254,7 @@ document.querySelector("#terms_of_use").addEventListener("click", ()=> {
 document.querySelector("#privacy_policy").addEventListener("click", ()=> {
    window.open('pages/privacy_policy.html', '_blank');
 });
+
+document.querySelector("#developer").addEventListener("click", ()=> {
+   window.open('https://instagram.com/igor.cardoso75?igshid=MTIzZWQxMDU='/*, '_blank'*/);
+});
