@@ -401,7 +401,7 @@ function getIp(callback) {
             var dSemana = doc.data().year + "-0" + doc.data().month + "-" + doc.data().day
 
             var Xmas95 = new Date(`0${doc.data().month} ${doc.data().day}, ${doc.data().year}`);
-            var weekday = Xmas95.getDay();
+            var weekday = Xmas95.getDay() - 1;
 
             var data = new Date();
             var dayAtual = String(data.getDate()).padStart(2, '0');
