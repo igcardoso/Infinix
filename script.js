@@ -457,7 +457,7 @@ function getIp(callback) {
               }
               
               var for_tomorrow = dayAtual + 1;
-
+              window.alert(for_tomorrow)
               if (doc.data().day == for_tomorrow) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
