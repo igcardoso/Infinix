@@ -452,7 +452,7 @@ function getIp(callback) {
                 day.style.background = "#fa3400";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (doc.data().day == dayAtual + 1) {
+              } else if (doc.data().day == dayAtual + 2) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
