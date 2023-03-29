@@ -406,6 +406,8 @@ function getIp(callback) {
             var data = new Date();
             var dayAtual = String(data.getDate()).padStart(2,
               '0');
+            var tomorrow = String(data.getDate()).padStart(2,
+              '0') + 1;
             var monthAtual = String(data.getMonth() + 1).padStart(2,
               '0');
             var yearAtual = data.getFullYear();
@@ -457,7 +459,7 @@ function getIp(callback) {
               }
               
               var for_tomorrow = dayAtual + 1;
-              window.alert(for_tomorrow)
+              window.alert(tomorrow)
               if (doc.data().day == for_tomorrow) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
