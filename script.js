@@ -282,13 +282,13 @@ function getIp(callback) {
             </div>
             <span class="text">
             <img style="border-radius: 8em; " width="30px" height="30px" src="images/logo.jpg" />
-            <p class="administration">ADMINISTRAÇÃO</p> 
+            <p class="administration">ADMINISTRAÇÃO</p>
             <h3>${doc.data().name}</h3>
             <p>
             <label>Atualizado:</label> ${doc.data().update_date}
             </p>
             </span>
-            <i class='bx_home_tools ${doc.data().icon}'></i> 
+            <i class='bx_home_tools ${doc.data().icon}'></i>
             `;
 
             highlights.addEventListener("click",
@@ -382,14 +382,14 @@ function getIp(callback) {
 
             var day = document.createElement("div");
             day.classList.add('my_week');
-            
+
             var matter = document.createElement("div");
             matter.classList.add('matter');
             day.appendChild(matter);
             var name_container = document.createElement("p");
             name_container.classList.add('name_container');
             matter.appendChild(name_container);
-            
+
             var day_date = document.createElement("div");
             day_date.classList.add('day_date');
             day.appendChild(day_date);
@@ -404,14 +404,16 @@ function getIp(callback) {
             var weekday = Xmas95.getDay() + 1;
 
             var data = new Date();
-            var dayAtual = String(data.getDate()).padStart(2, '0');
-            var monthAtual = String(data.getMonth() + 1).padStart(2, '0');
+            var dayAtual = String(data.getDate()).padStart(2,
+              '0');
+            var monthAtual = String(data.getMonth() + 1).padStart(2,
+              '0');
             var yearAtual = data.getFullYear();
             // dataAtual = dayAtual + '/' + monthAtual + '/' + yearAtual;
 
             var dHoje = new Date(`${monthAtual} ${dayAtual}, ${yearAtual}`)
             var dyHoje = dHoje.getDay();
-            
+
 
 
             switch (weekday) {
@@ -447,19 +449,23 @@ function getIp(callback) {
               default:
                 console.log("error")
               }
-             
+
               if (doc.data().day == dayAtual) {
                 day.style.background = "#fa3400";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (doc.data().day == dayAtual + 2) {
+              }
+
+              if (doc.data().day == dayAtual + 1) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (doc.data().day < dayAtual) {
+              }
+
+              if (doc.data().day < dayAtual) {
                 day.style.display = "none";
               }
-  
+
               page2.appendChild(day)
 
               return doc.data();
@@ -635,8 +641,8 @@ function getIp(callback) {
           });
 
           dark_mode.addEventListener("click", ()=> {
-            dark_mode.style.display = "none"; 
-            clear_mode.style.display = "flex"; 
+            dark_mode.style.display = "none";
+            clear_mode.style.display = "flex";
             db.collection('users').doc(user.uid).update({
               light: '#3838387c',
               blue: '#000000',
