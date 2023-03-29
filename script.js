@@ -406,7 +406,7 @@ function getIp(callback) {
             var data = new Date();
             var dayAtual = String(data.getDate()).padStart(2,
               '0');
-            var tomorrow = String(data.getDate() + 1).padStart(2,
+            var for_tomorrow = String(data.getDate() + 1).padStart(2,
               '0');
             var monthAtual = String(data.getMonth() + 1).padStart(2,
               '0');
@@ -456,17 +456,11 @@ function getIp(callback) {
                 day.style.background = "#fa3400";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              }
-              
-              var for_tomorrow = dayAtual + 1;
-              window.alert(tomorrow)
-              if (doc.data().day == for_tomorrow) {
+              } else if (doc.data().day == for_tomorrow) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              }
-
-              if (doc.data().day < dayAtual) {
+              }else if (doc.data().day < dayAtual) {
                 day.style.display = "none";
               }
 
