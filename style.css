@@ -475,6 +475,7 @@ body {
   position: relative;
   padding: 10px;
   color: var(--dark-grey);
+  width: 100%;
 }
 
 #content nav .active {
