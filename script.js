@@ -459,7 +459,7 @@ function getIp(callback) {
                 day.style.color = "var(--light)";
                 name_container.innerHTML = doc.data().name
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (doc.data().day < dayAtual) of (doc.data().month < monthAtual) {
+              } else if (doc.data().day < dayAtual) {
                 day.style.display = "none";
               }
   
