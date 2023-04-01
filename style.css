@@ -1119,6 +1119,7 @@ body {
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 30px;
     background: var(--grey);
   }
 
