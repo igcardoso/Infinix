@@ -380,8 +380,7 @@ function getIp(callback) {
 
             var page2 = document.querySelector("#page2");
 
-            var contantDay = document.createElement("div");
-            contantDay.classList.add('contant_day');
+            var contantDay = document.querySelector(".contant_day");
             
             var day = document.createElement("div");
             day.classList.add('my_week');
