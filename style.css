@@ -1124,7 +1124,7 @@ body {
 
   #sidebar {
     backdrop-filter: blur(16px);
-    /*background: var(--grey);*/
+    background: none /*var(--grey)*/;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.137);
     position: fixed;
     top: auto;
