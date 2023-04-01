@@ -378,13 +378,10 @@ function getIp(callback) {
 
             document.querySelector("#affairs").appendChild(Affairs);
 
-            var page2 = document.querySelector("#page2");
-
-            var contantDay = document.querySelector(".contant_day");
+            var page2 = document.querySelector("#page2 .contant_day");
             
             var day = document.createElement("div");
             day.classList.add('my_week');
-            contantDay.appendChild(day)
             
             var matter = document.createElement("div");
             matter.classList.add('matter');
@@ -468,7 +465,7 @@ function getIp(callback) {
                 day.style.display = "none";
               }
   
-              page2.appendChild(contantDay)
+              page2.appendChild(day)
 
               return doc.data();
             });
