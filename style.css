@@ -1523,7 +1523,7 @@ body {
 
 /* página minha semana */
 
-.my_week {
+.contant_day .my_week {
   width: 100%;
   padding: 10px;
   padding-left: 20px;
@@ -1536,11 +1536,11 @@ body {
   margin-top: 20px;
 }
 
-.my_week div {
+.contant_day .my_week div {
   height: 100%;
 }
 
-.my_week .day_date {
+.contant_day .my_week .day_date {
   font-weight: 400;
   font-size: 13px;
   opacity: .7;
