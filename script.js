@@ -458,9 +458,7 @@ function getIp(callback) {
                 day.style.background = "var(--blue-ios)";
                 day.style.color = "var(--light)";
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
-              } else if (doc.data().day < dayAtual) {
-                day.style.display = "none";
-              } else if (doc.data().month < monthAtual) {
+              } else if (doc.data().day < dayAtual of doc.data().month < monthAtual) {
                 day.style.display = "none";
               }
   
