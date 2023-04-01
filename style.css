@@ -1527,10 +1527,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 0;
+  grid-gap: 24px;
 }
 
  .my_week {
-  width: 100%;
+  grid-gap: 24px;
   padding: 10px;
   padding-left: 20px;
   display: flex;
