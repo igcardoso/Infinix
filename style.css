@@ -1523,13 +1523,8 @@ body {
 
 /* página minha semana */
 
-.page2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 0;
-}
-
  .my_week {
+  max-width: 250px;
   width: 100%;
   padding: 10px;
   padding-left: 20px;
