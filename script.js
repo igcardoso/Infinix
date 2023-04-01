@@ -460,6 +460,8 @@ function getIp(callback) {
                 name_containerDayDate.innerHTML = "Amanhã: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
               } else if (doc.data().day < dayAtual) {
                 day.style.display = "none";
+              } else if (doc.data().month < monthAtual) {
+                day.style.display = "none";
               }
   
               page2.appendChild(day)
