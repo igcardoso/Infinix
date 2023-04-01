@@ -452,6 +452,7 @@ function getIp(callback) {
               if (doc.data().day == dayAtual) {
                 day.style.background = "#fa3400";
                 day.style.color = "var(--light)";
+                name_container.innerHTML = doc.data().name
                 name_containerDayDate.innerHTML = "Hoje: " + doc.data().day + "/" + doc.data().month + "/" + doc.data().year
               } else if (doc.data().day == tomorrow) {
                 day.style.background = "var(--blue-ios)";
