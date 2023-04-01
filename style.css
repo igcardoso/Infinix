@@ -1531,7 +1531,6 @@ body {
 }
 
  .my_week {
-  grid-gap: 24px;
   padding: 10px;
   padding-left: 20px;
   display: flex;
