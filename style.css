@@ -1527,7 +1527,6 @@ body {
   width: 100%;
   padding: 10px;
   padding-left: 20px;
-  initial-letter: inline-block;
   display: flex;
   flex-direction: column;
   font-weight: 800;
