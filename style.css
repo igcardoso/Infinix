@@ -1524,12 +1524,12 @@ body {
 /* página minha semana */
 
  .my_week {
-  max-width: 250px;
   width: 100%;
   padding: 10px;
   padding-left: 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 0;
   font-weight: 800;
   background: var(--light);
   color: var(--dark);
