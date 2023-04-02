@@ -372,7 +372,7 @@ function getIp(callback) {
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
             <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
             </ul>
-            </ul></br></br></br></br></br>`;
+            </ul>`;
 
             // *******************************
 
@@ -467,17 +467,6 @@ function getIp(callback) {
               } else if (0 + doc.data().month < monthAtual) {
                 day.style.display = "none";
               }
-
-              const sr = ScrollReveal({
-                distance: '300px',
-                duration: 2500,
-                delay: 400,
-                reset: true
-              })
-
-              sr.reveal(Affairs, {
-                delay: 200, origin: 'top'
-              });
 
               page2.appendChild(day)
 
