@@ -1532,7 +1532,6 @@ body {
 .contant_day {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 24px;
 }
 
  .my_week {
@@ -1545,6 +1544,7 @@ body {
   color: var(--dark);
   border-radius: var(--border-radius);
   margin-top: 20px;
+  margin-right: 20px;
 }
 
  .my_week div {
