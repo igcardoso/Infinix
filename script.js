@@ -372,7 +372,7 @@ function getIp(callback) {
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
             <li class="${doc.data().stitches}" >${doc.data().stitches}</li>
             </ul>
-            </ul>`;
+            </ul></br></br></br></br></br>`;
 
             // *******************************
 
