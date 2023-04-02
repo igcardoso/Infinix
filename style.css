@@ -1394,7 +1394,7 @@ body {
 
 .contant_forms {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
   grid-gap: 24px;
 }
 
@@ -1531,7 +1531,7 @@ body {
 
 .contant_day {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 24px;
 }
 
