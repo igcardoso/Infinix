@@ -1543,8 +1543,8 @@ body {
   background: var(--light);
   color: var(--dark);
   border-radius: var(--border-radius);
+  margin: 5px;
   margin-top: 20px;
-  margin-right: 20px;
 }
 
  .my_week div {
