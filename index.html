@@ -492,14 +492,6 @@
 <script src="https://www.gstatic.com/firebasejs/ui/3.5.1/firebase-ui-auth__pt.js"></script>
 <script type="text/javascript" charset="utf-8">
 
-  const header = document.querySelector("nav");
-
-  window.addEventListener("scroll", function() {
-    if (window.scrollY > 0) {
-      header.style.background = "red"
-    }
-  });
-
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
