@@ -623,7 +623,7 @@ body {
   height: 100%;
 }
 
-.home .highlights .options {
+#affairs {
   background: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
