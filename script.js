@@ -353,7 +353,7 @@ function getIp(callback) {
             var shar7 = doc.data().day + doc.data().month + doc.data().year
 
             Affairs.innerHTML = `
-            <div>
+            <div class="element">
             <li class="matter_name">${doc.data().name}</li>
             <li class="posting_date">Entrega: ${doc.data().day}/0${doc.data().month}/${doc.data().year}</li>
             <li class="more" onclick="
@@ -480,7 +480,7 @@ function getIp(callback) {
               console.log("objeto:",
                 doc.data());
               var evaluation = document.createElement("div");
-              evaluation.innerHTML = `<div>
+              evaluation.innerHTML = `<div class="element">
               <li class="matter_name">${doc.data().name}</li>
               <li class="posting_date">Entrega: ${doc.data().date}</li>
               <li class="more" onclick="
