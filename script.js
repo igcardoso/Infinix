@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 */
 
-const sr = ScrollReveal ({
+const sr = ScrollReveal({
   distance: '300px',
   duration: 2500,
   delay: 400,
