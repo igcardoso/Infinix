@@ -32,10 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 */
 
-const header = document.querySelector(".container_user .profile");
+const sr = ScrollReveal ({
+  distance: '300px',
+  duration: 2500,
+  delay: 400,
+  reset: true
+})
 
-window.addEventListener ("scroll", function() {
-  header.classList.toggle("sticky", window.scrollY > 300);
+sr.reveal('.page6 .profile', {
+  delay: 200, origin: 'top'
 });
 
 
