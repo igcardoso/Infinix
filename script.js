@@ -32,6 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 */
 
+(function () {
+    var menu = document.getElementById('nav'); // colocar em cache
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          menu.style.background = "red"
+        } else {
+          menu.style.background = "blue"
+        }
+    });
+})();
+
 window.onload = function() {
 
   auth.onAuthStateChanged(user => {
