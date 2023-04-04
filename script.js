@@ -75,12 +75,7 @@ window.onload = function() {
         }
 
         svg {
-        fill: none;
-        stroke: none;
-        }
-        
-        svg path {
-          stroke: var(--dark);
+        fill: var(--dark);
         }
 
         </style>`;
