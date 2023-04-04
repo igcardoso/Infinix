@@ -625,7 +625,7 @@ body {
 
 .home .highlights .options ul {
   position: relative;
-  background: var(--grey);
+  background: var(--light);
   padding: 10px;
   border-radius: var(--border-radius);
   margin-top: 20px;
@@ -655,7 +655,7 @@ body {
   font-size: 15px;
   background: var(--blue-ios);
   width: 100%;
-  color: var(--dark);
+  color: #ffffff;
   padding: 15px;
   border-radius: var(--border-radius);
 }
@@ -1354,7 +1354,7 @@ body {
 
 #containment-card-notifications .cards .adms .text {
   position: absolute;
-  color: var(--grey);
+  color: #ffffff;
   background: var(--blue-ios);
   padding: 5px 10px 5px 10px;
   border-radius: var(--border-radius);
