@@ -634,6 +634,7 @@ body {
 }
 
 .home .highlights .options div li {
+  margin: 20px;
   width: 100%;
   text-align: center;
   color: var(--dark);
