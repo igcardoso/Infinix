@@ -34,10 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-nav.sticky {
-  background: red;
-}
-
 .loading {
   position: fixed;
   top: 0;
@@ -1480,10 +1476,6 @@ nav.sticky {
   font-size: 14px;
   color: var(--dark)/*#00000048*/;
   opacity: .7;
-}
-
-.page6 .sticky {
-  background: red;
 }
 
 .page6 .profile {
