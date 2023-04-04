@@ -625,8 +625,7 @@ body {
 
 #affairs {
   background: red;
-  display: flex;
-  flex-direction: row;
+  display: inline-block ;
 }
 
 .home .highlights .options div {
@@ -637,6 +636,7 @@ body {
   padding: 10px;
   border-radius: var(--border-radius);
   margin-top: 20px;
+  width: 330px;
 }
 
 .home .highlights .options div li {
