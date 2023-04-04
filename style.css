@@ -630,6 +630,7 @@ body {
 }
 
 .home .highlights .options ul {
+  display: flex;
   position: relative;
   background: var(--light);
   padding: 10px;
