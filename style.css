@@ -625,6 +625,7 @@ body {
 
 .home .highlights .options div {
   position: relative;
+  padding: 10px;
   background: var(--light);
   border-radius: var(--border-radius);
   margin-top: 20px;
@@ -634,7 +635,6 @@ body {
 }
 
 .home .highlights .options div li {
-  margin: 10px;
   width: 100%;
   text-align: center;
   color: var(--dark);
