@@ -74,8 +74,9 @@ window.onload = function() {
         --border-radius: 1.5em;
         }
 
-        svg path {
-        fill: var(--dark);
+        svg {
+        fill: none;
+        stroke: none;
         }
         
         svg path {
