@@ -76,6 +76,7 @@ window.onload = function() {
 
         svg {
         fill: var(--dark);
+        stroke: var(--dark);
         }
 
         </style>`;
