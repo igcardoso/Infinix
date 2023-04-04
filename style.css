@@ -623,7 +623,7 @@ body {
   height: 100%;
 }
 
-.home .highlights .options .restraint_duties {
+.home .highlights .options {
   background: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
