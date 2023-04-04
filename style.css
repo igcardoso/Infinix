@@ -623,7 +623,7 @@ body {
   height: 100%;
 }
 
-.home .highlights .options ul {
+.home .highlights .options div {
   position: relative;
   background: var(--light);
   padding: 10px;
@@ -633,25 +633,25 @@ body {
   width: 320px;
 }
 
-.home .highlights .options ul li {
+.home .highlights .options div li {
   width: 100%;
   text-align: center;
   color: var(--dark);
 }
 
-.home .highlights .options ul li.matter_name {
+.home .highlights .options div li.matter_name {
   font-weight: 700;
   font-size: 18px;
   color: var(--dark);
 }
 
-.home .highlights .options ul li.posting_date {
+.home .highlights .options div li.posting_date {
   font-weight: 300;
   font-size: 13px;
   color: var(--dark);
 }
 
-.home .highlights .options ul li.more {
+.home .highlights .options div li.more {
   margin-top: 20px;
   font-weight: 700;
   font-size: 15px;
@@ -662,26 +662,26 @@ body {
   border-radius: var(--border-radius);
 }
 
-.home .highlights .options ul ul {
+.home .highlights .options div ul {
   display: none;
   width: 100%;
   color: var(--dark);
   margin-top: 20px;
 }
 
-.home .highlights .options ul ul li:first-child {
+.home .highlights .options div ul li:first-child {
   border-top-right-radius: .8em;
   border-top-left-radius: .8em;
 }
 
 
-.home .highlights .options ul ul li:last-child {
+.home .highlights .options div ul li:last-child {
   border-bottom-right-radius: .8em;
   border-bottom-left-radius: .8em;
   border-bottom: 0;
 }
 
-.home .highlights .options ul ul .none {
+.home .highlights .options div ul .none {
   height: 0;
   border-bottom: 0;
   opacity: 0;
@@ -692,7 +692,7 @@ body {
   padding: 0;
 }
 
-.home .highlights .options ul ul li {
+.home .highlights .options div ul li {
   background: var(--light);
   padding: 10px;
   overflow: hidden;
