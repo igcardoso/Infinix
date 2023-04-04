@@ -625,7 +625,7 @@ body {
 
 .home .highlights .options ul {
   position: relative;
-  background: var(--blue-ios);
+  background: var(--grey);
   padding: 10px;
   border-radius: var(--border-radius);
   margin-top: 20px;
@@ -653,7 +653,7 @@ body {
   margin-top: 20px;
   font-weight: 700;
   font-size: 15px;
-  background: var(--light);
+  background: var(--blue-ios);
   width: 100%;
   color: var(--dark);
   padding: 15px;
