@@ -34,6 +34,9 @@ body {
   overflow-x: hidden;
 }
 
+.sticky {
+  background: red;
+}
 
 .loading {
   position: fixed;
