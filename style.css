@@ -620,9 +620,12 @@ body {
 }
 
 .home .highlight {
+  height: 100%;
+}
+
+#affairs, #evaluation, #timetables {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  height: 100%;
 }
 
 .home .highlights .options ul {
