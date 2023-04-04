@@ -352,8 +352,8 @@ function getIp(callback) {
             var Affairs = document.createElement("div");
             var shar7 = doc.data().day + doc.data().month + doc.data().year
 
-            Affairs.innerHTML = `
-            <div>
+            Affairs.innerHTML = 
+            `<div>
             <li class="matter_name">${doc.data().name}</li>
             <li class="posting_date">Entrega: ${doc.data().day}/0${doc.data().month}/${doc.data().year}</li>
             <li class="more" onclick="
