@@ -1479,6 +1479,10 @@ body {
   opacity: .7;
 }
 
+.page6 .profile.sticky {
+  background: red;
+}
+
 .page6 .profile {
   width: 50px;
   height: 50px;
