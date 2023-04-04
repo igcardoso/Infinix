@@ -630,10 +630,6 @@ body {
   grid-gap: 50px;
 }
 
-.home .highlights .options div:nth-child(2) {
-  width: 45%;
-}
-
 .home .highlights .options div {
   display: flex;
   flex-direction: column;
