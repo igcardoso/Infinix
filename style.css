@@ -623,7 +623,7 @@ body {
   height: 100%;
 }
 
-.home .highlights .restraint_duties {
+.home .highlights .options div {
   background: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -635,6 +635,7 @@ body {
   padding: 10px;
   border-radius: var(--border-radius);
   margin-top: 20px;
+  width: 240px;
 }
 
 .home .highlights .options ul li {
