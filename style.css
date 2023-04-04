@@ -34,7 +34,7 @@ body {
   overflow-x: hidden;
 }
 
-.sticky {
+nav.sticky {
   background: red;
 }
 
