@@ -623,10 +623,6 @@ body {
   height: 100%;
 }
 
-.home .highlights .options div {
-  background: var(--light);
-}
-
 .home .highlights .options ul {
   position: relative;
   background: var(--light);
