@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
- 
+
   <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -66,7 +66,10 @@
       <!-- opções do topo do menu -->
       <li class="active">
         <button class="options op1">
-          <i class='bx bxs-dashboard'></i>
+          <i class="bx"><svg width="18p" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.02 2.84004L3.63 7.04004C2.73 7.74004 2 9.23004 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29004 21.19 7.74004 20.2 7.05004L14.02 2.72004C12.62 1.74004 10.37 1.79004 9.02 2.84004Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 17.99V14.99" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg></i>
           <span class="text">Inicio</span>
         </button>
       </li>
@@ -74,58 +77,113 @@
         <button class="options op2">
           <i class='bx'><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path></svg></i>
           <span class="text">Lembretes</span>
-      </button>
-    </li>
-    <li>
-      <button class="options op3">
-        <i class="bx bx-link"></i>
-        <span class="text">Ferramentas</span>
-      </button>
-    </li>
-    <li class="control">
-      <button class="options op4">
-        <i class='bx bxs-mobile'></i>
-        <span class="text">Controle do app</span>
-      </button>
-    </li>
-    <li>
-      <button class="options op5">
-        <i class='bx bxs-group'></i>
-        <span class="text">Conexões</span>
-      </button>
-    </li>
-    <!-- // final das opções do topo do menu // -->
-  </ul>
-  <!-- final da sessão de opções do topo do menu -->
-  <!-- linha de divisão de sessões -->
-  <br />
-  <div class="divisor"></div>
-  <!-- sessão de opções da parte de baixo do menu -->
-  <ul class="side-menu">
-    <!-- // final das opções da parte de baixo do menu // -->
-  </ul>
-  <!-- // final da sessão de opções da parte de baixo do menu // -->
-</section>
-<!-- // final do menu lateral // -->
+        </button>
+      </li>
+      <li>
+        <button class="options op3">
+          <i class="bx bx-link"></i>
+          <span class="text">Ferramentas</span>
+        </button>
+      </li>
+      <li class="control">
+        <button class="options op4">
+          <i class='bx bxs-mobile'></i>
+          <span class="text">Controle do app</span>
+        </button>
+      </li>
+      <li>
+        <button class="options op5">
+          <i class='bx bxs-group'></i>
+          <span class="text">Conexões</span>
+        </button>
+      </li>
+      <!-- // final das opções do topo do menu // -->
+    </ul>
+    <!-- final da sessão de opções do topo do menu -->
+    <!-- linha de divisão de sessões -->
+    <br />
+    <div class="divisor"></div>
+    <!-- sessão de opções da parte de baixo do menu -->
+    <ul class="side-menu">
+      <!-- // final das opções da parte de baixo do menu // -->
+    </ul>
+    <!-- // final da sessão de opções da parte de baixo do menu // -->
+  </section>
+  <!-- // final do menu lateral // -->
 
-<!-- contenção da página e do menu do topo -->
-<section id="content">
+  <!-- contenção da página e do menu do topo -->
+  <section id="content">
 
-  <!-- conteúdo das páginas -->
-  <main>
+    <!-- conteúdo das páginas -->
+    <main>
 
-    <!-- pagina home -->
-    <div class="home page active">
-      <span class="back"></span>
-      <div class="elementsOfHome">
+      <!-- pagina home -->
+      <div class="home page active">
+        <span class="back"></span>
+        <div class="elementsOfHome">
+          <!-- título da página -->
+          <div class="head-title">
+            <div class="left">
+              <h1>Bem vindo!</h1>
+              <ul class="breadcrumb">
+                <li>
+                  <div class="name">
+                    Olá, Igor O. Cardoso
+                  </div>
+                </li>
+                <li>
+                  <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+                </li>
+                <li>
+                  <div class="active">
+                    Inicio
+                  </div>
+                </li>
+              </ul>
+              <p>
+                O app ainda está em faze de desenvolvimento e pode apresentar instabilidade. Reporte erros ao desenvolvedor ou a lideres de classe, para que possamos oferecer um melhor serviço.
+              </p>
+
+            </div>
+          </div>
+          <!-- linha de divisão de sessões -->
+          <div class="divisor"></div>
+          <!-- // final do título da página // -->
+          <div class="containment-support">
+            <label for=".block-info img"></label>
+            <div class="block-info">
+              <img class="img1" src="images/user_01.jpg" />
+              <img class="img2" src="images/user_02.jpg" />
+              <img class="img3" src="images/user_03.jpg" />
+              <img class="img4" src="images/user_04.jpg" />
+              <p class="text">
+                São administradores deste app
+              </p>
+              <button class="icon"><svg height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></button>
+            </div>
+          </div>
+          <!-- elementos da página -->
+          <ul id="highlights" class="box-info">
+
+          </ul>
+          <!-- // final dos elementos da página // -->
+        </div>
+        <div class="highlights">
+          <div id="affairs" class="options"></div>
+          <div id="evaluation" class="options"></div>
+          <div id="timetables" class="options"></div>
+        </div>
+      </div>
+      <!-- // final da pagina home // -->
+      <div id="page2" class="page2 page">
         <!-- título da página -->
         <div class="head-title">
           <div class="left">
-            <h1>Bem vindo!</h1>
+            <h1>Semana</h1>
             <ul class="breadcrumb">
               <li>
-                <div class="name">
-                  Olá, Igor O. Cardoso
+                <div>
+                  Semana
                 </div>
               </li>
               <li>
@@ -133,380 +191,325 @@
               </li>
               <li>
                 <div class="active">
-                  Inicio
+                  Todos
                 </div>
               </li>
             </ul>
-            <p>
-              O app ainda está em faze de desenvolvimento e pode apresentar instabilidade. Reporte erros ao desenvolvedor ou a lideres de classe, para que possamos oferecer um melhor serviço.
-            </p>
-
           </div>
         </div>
-        <!-- linha de divisão de sessões -->
-        <div class="divisor"></div>
         <!-- // final do título da página // -->
-        <div class="containment-support">
-          <label for=".block-info img"></label>
-          <div class="block-info">
-            <img class="img1" src="images/user_01.jpg" />
-            <img class="img2" src="images/user_02.jpg" />
-            <img class="img3" src="images/user_03.jpg" />
-            <img class="img4" src="images/user_04.jpg" />
-            <p class="text">
-              São administradores deste app
-            </p>
-            <button class="icon"><svg height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></button>
+        <div class="contant_day">
+
+        </div>
+        <div id="entrega">
+
+        </div>
+      </div>
+      <div class="page3 page">
+        <!-- título da página -->
+        <div class="head-title">
+          <div class="left">
+            <h1>Ferramentas</h1>
+            <ul class="breadcrumb">
+              <li>
+                <div>
+                  Ferramentas
+                </div>
+              </li>
+              <li>
+                <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+              </li>
+              <li>
+                <div class="active">
+                  Todas
+                </div>
+              </li>
+            </ul>
+
           </div>
         </div>
+        <!-- // final do título da página // -->
         <!-- elementos da página -->
-        <ul id="highlights" class="box-info">
-
-        </ul>
+        <ul id="tools" class="box-info"></ul>
         <!-- // final dos elementos da página // -->
       </div>
-      <div class="highlights">
-        <div id="affairs" class="options"></div>
-        <div id="evaluation" class="options"></div>
-        <div id="timetables" class="options"></div>
-      </div>
-    </div>
-    <!-- // final da pagina home // -->
-    <div id="page2" class="page2 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Semana</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                Semana
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Todos
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- // final do título da página // -->
-      <div class="contant_day">
+      <div class="page4 page">
+        <!-- título da página -->
+        <div class="head-title">
+          <div class="left">
+            <h1>Controle</h1>
+            <ul class="breadcrumb">
+              <li>
+                <div>
+                  App
+                </div>
+              </li>
+              <li>
+                <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+              </li>
+              <li>
+                <div class="active">
+                  Todas
+                </div>
+              </li>
+            </ul>
 
-      </div>
-      <div id="entrega">
-
-      </div>
-    </div>
-    <div class="page3 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Ferramentas</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                Ferramentas
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Todas
-              </div>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <!-- // final do título da página // -->
-      <!-- elementos da página -->
-      <ul id="tools" class="box-info"></ul>
-      <!-- // final dos elementos da página // -->
-    </div>
-    <div class="page4 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Controle</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                App
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Todas
-              </div>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <!-- // final do título da página // -->
-      <div class="contant_forms">
-        <!-- elementos da página -->
-        <form id="publish__notification" class="releases">
-          <h2>Comunicados<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
-          <input value="dd/mm/aaaa" type="date" name="dateNotifications" id="date" />
-          <input placeholder="Digite seu número de telefone" type="tel" name="telNotifications" id="number" />
-          <textarea placeholder="Digite seu comunicado" type="text" name="messageNotifications" class="message" id="message"></textarea>
-          <div class="submit__contention">
-            <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
           </div>
-        </form>
+        </div>
+        <!-- // final do título da página // -->
+        <div class="contant_forms">
+          <!-- elementos da página -->
+          <form id="publish__notification" class="releases">
+            <h2>Comunicados<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
+            <input value="dd/mm/aaaa" type="date" name="dateNotifications" id="date" />
+            <input placeholder="Digite seu número de telefone" type="tel" name="telNotifications" id="number" />
+            <textarea placeholder="Digite seu comunicado" type="text" name="messageNotifications" class="message" id="message"></textarea>
+            <div class="submit__contention">
+              <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
+            </div>
+          </form>
 
-        <!-- Ferramentas -->
-        <form id="publish__tools" class="releases">
-          <h2>Ferramentas<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
-          <input placeholder="Nome da ferramenta" type="text" name="nameTools" id="nameTools" />
-          <input placeholder="Link da ferramenta" type="url" name="linkTools" id="linkTools">
-          <div class="submit__contention">
-            <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
-          </div>
-        </form>
+          <!-- Ferramentas -->
+          <form id="publish__tools" class="releases">
+            <h2>Ferramentas<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
+            <input placeholder="Nome da ferramenta" type="text" name="nameTools" id="nameTools" />
+            <input placeholder="Link da ferramenta" type="url" name="linkTools" id="linkTools">
+            <div class="submit__contention">
+              <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
+            </div>
+          </form>
 
-        <!-- Trabalhos  -->
-        <form id="publish__work" class="releases">
-          <h2>Trabalhos<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
-          <input required="required" placeholder="Nome da matéria" type="text" name="nameWork" id="nameWork" />
+          <!-- Trabalhos  -->
+          <form id="publish__work" class="releases">
+            <h2>Trabalhos<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
+            <input required="required" placeholder="Nome da matéria" type="text" name="nameWork" id="nameWork" />
 
-          <input placeholder="Número do dia, exemplo: 20" required="required" type="number" name="dayWork">
-          <input placeholder="Número do mês, exemplo: 3" required="required" type="number" name="monthWork">
-          <input placeholder="Número do ano, exemplo: 2022" required="required" type="number" name="yearWork">
+            <input placeholder="Número do dia, exemplo: 20" required="required" type="number" name="dayWork">
+            <input placeholder="Número do mês, exemplo: 3" required="required" type="number" name="monthWork">
+            <input placeholder="Número do ano, exemplo: 2022" required="required" type="number" name="yearWork">
 
-          <input required="required" placeholder='Link dos arquivos, digite "none" se não ouver' type="text" name="indexing_filesWork" id="indexing_filesWork">
+            <input required="required" placeholder='Link dos arquivos, digite "none" se não ouver' type="text" name="indexing_filesWork" id="indexing_filesWork">
 
-          <input required="required" placeholder='Link da imagem, digite "none" se não ouver' type="text" name="photographWork" id="photographWork">
+            <input required="required" placeholder='Link da imagem, digite "none" se não ouver' type="text" name="photographWork" id="photographWork">
 
-          <input required="required" placeholder='Nota, digite "none" se não ouver' type="text" name="stitchesWork" id="stitchesWork">
+            <input required="required" placeholder='Nota, digite "none" se não ouver' type="text" name="stitchesWork" id="stitchesWork">
 
-          <textarea required="required" placeholder='Digite a descrição, digite "none" se não ouver' type="text" name="descriptionWork" id="descriptionWork"></textarea>
+            <textarea required="required" placeholder='Digite a descrição, digite "none" se não ouver' type="text" name="descriptionWork" id="descriptionWork"></textarea>
 
-          <div class="submit__contention">
-            <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
-          </div>
-        </form>
+            <div class="submit__contention">
+              <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
+            </div>
+          </form>
 
-        <!-- Provas  -->
-        <form id="publish__evaluations" class="releases">
-          <h2>Provas<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
-          <input required="required" placeholder="Nome da matéria" type="text" name="nameEvaluation" id="nameEvaluation" />
+          <!-- Provas  -->
+          <form id="publish__evaluations" class="releases">
+            <h2>Provas<svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" fill="var(--blue-ios)" /></svg></h2>
+            <input required="required" placeholder="Nome da matéria" type="text" name="nameEvaluation" id="nameEvaluation" />
 
-          <input required="required" type="date" name="dateEvaluation" id="dateEvaluation">
+            <input required="required" type="date" name="dateEvaluation" id="dateEvaluation">
 
-          <input required="required" placeholder='Link dos arquivos, digite "none" se não ouver' type="text" name="indexing_filesEvaluation" id="indexing_filesEvaluation">
+            <input required="required" placeholder='Link dos arquivos, digite "none" se não ouver' type="text" name="indexing_filesEvaluation" id="indexing_filesEvaluation">
 
-          <input required="required" placeholder='Link da imagem, digite "none" se não ouver' type="text" name="photographEvaluation" id="photographEvaluation">
+            <input required="required" placeholder='Link da imagem, digite "none" se não ouver' type="text" name="photographEvaluation" id="photographEvaluation">
 
-          <input required="required" placeholder='Nota, digite "none" se não ouver' type="text" name="stitchesEvaluation" id="stitchesEvaluation">
+            <input required="required" placeholder='Nota, digite "none" se não ouver' type="text" name="stitchesEvaluation" id="stitchesEvaluation">
 
-          <textarea required="required" placeholder='Digite a descrição, digite "none" se não ouver' type="text" name="descriptionEvaluation" id="descriptionEvaluation"></textarea>
+            <textarea required="required" placeholder='Digite a descrição, digite "none" se não ouver' type="text" name="descriptionEvaluation" id="descriptionEvaluation"></textarea>
 
-          <div class="submit__contention">
-            <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="page5 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Equipe</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                Acesso
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Permissões
-              </div>
-            </li>
-          </ul>
+            <div class="submit__contention">
+              <button class="submit"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9958 11C19.5087 11 19.9313 11.386 19.9891 11.8834L19.9958 12V18C19.9958 20.1422 18.3119 21.8911 16.1955 21.9951L15.9958 22H8C5.8578 22 4.10892 20.316 4.0049 18.1996L4 18V12C4 11.4477 4.44772 11 5 11C5.51284 11 5.93551 11.386 5.99327 11.8834L6 12V18C6 19.0544 6.81588 19.9182 7.85074 19.9945L8 20H15.9958C17.0502 20 17.914 19.1841 17.9903 18.1493L17.9958 18V12C17.9958 11.4477 18.4435 11 18.9958 11ZM6.28871 7.28943L11.2864 2.29282C11.6467 1.93257 12.2135 1.90471 12.6058 2.20933L12.7 2.29241L17.7035 7.28902C18.0943 7.67928 18.0947 8.31245 17.7044 8.70324C17.3442 9.06397 16.777 9.09208 16.3845 8.78733L16.2902 8.7042L12.996 5.415L12.9963 15.2549C12.9963 15.7678 12.6103 16.1905 12.1129 16.2482L11.9963 16.2549C11.4835 16.2549 11.0608 15.8689 11.003 15.3716L10.9963 15.2549L10.996 5.41L7.70278 8.70379C7.34226 9.06424 6.77503 9.09191 6.38277 8.78685L6.28857 8.70365C5.92812 8.34313 5.90045 7.77589 6.20551 7.38363L6.28871 7.28943L11.2864 2.29282L6.28871 7.28943Z" /></svg></button>
+            </div>
+          </form>
         </div>
       </div>
-      <!-- // final do título da página // -->
-    </div>
-    <div class="page6 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Ajustes</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                Config.
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Conta
-              </div>
-            </li>
-          </ul>
+      <div class="page5 page">
+        <!-- título da página -->
+        <div class="head-title">
+          <div class="left">
+            <h1>Equipe</h1>
+            <ul class="breadcrumb">
+              <li>
+                <div>
+                  Acesso
+                </div>
+              </li>
+              <li>
+                <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+              </li>
+              <li>
+                <div class="active">
+                  Permissões
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- // final do título da página // -->
+      </div>
+      <div class="page6 page">
+        <!-- título da página -->
+        <div class="head-title">
+          <div class="left">
+            <h1>Ajustes</h1>
+            <ul class="breadcrumb">
+              <li>
+                <div>
+                  Config.
+                </div>
+              </li>
+              <li>
+                <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+              </li>
+              <li>
+                <div class="active">
+                  Conta
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- // final do título da página // -->
+        <div class="container_user">
+          <div class="profile">
+
+          </div>
+          <div class="container_info">
+            <p class="name"></p>
+            <p class="mail"></p>
+          </div>
+        </div>
+        <div class="configuration_options">
+          <p class="session_title">
+            Preferências
+          </p>
+          <button id="dark_mode">
+            <span>Modo claro</span><span><svg width="40" height="40" style="fill: var(--blue-ios) ; transform: rotate(180deg); enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M23,8H9c-4.4,0-8,3.6-8,8s3.6,8,8,8h14c4.4,0,8-3.6,8-8S27.4,8,23,8z M9,21c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5  S11.8,21,9,21z" /></svg>
+            </span>
+          </button>
+          <button style="display: none;" id="clear_mode">
+            <span>Modo claro</span>
+            <span><svg width="40" height="40" style="fill: var(--light); enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M23,8H9c-4.4,0-8,3.6-8,8s3.6,8,8,8h14c4.4,0,8-3.6,8-8S27.4,8,23,8z M9,21c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5  S11.8,21,9,21z" /></svg></span>
+          </button>
+          <button>
+            <span>Sobre</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button id="privacy_policy">
+            <span>Política de privacidade</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button id="terms_of_use">
+            <span>Termos de uso</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button>
+            <span>Segurança</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button>
+            <span>Feedback</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button id="developer">
+            <span>Desenvolvedor</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
+          <button onclick="logout()" id="logout">
+            <span>Sair</span>
+            <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
+          </button>
         </div>
       </div>
-      <!-- // final do título da página // -->
-      <div class="container_user">
+      <div class="page7 page">
+        <!-- título da página -->
+        <div class="head-title">
+          <div class="left">
+            <h1>Notificações</h1>
+            <ul class="breadcrumb">
+              <li>
+                <div>
+                  Notificações
+                </div>
+              </li>
+              <li>
+                <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
+              </li>
+              <li>
+                <div class="active">
+                  Todas
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- // final do título da página // -->
+        <!-- div de contenção das notificações -->
+        <div id="containment-card-notifications">
+
+        </div>
+      </div>
+    </main>
+    <!-- // final do conteúdo das páginas // -->
+
+    <!-- menu do topo -->
+    <nav id="nav">
+      <!-- icone de abrir e fechar o menu -->
+      <i class='bx bx-menu-alt-left'></i>
+      <!-- título do que buscar -->
+      <div class="nav-link">
+        Dados
+      </div>
+      <!-- form de captura da busca, obs: não tire -->
+      <!-- icone de notificações -->
+      <div class="notification op7">
+        <svg style="margin-bottom: -3px;" height="19.409px" id="Capa_1" style="enable-background:new 0 0 27.147 21.409;" version="1.1" viewBox="0 0 27.147 21.409" width="25.147px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M9.971,4.226c5.505,0,9.97,3.402,9.97,7.598   s-4.465,7.597-9.97,7.597c-0.972,0-1.91-0.106-2.798-0.303C6,21.244,3.872,21.716,1.969,21.238c1.147-0.984,2.137-1.916,2.88-2.896   C1.944,17.015,0,14.592,0,11.824C0,7.628,4.465,4.226,9.971,4.226z" /><path d="M17.178,0c-3.416,0-6.432,1.31-8.229,3.307   c4.46-1.197,15.345,3.597,11.237,11.604c1.173,2.126,3.089,2.578,4.993,2.1c-1.147-0.984-2.137-1.916-2.88-2.896   c2.903-1.328,4.848-3.75,4.848-6.519C27.147,3.402,22.683,0,17.178,0z" /></g><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /></svg>
+      </div>
+      <form style="opacity: 0; z-index: -100; pointer-events: none;">
+        <div class="form-input">
+          <input type="search" placeholder="Pesquisar por comunicados">
+          <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+      </form>
+      <!-- informações do usuário-->
+      <div class="containerUser">
         <div class="profile">
-
-        </div>
-        <div class="container_info">
-          <p class="name"></p>
-          <p class="mail"></p>
-        </div>
-      </div>
-      <div class="configuration_options">
-        <p class="session_title">
-          Preferências
-        </p>
-        <button id="dark_mode">
-          <span>Modo claro</span><span><svg width="40" height="40" style="fill: var(--blue-ios) ; transform: rotate(180deg); enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M23,8H9c-4.4,0-8,3.6-8,8s3.6,8,8,8h14c4.4,0,8-3.6,8-8S27.4,8,23,8z M9,21c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5  S11.8,21,9,21z" /></svg>
-          </span>
-        </button>
-        <button style="display: none;" id="clear_mode">
-          <span>Modo claro</span>
-          <span><svg width="40" height="40" style="fill: var(--light); enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M23,8H9c-4.4,0-8,3.6-8,8s3.6,8,8,8h14c4.4,0,8-3.6,8-8S27.4,8,23,8z M9,21c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5  S11.8,21,9,21z" /></svg></span>
-        </button>
-        <button>
-          <span>Sobre</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button id="privacy_policy">
-          <span>Política de privacidade</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button id="terms_of_use">
-          <span>Termos de uso</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button>
-          <span>Segurança</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button>
-          <span>Feedback</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button id="developer">
-          <span>Desenvolvedor</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-        <button onclick="logout()" id="logout">
-          <span>Sair</span>
-          <span><svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg></span>
-        </button>
-      </div>
-    </div>
-    <div class="page7 page">
-      <!-- título da página -->
-      <div class="head-title">
-        <div class="left">
-          <h1>Notificações</h1>
-          <ul class="breadcrumb">
-            <li>
-              <div>
-                Notificações
-              </div>
-            </li>
-            <li>
-              <svg style="margin-bottom:-3px;" height="20" viewBox="0 0 18 18" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12.2197 6.03033C11.9268 5.73744 11.9268 5.26256 12.2197 4.96967C12.5126 4.67678 12.9874 4.67678 13.2803 4.96967L17.7803 9.46967C18.0732 9.76256 18.0732 10.2374 17.7803 10.5303L13.2803 15.0303C12.9874 15.3232 12.5126 15.3232 12.2197 15.0303C11.9268 14.7374 11.9268 14.2626 12.2197 13.9697L16.1893 10L12.2197 6.03033Z" /></svg>
-            </li>
-            <li>
-              <div class="active">
-                Todas
-              </div>
-            </li>
-          </ul>
+          <div class="user">
+            <div style="border-radius: 8em; width: 100%; height: 90%; background: var(--grey);"></div>
+          </div>
+          <div class="icon op6">
+            <svg style="margin-left: 10px; margin-right: -10px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,2c-0.552,0 -1,0.448 -1,1v0.17188c0,0.478 -0.33659,0.90447 -0.80859,0.98047c-0.229,0.037 -0.45569,0.07986 -0.67969,0.13086c-0.464,0.106 -0.93323,-0.1567 -1.11524,-0.5957l-0.06641,-0.15625c-0.211,-0.51 -0.79564,-0.75302 -1.30664,-0.54102c-0.51,0.211 -0.75302,0.79564 -0.54102,1.30664l0.06641,0.16016c0.184,0.44 0.03686,0.96089 -0.36914,1.21289c-0.196,0.122 -0.38722,0.24981 -0.57422,0.38281c-0.388,0.277 -0.92472,0.21395 -1.26172,-0.12305l-0.12109,-0.12109c-0.391,-0.391 -1.02406,-0.391 -1.41406,0c-0.39,0.391 -0.39,1.02406 0,1.41406l0.12109,0.12109c0.337,0.337 0.40005,0.87272 0.12305,1.26172c-0.133,0.187 -0.26081,0.37822 -0.38281,0.57422c-0.252,0.406 -0.77384,0.55409 -1.21484,0.37109l-0.1582,-0.06641c-0.51,-0.211 -1.09659,0.03102 -1.30859,0.54102c-0.211,0.51 0.03102,1.09464 0.54102,1.30664l0.15625,0.06445c0.439,0.182 0.70366,0.65124 0.59766,1.11524c-0.051,0.224 -0.09581,0.45069 -0.13281,0.67969c-0.075,0.471 -0.50052,0.80859 -0.97852,0.80859h-0.17187c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h0.17188c0.478,0 0.90447,0.33659 0.98047,0.80859c0.037,0.229 0.07986,0.45569 0.13086,0.67969c0.106,0.464 -0.1567,0.93323 -0.5957,1.11523l-0.15625,0.06641c-0.51,0.211 -0.75302,0.79564 -0.54102,1.30664c0.211,0.51 0.79564,0.75302 1.30664,0.54102l0.16016,-0.06641c0.441,-0.183 0.96184,-0.03586 1.21484,0.36914c0.122,0.196 0.24881,0.38817 0.38281,0.57617c0.277,0.388 0.21395,0.92472 -0.12305,1.26172l-0.12305,0.12109c-0.391,0.391 -0.391,1.02406 0,1.41406c0.391,0.39 1.02406,0.391 1.41406,0l0.12305,-0.12109c0.337,-0.337 0.87177,-0.402 1.25977,-0.125c0.188,0.134 0.38017,0.26277 0.57617,0.38477c0.405,0.252 0.55409,0.77384 0.37109,1.21484l-0.06641,0.1582c-0.211,0.51 0.03102,1.09659 0.54102,1.30859c0.51,0.211 1.09464,-0.03102 1.30664,-0.54102l0.06445,-0.15625c0.182,-0.439 0.65123,-0.70366 1.11523,-0.59766c0.224,0.051 0.45069,0.09581 0.67969,0.13281c0.469,0.073 0.80664,0.49856 0.80664,0.97656v0.17188c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1v-0.17187c0,-0.478 0.33659,-0.90447 0.80859,-0.98047c0.229,-0.037 0.45569,-0.07986 0.67969,-0.13086c0.464,-0.106 0.93323,0.1567 1.11523,0.5957l0.06641,0.15625c0.211,0.51 0.79564,0.75302 1.30664,0.54102c0.51,-0.211 0.75302,-0.79564 0.54102,-1.30664l-0.06641,-0.16016c-0.183,-0.441 -0.03586,-0.96184 0.36914,-1.21484c0.196,-0.122 0.38817,-0.24881 0.57617,-0.38281c0.388,-0.277 0.92472,-0.21395 1.26172,0.12305l0.12109,0.12305c0.391,0.391 1.02406,0.391 1.41406,0c0.39,-0.391 0.391,-1.02406 0,-1.41406l-0.12109,-0.12305c-0.337,-0.337 -0.402,-0.87177 -0.125,-1.25977c0.134,-0.188 0.26277,-0.38017 0.38477,-0.57617c0.252,-0.405 0.77384,-0.55409 1.21484,-0.37109l0.1582,0.06641c0.51,0.211 1.09659,-0.03102 1.30859,-0.54102c0.211,-0.51 -0.03102,-1.09464 -0.54102,-1.30664l-0.15625,-0.06445c-0.439,-0.182 -0.70366,-0.65123 -0.59766,-1.11523c0.051,-0.224 0.09581,-0.45069 0.13281,-0.67969c0.073,-0.469 0.49856,-0.80664 0.97656,-0.80664h0.17188c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1h-0.17187c-0.478,0 -0.90447,-0.33659 -0.98047,-0.80859c-0.037,-0.229 -0.07986,-0.45569 -0.13086,-0.67969c-0.106,-0.464 0.1567,-0.93323 0.5957,-1.11524l0.15625,-0.06641c0.51,-0.211 0.75302,-0.79564 0.54102,-1.30664c-0.211,-0.51 -0.79564,-0.75302 -1.30664,-0.54102l-0.16016,0.06641c-0.441,0.183 -0.96184,0.03586 -1.21484,-0.36914c-0.122,-0.196 -0.24881,-0.38817 -0.38281,-0.57617c-0.277,-0.388 -0.21395,-0.92472 0.12305,-1.26172l0.12305,-0.12109c0.391,-0.391 0.391,-1.02406 0,-1.41406c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-0.12109,0.12305c-0.337,0.337 -0.87372,0.402 -1.26172,0.125c-0.188,-0.134 -0.38017,-0.26277 -0.57617,-0.38477c-0.405,-0.252 -0.55214,-0.77384 -0.36914,-1.21484l0.06641,-0.1582c0.211,-0.51 -0.03102,-1.09659 -0.54102,-1.30859c-0.51,-0.211 -1.09464,0.03102 -1.30664,0.54102l-0.06641,0.15625c-0.182,0.439 -0.65123,0.70366 -1.11523,0.59766c-0.224,-0.051 -0.45069,-0.09581 -0.67969,-0.13281c-0.47,-0.075 -0.80664,-0.50052 -0.80664,-0.97852v-0.17187c0,-0.552 -0.448,-1 -1,-1zM15,7c4.07865,0 7.43859,3.05488 7.93164,7h-6.20312c-0.35663,-0.61771 -1.01525,-0.99874 -1.72852,-1c-0.00065,0 -0.0013,0 -0.00195,0l-3.10156,-5.375c0.95452,-0.40227 2.00273,-0.625 3.10352,-0.625zM10.16992,8.63281l3.09961,5.36719c-0.17609,0.30389 -0.26905,0.64878 -0.26953,1c0.00117,0.34989 0.0941,0.69336 0.26953,0.99609l-3.10156,5.36914c-1.92154,-1.46124 -3.16797,-3.76516 -3.16797,-6.36523c0,-2.60106 1.24714,-4.90604 3.16992,-6.36719zM16.73047,16h6.20117c-0.49305,3.94512 -3.853,7 -7.93164,7c-1.10079,0 -2.149,-0.22273 -3.10352,-0.625l3.10156,-5.375c0.00065,0 0.0013,0 0.00195,0c0.71397,-0.00056 1.37349,-0.38169 1.73047,-1z"></path></g></g></svg>
+          </div>
         </div>
       </div>
-      <!-- // final do título da página // -->
-      <!-- div de contenção das notificações -->
-      <div id="containment-card-notifications">
+    </nav>
+    <!-- // final do menu do topo // -->
 
-      </div>
-    </div>
-  </main>
-  <!-- // final do conteúdo das páginas // -->
+  </section>
+  <!-- // final da contenção da página e do menu do topo // -->
+  <!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+  <!-- Inicializa o firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/3.5.1/firebase-ui-auth__pt.js"></script>
+  <script type="text/javascript" charset="utf-8">
 
-  <!-- menu do topo -->
-  <nav id="nav">
-    <!-- icone de abrir e fechar o menu -->
-    <i class='bx bx-menu-alt-left'></i>
-    <!-- título do que buscar -->
-    <div class="nav-link">
-      Dados
-    </div>
-    <!-- form de captura da busca, obs: não tire -->
-    <!-- icone de notificações -->
-    <div class="notification op7">
-      <svg style="margin-bottom: -3px;" height="19.409px" id="Capa_1" style="enable-background:new 0 0 27.147 21.409;" version="1.1" viewBox="0 0 27.147 21.409" width="25.147px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M9.971,4.226c5.505,0,9.97,3.402,9.97,7.598   s-4.465,7.597-9.97,7.597c-0.972,0-1.91-0.106-2.798-0.303C6,21.244,3.872,21.716,1.969,21.238c1.147-0.984,2.137-1.916,2.88-2.896   C1.944,17.015,0,14.592,0,11.824C0,7.628,4.465,4.226,9.971,4.226z" /><path d="M17.178,0c-3.416,0-6.432,1.31-8.229,3.307   c4.46-1.197,15.345,3.597,11.237,11.604c1.173,2.126,3.089,2.578,4.993,2.1c-1.147-0.984-2.137-1.916-2.88-2.896   c2.903-1.328,4.848-3.75,4.848-6.519C27.147,3.402,22.683,0,17.178,0z" /></g><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /></svg>
-    </div>
-    <form style="opacity: 0; z-index: -100; pointer-events: none;">
-      <div class="form-input">
-        <input type="search" placeholder="Pesquisar por comunicados">
-        <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
-      </div>
-    </form>
-    <!-- informações do usuário-->
-    <div class="containerUser">
-      <div class="profile">
-        <div class="user">
-          <div style="border-radius: 8em; width: 100%; height: 90%; background: var(--grey);"></div>
-        </div>
-        <div class="icon op6">
-          <svg style="margin-left: 10px; margin-right: -10px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,2c-0.552,0 -1,0.448 -1,1v0.17188c0,0.478 -0.33659,0.90447 -0.80859,0.98047c-0.229,0.037 -0.45569,0.07986 -0.67969,0.13086c-0.464,0.106 -0.93323,-0.1567 -1.11524,-0.5957l-0.06641,-0.15625c-0.211,-0.51 -0.79564,-0.75302 -1.30664,-0.54102c-0.51,0.211 -0.75302,0.79564 -0.54102,1.30664l0.06641,0.16016c0.184,0.44 0.03686,0.96089 -0.36914,1.21289c-0.196,0.122 -0.38722,0.24981 -0.57422,0.38281c-0.388,0.277 -0.92472,0.21395 -1.26172,-0.12305l-0.12109,-0.12109c-0.391,-0.391 -1.02406,-0.391 -1.41406,0c-0.39,0.391 -0.39,1.02406 0,1.41406l0.12109,0.12109c0.337,0.337 0.40005,0.87272 0.12305,1.26172c-0.133,0.187 -0.26081,0.37822 -0.38281,0.57422c-0.252,0.406 -0.77384,0.55409 -1.21484,0.37109l-0.1582,-0.06641c-0.51,-0.211 -1.09659,0.03102 -1.30859,0.54102c-0.211,0.51 0.03102,1.09464 0.54102,1.30664l0.15625,0.06445c0.439,0.182 0.70366,0.65124 0.59766,1.11524c-0.051,0.224 -0.09581,0.45069 -0.13281,0.67969c-0.075,0.471 -0.50052,0.80859 -0.97852,0.80859h-0.17187c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h0.17188c0.478,0 0.90447,0.33659 0.98047,0.80859c0.037,0.229 0.07986,0.45569 0.13086,0.67969c0.106,0.464 -0.1567,0.93323 -0.5957,1.11523l-0.15625,0.06641c-0.51,0.211 -0.75302,0.79564 -0.54102,1.30664c0.211,0.51 0.79564,0.75302 1.30664,0.54102l0.16016,-0.06641c0.441,-0.183 0.96184,-0.03586 1.21484,0.36914c0.122,0.196 0.24881,0.38817 0.38281,0.57617c0.277,0.388 0.21395,0.92472 -0.12305,1.26172l-0.12305,0.12109c-0.391,0.391 -0.391,1.02406 0,1.41406c0.391,0.39 1.02406,0.391 1.41406,0l0.12305,-0.12109c0.337,-0.337 0.87177,-0.402 1.25977,-0.125c0.188,0.134 0.38017,0.26277 0.57617,0.38477c0.405,0.252 0.55409,0.77384 0.37109,1.21484l-0.06641,0.1582c-0.211,0.51 0.03102,1.09659 0.54102,1.30859c0.51,0.211 1.09464,-0.03102 1.30664,-0.54102l0.06445,-0.15625c0.182,-0.439 0.65123,-0.70366 1.11523,-0.59766c0.224,0.051 0.45069,0.09581 0.67969,0.13281c0.469,0.073 0.80664,0.49856 0.80664,0.97656v0.17188c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1v-0.17187c0,-0.478 0.33659,-0.90447 0.80859,-0.98047c0.229,-0.037 0.45569,-0.07986 0.67969,-0.13086c0.464,-0.106 0.93323,0.1567 1.11523,0.5957l0.06641,0.15625c0.211,0.51 0.79564,0.75302 1.30664,0.54102c0.51,-0.211 0.75302,-0.79564 0.54102,-1.30664l-0.06641,-0.16016c-0.183,-0.441 -0.03586,-0.96184 0.36914,-1.21484c0.196,-0.122 0.38817,-0.24881 0.57617,-0.38281c0.388,-0.277 0.92472,-0.21395 1.26172,0.12305l0.12109,0.12305c0.391,0.391 1.02406,0.391 1.41406,0c0.39,-0.391 0.391,-1.02406 0,-1.41406l-0.12109,-0.12305c-0.337,-0.337 -0.402,-0.87177 -0.125,-1.25977c0.134,-0.188 0.26277,-0.38017 0.38477,-0.57617c0.252,-0.405 0.77384,-0.55409 1.21484,-0.37109l0.1582,0.06641c0.51,0.211 1.09659,-0.03102 1.30859,-0.54102c0.211,-0.51 -0.03102,-1.09464 -0.54102,-1.30664l-0.15625,-0.06445c-0.439,-0.182 -0.70366,-0.65123 -0.59766,-1.11523c0.051,-0.224 0.09581,-0.45069 0.13281,-0.67969c0.073,-0.469 0.49856,-0.80664 0.97656,-0.80664h0.17188c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1h-0.17187c-0.478,0 -0.90447,-0.33659 -0.98047,-0.80859c-0.037,-0.229 -0.07986,-0.45569 -0.13086,-0.67969c-0.106,-0.464 0.1567,-0.93323 0.5957,-1.11524l0.15625,-0.06641c0.51,-0.211 0.75302,-0.79564 0.54102,-1.30664c-0.211,-0.51 -0.79564,-0.75302 -1.30664,-0.54102l-0.16016,0.06641c-0.441,0.183 -0.96184,0.03586 -1.21484,-0.36914c-0.122,-0.196 -0.24881,-0.38817 -0.38281,-0.57617c-0.277,-0.388 -0.21395,-0.92472 0.12305,-1.26172l0.12305,-0.12109c0.391,-0.391 0.391,-1.02406 0,-1.41406c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-0.12109,0.12305c-0.337,0.337 -0.87372,0.402 -1.26172,0.125c-0.188,-0.134 -0.38017,-0.26277 -0.57617,-0.38477c-0.405,-0.252 -0.55214,-0.77384 -0.36914,-1.21484l0.06641,-0.1582c0.211,-0.51 -0.03102,-1.09659 -0.54102,-1.30859c-0.51,-0.211 -1.09464,0.03102 -1.30664,0.54102l-0.06641,0.15625c-0.182,0.439 -0.65123,0.70366 -1.11523,0.59766c-0.224,-0.051 -0.45069,-0.09581 -0.67969,-0.13281c-0.47,-0.075 -0.80664,-0.50052 -0.80664,-0.97852v-0.17187c0,-0.552 -0.448,-1 -1,-1zM15,7c4.07865,0 7.43859,3.05488 7.93164,7h-6.20312c-0.35663,-0.61771 -1.01525,-0.99874 -1.72852,-1c-0.00065,0 -0.0013,0 -0.00195,0l-3.10156,-5.375c0.95452,-0.40227 2.00273,-0.625 3.10352,-0.625zM10.16992,8.63281l3.09961,5.36719c-0.17609,0.30389 -0.26905,0.64878 -0.26953,1c0.00117,0.34989 0.0941,0.69336 0.26953,0.99609l-3.10156,5.36914c-1.92154,-1.46124 -3.16797,-3.76516 -3.16797,-6.36523c0,-2.60106 1.24714,-4.90604 3.16992,-6.36719zM16.73047,16h6.20117c-0.49305,3.94512 -3.853,7 -7.93164,7c-1.10079,0 -2.149,-0.22273 -3.10352,-0.625l3.10156,-5.375c0.00065,0 0.0013,0 0.00195,0c0.71397,-0.00056 1.37349,-0.38169 1.73047,-1z"></path></g></g></svg>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- // final do menu do topo // -->
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err));
+      });
+    }
 
-</section>
-<!-- // final da contenção da página e do menu do topo // -->
-<!-- Firebase App is always required and must be first -->
-<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-<!-- Add additional services that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
-<!-- Inicializa o firebase -->
-<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/ui/3.5.1/firebase-ui-auth__pt.js"></script>
-<script type="text/javascript" charset="utf-8">
-
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function() {
-      navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err));
+    window.addEventListener('offline', () => {
+      window.location = "cached_local_page.html"
     });
-  }
 
-  window.addEventListener('offline', () => {
-    window.location = "cached_local_page.html"
-  });
-
-</script>
-<script src="script.js"></script>
-<script src="Interactions/App.js"></script>
+  </script>
+  <script src="script.js"></script>
+  <script src="Interactions/App.js"></script>
 </body>
 </html>
