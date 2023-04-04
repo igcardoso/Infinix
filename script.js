@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const header = document.querySelector(".container_user .profile");
 
 window.addEventListener ("scroll", function() {
-  header.classList.toggle("sticky", window.scrollY > 0);
+  header.classList.toggle("sticky", window.scrollY > 300);
 });
 
 
