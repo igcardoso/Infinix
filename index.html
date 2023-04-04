@@ -494,8 +494,8 @@
 
   const header = document.querySelector("nav");
 
-  window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 0);
+  window.addEventListener("scroll", function() {
+    header.style.background = "red", window.scrollY > 0;
   });
 
   if ("serviceWorker" in navigator) {
