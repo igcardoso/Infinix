@@ -624,10 +624,9 @@ body {
 }
 
 #affairs {
-  background: yellow;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 50px;
+  background: red;
+  display: flex;
+  flex-direction: row;
 }
 
 .home .highlights .options div {
