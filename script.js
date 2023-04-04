@@ -76,7 +76,10 @@ window.onload = function() {
 
         svg {
         fill: var(--dark);
-        stroke: var(--dark);
+        }
+        
+        svg path {
+          stroke: var(--dark);
         }
 
         </style>`;
