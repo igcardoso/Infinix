@@ -74,7 +74,7 @@ window.onload = function() {
         --border-radius: 1.5em;
         }
 
-        svg {
+        svg path {
         fill: var(--dark);
         }
         
