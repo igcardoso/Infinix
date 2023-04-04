@@ -638,7 +638,6 @@ body {
 }
 
 .home .highlights .options ul li {
-  width: 100%;
   text-align: center;
   color: var(--dark);
 }
