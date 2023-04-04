@@ -625,18 +625,16 @@ body {
 
 #affairs {
   background: red;
-  display: inline-block ;
 }
 
 .home .highlights .options div {
-  display: flex;
-  flex-direction: column;
+  display: inline-block; 
   position: relative;
   background: var(--light);
   padding: 10px;
   border-radius: var(--border-radius);
   margin-top: 20px;
-  width: 330px;
+  width: 340px;
 }
 
 .home .highlights .options div li {
