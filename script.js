@@ -350,6 +350,7 @@ function getIp(callback) {
             console.log("objeto:",
               doc.data());
             var Affairs = document.createElement("div");
+            Affairs.className = 'restraint_duties';
             var shar7 = doc.data().day + doc.data().month + doc.data().year
 
             Affairs.innerHTML = `
