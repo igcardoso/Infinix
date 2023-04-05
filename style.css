@@ -675,8 +675,8 @@ body {
 .home .highlights .options ul ul li:first-child {
   border-top-right-radius: .8em;
   border-top-left-radius: .8em;
+  border-bottom: none;
 }
-
 
 .home .highlights .options ul ul li:last-child {
   border-bottom-right-radius: .8em;
