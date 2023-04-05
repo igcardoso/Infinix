@@ -1090,9 +1090,9 @@ body {
   #content main {
     padding: 10px 10px;
     padding-top: 110px;
-    padding-bottom: 105px;
+    padding-bottom: 110px;
     margin: 0;
-    top: 0;
+    top: 20px;
     left: 0;
     height: 100vh;
     width: 100%;
