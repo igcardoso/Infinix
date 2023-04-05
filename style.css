@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background: var(--blue);
+  background: var(--light);
   overflow-x: hidden;
 }
 
