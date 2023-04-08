@@ -86,11 +86,11 @@ window.onload = function() {
         body.appendChild(style);
 
         if (doc.data().update == 'true') {
-          document.querySelector("#update ").style.display = "none";
+          document.querySelector("#update").style.display = "none";
           document.querySelector("main").style.opacity = "1";
           document.querySelector("nav").style.opacity = "1";
         } else {
-          document.querySelector("#update ").style.display = "block";
+          document.querySelector("#update").style.display = "block";
           document.querySelector("main").style.opacity = "0";
           document.querySelector("nav").style.opacity = "0";
         }
