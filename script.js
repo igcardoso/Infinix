@@ -42,7 +42,8 @@ window.onload = function() {
 
         if (doc.data().status == 'true') {
           document.querySelector("#loading .name-uiFace").innerHTML = "Bem Vindo, " + "<br />" + user.displayName
-          document.querySelector("#loading .lds-spinner").style.display = "none"
+          document.querySelector("#loading .lds-spinner").style.opacity = "0"
+          document.querySelector("#loading .lds-spinner").style.marginTop = "calc(70% - 27px)"
           document.querySelector("#Loading_check").style.display = "block"
           
           setTimeout(function() {
