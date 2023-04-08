@@ -91,8 +91,8 @@ window.onload = function() {
           document.querySelector("nav").style.opacity = "1";
         } else {
           document.querySelector("#update ").style.display = "block";
-          document.querySelector("main").style.filter = "blur(30px)";
-          document.querySelector("nav").style.filter = "blur(30px)";
+          document.querySelector("main").style.filter = "blur(15px)";
+          document.querySelector("nav").style.filter = "blur(15px)";
         }
 
 
