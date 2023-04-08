@@ -105,7 +105,7 @@ body {
 
 #update button {
   color: #ffffff;
-  background: #329FFC;
+  background: #000000;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -116,6 +116,7 @@ body {
 }
 
 #update p {
+  font-weight: 700;
   text-align: justify;
   margin-bottom: 40px;
 }
