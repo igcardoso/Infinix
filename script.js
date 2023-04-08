@@ -44,7 +44,7 @@ window.onload = function() {
           document.querySelector("#loading .name-uiFace").innerHTML = "Bem Vindo, " + "<br />" + user.displayName
           setTimeout(function() {
             document.querySelector(".loading").style.left = "-1000%";
-          }, 1000);
+          }, 3000);
         }
       });
 
