@@ -47,6 +47,10 @@ body {
   transition: 2s ease;
 }
 
+#Loading_check {
+  display: none;
+}
+
 .loading .name-uiFace {
   color: #000000;
   font-weight: 700;
