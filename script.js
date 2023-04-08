@@ -41,6 +41,7 @@ window.onload = function() {
       db.collection('loading').doc('global').onSnapshot((doc)=> {
 
         if (doc.data().status == 'true') {
+          document.querySelector("#loading .name-uiFace").innerHTML = "Bem Vindo, " + "<br />" + user.displayName
           setTimeout(function() {
             document.querySelector(".loading").style.left = "-1000%";
           }, 1000);
