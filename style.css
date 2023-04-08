@@ -116,6 +116,7 @@ body {
 }
 
 #update p {
+  font-family: Sans-Serif;
   font-weight: 700;
   text-align: justify;
   margin-bottom: 40px;
