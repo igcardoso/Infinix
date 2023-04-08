@@ -50,6 +50,7 @@ body {
 #Loading_check {
   margin: 70% auto 13px;
   display: none;
+  border: 1px solid #000000;
 }
 
 .loading .name-uiFace {
