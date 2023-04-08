@@ -42,6 +42,9 @@ window.onload = function() {
 
         if (doc.data().status == 'true') {
           document.querySelector("#loading .name-uiFace").innerHTML = "Bem Vindo, " + "<br />" + user.displayName
+          document.querySelector("#loading .lds-spinner").style.display = "none"
+          document.querySelector("#Loading_check").style.display = "block"
+          
           setTimeout(function() {
             document.querySelector(".loading").style.left = "-1000%";
           }, 3000);
