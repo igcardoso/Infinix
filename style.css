@@ -710,6 +710,7 @@ body {
   padding: 10px;
   overflow: hidden;
   color: var(--dark);
+  text-align: justify;
   border-bottom: 0.5px solid var(--dark);
 }
 
