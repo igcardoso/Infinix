@@ -671,7 +671,6 @@ body {
   width: 100%;
   color: #ffffff;
   padding: 15px;
-  text-align: justify;
   border-radius: var(--border-radius);
 }
 
@@ -680,6 +679,7 @@ body {
   width: 100%;
   color: var(--dark);
   margin-top: 20px;
+  text-align: justify; 
 }
 
 .home .highlights .options ul ul li:first-child {
