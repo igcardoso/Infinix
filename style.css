@@ -671,6 +671,7 @@ body {
   width: 100%;
   color: #ffffff;
   padding: 15px;
+  text-align: justify;
   border-radius: var(--border-radius);
 }
 
