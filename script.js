@@ -375,7 +375,7 @@ function getIp(callback) {
             " class="plus"><i>mais...</i>
             </li>
             <ul id="${shar7}${doc.data().name}affairs">
-            <li class="${doc.data().description}" >${doc.data().description}</li>
+            <li style="text-align: justify;" class="${doc.data().description}" >${doc.data().description}</li>
             <li style="background: var(--dark); color: var(--grey); border: none; border-radius: var(--border-radius); padding:7px; font-weight: 700;"  class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Visualizar arquivos</li>
             <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}"/></li>
             <li class="${doc.data().stitches}" >Nota: ${doc.data().stitches}</li>
@@ -502,7 +502,7 @@ function getIp(callback) {
               "  class="plus"><i>mais...</i>
               </li>
               <ul id="${doc.data().date}${doc.data().name}evaluations">
-              <li class="${doc.data().description}">${doc.data().description}</li>
+              <li style="text-align: justify;" class="${doc.data().description}">${doc.data().description}</li>
               <li style="background: var(--dark); color: var(--grey); border: none; border-radius: var(--border-radius); padding:7px; font-weight: 700;" class="${doc.data().indexing_files}" onclick="window.location = '${doc.data().indexing_files}'">Visualizar arquivos</li>
              <li class="${doc.data().photograph}" onclick="window.location = '${doc.data().photograph}'" ><img src="${doc.data().photograph}" /></li>
               <li class="${doc.data().stitches}" >Nota: ${doc.data().stitches}</li>
