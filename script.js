@@ -12,7 +12,6 @@ firebase.initializeApp(config);
 // Apenas para remover um warning
 firebase.firestore().settings({
   timestampsInSnapshots: true,
-
 });
 
 const db = firebase.firestore();
